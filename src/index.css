@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    border-color: #E7E5DF;
+  }
+  
+  html, body {
+    background-color: #FAF9F5;
+    color: #1A1A18;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Custom subtle scrollbars for sleek academic aesthetic */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #DEDBD2;
+    border-radius: 9999px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #C5C1B4;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .font-serif-display {
+    font-family: 'Newsreader', Georgia, Cambria, 'Times New Roman', serif;
+  }
+
+  .paper-canvas {
+    background-color: #FAF9F5;
+  }
+
+  .paper-surface {
+    background-color: #FFFFFF;
+    border: 1px solid #E7E5DF;
+  }
+
+  .paper-subtle {
+    background-color: #F5F4EE;
+  }
+
+  .border-warm {
+    border-color: #E7E5DF;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

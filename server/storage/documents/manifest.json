@@ -1,0 +1,477 @@
+[
+  {
+    "id": "doc_1790181572484_eygm33",
+    "name": "4. Physical Layer_.pdf",
+    "type": "pdf",
+    "size": "1.79 MB",
+    "pages": 97,
+    "chunksCount": 87,
+    "uploadedAt": "Sep 23, 2026",
+    "status": "ready",
+    "profile": {
+      "documentId": "doc_1790181572484_eygm33",
+      "documentName": "4. Physical Layer_.pdf",
+      "title": "Physical Layer",
+      "subject": "Academic Course Material",
+      "mainTopic": "Physical Layer",
+      "topics": [
+        {
+          "id": "con_doc_1790181572484_eygm33_1",
+          "name": "Physical Layer Function",
+          "description": "The physical layer is the first and lowest layer of the OSI model and is responsible for carrying bits across a physical transmission medium.",
+          "sourcePages": [
+            1,
+            3
+          ]
+        },
+        {
+          "id": "con_doc_1790181572484_eygm33_2",
+          "name": "Analog and Digital Signals",
+          "description": "An analog signal varies continuously and smoothly over time, whereas a digital signal uses discrete values, commonly represented as LOW and HIGH or 0 and 1.",
+          "sourcePages": [
+            4,
+            6
+          ]
+        },
+        {
+          "id": "con_doc_1790181572484_eygm33_3",
+          "name": "Bit Rate and Bit Length",
+          "description": "Bit rate is the number of bits transmitted per second, while bit length is the physical distance occupied by one bit in a medium. Higher bit rates pack more bits into a given transmission distance.",
+          "sourcePages": [
+            7,
+            9
+          ]
+        },
+        {
+          "id": "sec_doc_1790181572484_eygm33_1_1",
+          "name": "Physical Layer and Signal Fundamentals",
+          "description": "Explains the physical layer's role in carrying bits and introduces the basic forms and measurements of transmitted signals.",
+          "sourcePages": [
+            1,
+            9
+          ]
+        },
+        {
+          "id": "con_doc_1790181572484_eygm33_4",
+          "name": "Digital Modulation and Encoding Assumptions",
+          "description": "Digital modulation converts bits into signals and received signals back into bits. The introductory model assumes discrete high and low signals for encoding binary 1 and 0.",
+          "sourcePages": [
+            10,
+            11
+          ]
+        },
+        {
+          "id": "con_doc_1790181572484_eygm33_5",
+          "name": "Non-Return to Zero and Desynchronization",
+          "description": "Non-Return to Zero represents 1 with a high signal and 0 with a low signal. Long sequences without transitions make receiver clock recovery difficult and can cause desynchronization.",
+          "sourcePages": [
+            12,
+            13
+          ]
+        },
+        {
+          "id": "con_doc_1790181572484_eygm33_6",
+          "name": "Non-Return to Zero Inverted",
+          "description": "NRZI represents a binary 1 by making a signal transition and a binary 0 by leaving the signal unchanged.",
+          "sourcePages": [
+            14,
+            14
+          ]
+        },
+        {
+          "id": "con_doc_1790181572484_eygm33_7",
+          "name": "Manchester Encoding",
+          "description": "Manchester encoding uses a high-to-low transition for 1 and a low-to-high transition for 0, providing regular transitions that support clock synchronization.",
+          "sourcePages": [
+            15,
+            15
+          ]
+        },
+        {
+          "id": "con_doc_1790181572484_eygm33_8",
+          "name": "4-bit/5-bit Encoding",
+          "description": "The 4-bit/5-bit technique maps four-bit data groups into five-bit codes to prevent problematic sequences of zeros when used with NRZI, including in 100 Mbps Ethernet.",
+          "sourcePages": [
+            16,
+            16
+          ]
+        },
+        {
+          "id": "con_doc_1790181572484_eygm33_9",
+          "name": "Differential Encoding Strategies",
+          "description": "Differential encoding represents data through changes in signal state rather than relying only on absolute voltage levels.",
+          "sourcePages": [
+            17,
+            17
+          ]
+        },
+        {
+          "id": "sec_doc_1790181572484_eygm33_1_2",
+          "name": "Digital Data Encoding Techniques",
+          "description": "Examines how binary data is converted into physical signals and the synchronization properties of major line-encoding methods.",
+          "sourcePages": [
+            10,
+            17
+          ]
+        },
+        {
+          "id": "con_doc_1790181572484_eygm33_10",
+          "name": "Asynchronous Transmission",
+          "description": "Asynchronous transmission sends data as individual bytes or characters, with timing established separately for each transmitted unit.",
+          "sourcePages": [
+            18,
+            19
+          ]
+        },
+        {
+          "id": "con_doc_1790181572484_eygm33_11",
+          "name": "Synchronous Transmission",
+          "description": "Synchronous transmission sends data in blocks or frames using coordinated timing between the sender and receiver.",
+          "sourcePages": [
+            21,
+            21
+          ]
+        },
+        {
+          "id": "sec_doc_1790181572484_eygm33_1_3",
+          "name": "Asynchronous and Synchronous Transmission",
+          "description": "Compares character-oriented asynchronous transmission with block- or frame-oriented synchronous transmission.",
+          "sourcePages": [
+            18,
+            21
+          ]
+        },
+        {
+          "id": "con_doc_1790181572484_eygm33_12",
+          "name": "Transmission Impairment Overview",
+          "description": "Transmission impairments are effects that degrade signals as they pass through a medium, principally attenuation, distortion, and noise.",
+          "sourcePages": [
+            23,
+            23
+          ]
+        },
+        {
+          "id": "con_doc_1790181572484_eygm33_13",
+          "name": "Attenuation",
+          "description": "Attenuation is the loss of signal energy as a signal travels through a transmission medium, resulting in a weaker received signal.",
+          "sourcePages": [
+            24,
+            24
+          ]
+        },
+        {
+          "id": "con_doc_1790181572484_eygm33_14",
+          "name": "Distortion",
+          "description": "Distortion occurs when a signal changes its form or shape, particularly when components of a composite signal propagate differently.",
+          "sourcePages": [
+            26,
+            26
+          ]
+        },
+        {
+          "id": "con_doc_1790181572484_eygm33_15",
+          "name": "Noise",
+          "description": "Noise is unwanted energy that interferes with a signal during transmission. The material introduces multiple noise types, including thermal noise caused by random electron motion.",
+          "sourcePages": [
+            28,
+            28
+          ]
+        },
+        {
+          "id": "sec_doc_1790181572484_eygm33_2_4",
+          "name": "Transmission Impairments",
+          "description": "Describes attenuation, distortion, and noise as factors that reduce the quality of a transmitted signal.",
+          "sourcePages": [
+            23,
+            28
+          ]
+        },
+        {
+          "id": "con_doc_1790181572484_eygm33_16",
+          "name": "Analog and Digital Signal Applications",
+          "description": "Applied examples examine continuous temperature measurements, analog and IP cameras, Internet data carried over radio waves, digitally transmitted information, and analog radio systems.",
+          "sourcePages": [
+            31,
+            44
+          ]
+        },
+        {
+          "id": "con_doc_1790181572484_eygm33_17",
+          "name": "Frequency and Bit Rate Measurement",
+          "description": "Hertz measures frequency or cycles per second, while bits per second measures the rate at which binary data is transmitted.",
+          "sourcePages": [
+            45,
+            46
+          ]
+        },
+        {
+          "id": "sec_doc_1790181572484_eygm33_2_5",
+          "name": "Applied Signal Analysis",
+          "description": "Uses practical questions to distinguish analog and digital signals and clarify the quantities measured by hertz and bits per second.",
+          "sourcePages": [
+            31,
+            46
+          ]
+        },
+        {
+          "id": "con_doc_1790181572484_eygm33_18",
+          "name": "Nyquist Formula",
+          "description": "The Nyquist formula determines the maximum bit rate of a noiseless channel from its bandwidth and number of discrete signal levels: Maximum Bit Rate = 2B log2 L.",
+          "sourcePages": [
+            47,
+            47
+          ]
+        },
+        {
+          "id": "con_doc_1790181572484_eygm33_19",
+          "name": "Shannon Formula",
+          "description": "The Shannon formula determines channel capacity in the presence of noise using bandwidth and signal-to-noise ratio: Channel Capacity = B log2(1 + SNR).",
+          "sourcePages": [
+            48,
+            48
+          ]
+        },
+        {
+          "id": "sec_doc_1790181572484_eygm33_2_6",
+          "name": "Maximum Bit Rate and Channel Capacity",
+          "description": "Introduces formulas for determining theoretical transmission limits in noiseless and noisy channels.",
+          "sourcePages": [
+            47,
+            48
+          ]
+        },
+        {
+          "id": "con_doc_1790181572484_eygm33_20",
+          "name": "Guided and Unguided Transmission Media",
+          "description": "Transmission media provide the path over which signals travel and are classified into guided media, which constrain signals to a physical path, and unguided media, which transmit through free space.",
+          "sourcePages": [
+            50,
+            52
+          ]
+        },
+        {
+          "id": "sec_doc_1790181572484_eygm33_3_7",
+          "name": "Classes of Transmission Medium",
+          "description": "Introduces transmission media as resources below and directly controlled by the physical layer and divides them into guided and unguided classes.",
+          "sourcePages": [
+            50,
+            52
+          ]
+        },
+        {
+          "id": "con_doc_1790181572484_eygm33_21",
+          "name": "Twisted Pair Cable",
+          "description": "Twisted-pair cable contains two individually insulated conductors, usually copper. Its applications include telephone lines and low-cost LANs, and its forms include Unshielded Twisted Pair and shielded variants.",
+          "sourcePages": [
+            53,
+            56
+          ]
+        },
+        {
+          "id": "con_doc_1790181572484_eygm33_22",
+          "name": "Coaxial Cable",
+          "description": "Coaxial cable uses concentric conductors and carries higher-frequency signals than twisted pair. It provides higher bandwidth and strong noise immunity for communication applications.",
+          "sourcePages": [
+            57,
+            58
+          ]
+        },
+        {
+          "id": "con_doc_1790181572484_eygm33_23",
+          "name": "Fibre Optic Cable and Propagation Modes",
+          "description": "Fibre-optic cable uses a glass or plastic core and transmits information as light. Its propagation modes depend on the core and lower-density cladding, and the medium offers high bandwidth and low attenuation alongside stated disadvantages and applications.",
+          "sourcePages": [
+            59,
+            62
+          ]
+        },
+        {
+          "id": "sec_doc_1790181572484_eygm33_3_8",
+          "name": "Guided Transmission Media",
+          "description": "Examines twisted-pair, coaxial, and fibre-optic cables as bounded media for signal transmission.",
+          "sourcePages": [
+            53,
+            62
+          ]
+        },
+        {
+          "id": "con_doc_1790181572484_eygm33_24",
+          "name": "Wireless Propagation Methods",
+          "description": "Unguided transmission uses electromagnetic waves traveling through free space. Propagation methods include ground propagation, in which lower-frequency radio waves follow the curvature of the Earth.",
+          "sourcePages": [
+            63,
+            64
+          ]
+        },
+        {
+          "id": "con_doc_1790181572484_eygm33_25",
+          "name": "Radio Waves",
+          "description": "Radio waves are electromagnetic waves in the approximate frequency range of 3 kHz to 1 GHz and are used for wireless communication.",
+          "sourcePages": [
+            65,
+            65
+          ]
+        },
+        {
+          "id": "con_doc_1790181572484_eygm33_26",
+          "name": "Microwaves",
+          "description": "Microwaves occupy the approximate frequency range from 1 GHz to 300 GHz and are used as an unguided communication medium.",
+          "sourcePages": [
+            66,
+            66
+          ]
+        },
+        {
+          "id": "con_doc_1790181572484_eygm33_27",
+          "name": "Infrared",
+          "description": "Infrared communication uses frequencies of approximately 300 GHz to 400 THz and is suited to short-range communication.",
+          "sourcePages": [
+            67,
+            67
+          ]
+        },
+        {
+          "id": "sec_doc_1790181572484_eygm33_3_9",
+          "name": "Unguided Transmission Media",
+          "description": "Explains wireless propagation methods and the frequency ranges and communication properties of radio waves, microwaves, and infrared.",
+          "sourcePages": [
+            63,
+            67
+          ]
+        },
+        {
+          "id": "con_doc_1790181572484_eygm33_28",
+          "name": "Applied Channel Capacity and Fibre Propagation Analysis",
+          "description": "Review questions distinguish Nyquist and Shannon parameters and examine single-mode and multimode fibre, modal dispersion in step-index fibre, dispersion reduction in graded-index fibre, and total internal reflection.",
+          "sourcePages": [
+            69,
+            80
+          ]
+        },
+        {
+          "id": "sec_doc_1790181572484_eygm33_3_10",
+          "name": "Channel Capacity and Optical Fibre Review",
+          "description": "Applies channel-capacity principles and compares optical-fibre propagation modes, modal dispersion, graded-index behavior, and total internal reflection.",
+          "sourcePages": [
+            69,
+            80
+          ]
+        },
+        {
+          "id": "con_doc_1790181572484_eygm33_29",
+          "name": "Switching Networks and Switching Methods",
+          "description": "A switching network is a collection of interconnected nodes and connections used for communication. Data can be switched using circuit switching or packet switching, with packet switching divided into datagram and virtual-circuit approaches.",
+          "sourcePages": [
+            81,
+            83
+          ]
+        },
+        {
+          "id": "sec_doc_1790181572484_eygm33_4_11",
+          "name": "Switching Network Foundations",
+          "description": "Defines a switching network and identifies the principal methods used to move data through interconnected nodes.",
+          "sourcePages": [
+            81,
+            83
+          ]
+        },
+        {
+          "id": "con_doc_1790181572484_eygm33_30",
+          "name": "Circuit Switching",
+          "description": "Circuit switching establishes a dedicated communication path through circuit establishment, data transfer, and circuit disconnection phases. It can be inefficient because channel capacity remains dedicated for the connection's duration.",
+          "sourcePages": [
+            84,
+            85
+          ]
+        },
+        {
+          "id": "con_doc_1790181572484_eygm33_31",
+          "name": "Packet Switching",
+          "description": "Packet switching divides a long message into packets and sends the packets through the network individually, allowing network resources to be shared.",
+          "sourcePages": [
+            86,
+            86
+          ]
+        },
+        {
+          "id": "con_doc_1790181572484_eygm33_32",
+          "name": "Datagram Packet Switching",
+          "description": "Datagram switching is connectionless: no route is established before transmission, and individual packets may be handled independently.",
+          "sourcePages": [
+            87,
+            87
+          ]
+        },
+        {
+          "id": "con_doc_1790181572484_eygm33_33",
+          "name": "Virtual Circuit Packet Switching",
+          "description": "Virtual-circuit switching establishes a planned route before packets are sent, providing a connection-oriented path for the packet sequence.",
+          "sourcePages": [
+            88,
+            88
+          ]
+        },
+        {
+          "id": "con_doc_1790181572484_eygm33_34",
+          "name": "Applied Comparison of Switching Methods",
+          "description": "Review questions evaluate virtual-circuit behavior, the inefficiency of idle dedicated circuits, and the greater resource efficiency generally provided by packet switching.",
+          "sourcePages": [
+            91,
+            96
+          ]
+        },
+        {
+          "id": "sec_doc_1790181572484_eygm33_4_12",
+          "name": "Circuit and Packet Switching",
+          "description": "Explains the operation, organization, and resource-use characteristics of circuit-switched and packet-switched communication.",
+          "sourcePages": [
+            84,
+            96
+          ]
+        }
+      ],
+      "keyConcepts": [
+        "Physical Layer Function",
+        "Analog and Digital Signals",
+        "Bit Rate and Bit Length",
+        "Digital Modulation and Encoding Assumptions",
+        "Non-Return to Zero and Desynchronization",
+        "Non-Return to Zero Inverted",
+        "Manchester Encoding",
+        "4-bit/5-bit Encoding",
+        "Differential Encoding Strategies",
+        "Asynchronous Transmission",
+        "Synchronous Transmission",
+        "Transmission Impairment Overview",
+        "Attenuation",
+        "Distortion",
+        "Noise",
+        "Analog and Digital Signal Applications",
+        "Frequency and Bit Rate Measurement",
+        "Nyquist Formula",
+        "Shannon Formula",
+        "Guided and Unguided Transmission Media",
+        "Twisted Pair Cable",
+        "Coaxial Cable",
+        "Fibre Optic Cable and Propagation Modes",
+        "Wireless Propagation Methods",
+        "Radio Waves",
+        "Microwaves",
+        "Infrared",
+        "Applied Channel Capacity and Fibre Propagation Analysis",
+        "Switching Networks and Switching Methods",
+        "Circuit Switching",
+        "Packet Switching",
+        "Datagram Packet Switching",
+        "Virtual Circuit Packet Switching",
+        "Applied Comparison of Switching Methods"
+      ],
+      "suggestedQuestions": [
+        "Explain the core concepts and mechanisms of Physical Layer Fundamentals and Data Encoding in Physical Layer.",
+        "Explain the core concepts and mechanisms of Transmission Impairments and Channel Capacity in Physical Layer.",
+        "Explain the core concepts and mechanisms of Transmission Media in Physical Layer.",
+        "Explain the core concepts and mechanisms of Switching Networks in Physical Layer."
+      ]
+    }
+  }
+]

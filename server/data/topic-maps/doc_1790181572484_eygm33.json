@@ -1,0 +1,4299 @@
+{
+  "documentId": "doc_1790181572484_eygm33",
+  "documentName": "4. Physical Layer_.pdf",
+  "courseTitle": "Physical Layer",
+  "totalUnits": 4,
+  "totalSections": 12,
+  "totalConcepts": 34,
+  "nodes": [
+    {
+      "id": "con_doc_1790181572484_eygm33_1",
+      "title": "Physical Layer Function",
+      "description": "The physical layer is the first and lowest layer of the OSI model and is responsible for carrying bits across a physical transmission medium.",
+      "parentId": "sec_doc_1790181572484_eygm33_1_1",
+      "level": "concept",
+      "documentId": "doc_1790181572484_eygm33",
+      "documentName": "4. Physical Layer_.pdf",
+      "pageStart": 1,
+      "pageEnd": 3,
+      "chunkIds": [
+        "doc_1790181572484_eygm33_1",
+        "doc_1790181572484_eygm33_2",
+        "doc_1790181572484_eygm33_3"
+      ],
+      "keywords": [
+        "physical layer",
+        "osi model",
+        "bits",
+        "physical medium"
+      ],
+      "order": 3
+    },
+    {
+      "id": "con_doc_1790181572484_eygm33_2",
+      "title": "Analog and Digital Signals",
+      "description": "An analog signal varies continuously and smoothly over time, whereas a digital signal uses discrete values, commonly represented as LOW and HIGH or 0 and 1.",
+      "parentId": "sec_doc_1790181572484_eygm33_1_1",
+      "level": "concept",
+      "documentId": "doc_1790181572484_eygm33",
+      "documentName": "4. Physical Layer_.pdf",
+      "pageStart": 4,
+      "pageEnd": 6,
+      "chunkIds": [
+        "doc_1790181572484_eygm33_4",
+        "doc_1790181572484_eygm33_5",
+        "doc_1790181572484_eygm33_6"
+      ],
+      "keywords": [
+        "analog signal",
+        "digital signal",
+        "continuous",
+        "discrete values"
+      ],
+      "order": 4
+    },
+    {
+      "id": "con_doc_1790181572484_eygm33_3",
+      "title": "Bit Rate and Bit Length",
+      "description": "Bit rate is the number of bits transmitted per second, while bit length is the physical distance occupied by one bit in a medium. Higher bit rates pack more bits into a given transmission distance.",
+      "parentId": "sec_doc_1790181572484_eygm33_1_1",
+      "level": "concept",
+      "documentId": "doc_1790181572484_eygm33",
+      "documentName": "4. Physical Layer_.pdf",
+      "pageStart": 7,
+      "pageEnd": 9,
+      "chunkIds": [
+        "doc_1790181572484_eygm33_7",
+        "doc_1790181572484_eygm33_8",
+        "doc_1790181572484_eygm33_9"
+      ],
+      "keywords": [
+        "bit rate",
+        "bit length",
+        "bps",
+        "transmission distance"
+      ],
+      "order": 5
+    },
+    {
+      "id": "sec_doc_1790181572484_eygm33_1_1",
+      "title": "Physical Layer and Signal Fundamentals",
+      "description": "Explains the physical layer's role in carrying bits and introduces the basic forms and measurements of transmitted signals.",
+      "parentId": "unit_doc_1790181572484_eygm33_1",
+      "level": "section",
+      "documentId": "doc_1790181572484_eygm33",
+      "documentName": "4. Physical Layer_.pdf",
+      "chunkIds": [
+        "doc_1790181572484_eygm33_1",
+        "doc_1790181572484_eygm33_2",
+        "doc_1790181572484_eygm33_3",
+        "doc_1790181572484_eygm33_4",
+        "doc_1790181572484_eygm33_5",
+        "doc_1790181572484_eygm33_6",
+        "doc_1790181572484_eygm33_7",
+        "doc_1790181572484_eygm33_8",
+        "doc_1790181572484_eygm33_9"
+      ],
+      "keywords": [],
+      "order": 2,
+      "children": [
+        {
+          "id": "con_doc_1790181572484_eygm33_1",
+          "title": "Physical Layer Function",
+          "description": "The physical layer is the first and lowest layer of the OSI model and is responsible for carrying bits across a physical transmission medium.",
+          "parentId": "sec_doc_1790181572484_eygm33_1_1",
+          "level": "concept",
+          "documentId": "doc_1790181572484_eygm33",
+          "documentName": "4. Physical Layer_.pdf",
+          "pageStart": 1,
+          "pageEnd": 3,
+          "chunkIds": [
+            "doc_1790181572484_eygm33_1",
+            "doc_1790181572484_eygm33_2",
+            "doc_1790181572484_eygm33_3"
+          ],
+          "keywords": [
+            "physical layer",
+            "osi model",
+            "bits",
+            "physical medium"
+          ],
+          "order": 3
+        },
+        {
+          "id": "con_doc_1790181572484_eygm33_2",
+          "title": "Analog and Digital Signals",
+          "description": "An analog signal varies continuously and smoothly over time, whereas a digital signal uses discrete values, commonly represented as LOW and HIGH or 0 and 1.",
+          "parentId": "sec_doc_1790181572484_eygm33_1_1",
+          "level": "concept",
+          "documentId": "doc_1790181572484_eygm33",
+          "documentName": "4. Physical Layer_.pdf",
+          "pageStart": 4,
+          "pageEnd": 6,
+          "chunkIds": [
+            "doc_1790181572484_eygm33_4",
+            "doc_1790181572484_eygm33_5",
+            "doc_1790181572484_eygm33_6"
+          ],
+          "keywords": [
+            "analog signal",
+            "digital signal",
+            "continuous",
+            "discrete values"
+          ],
+          "order": 4
+        },
+        {
+          "id": "con_doc_1790181572484_eygm33_3",
+          "title": "Bit Rate and Bit Length",
+          "description": "Bit rate is the number of bits transmitted per second, while bit length is the physical distance occupied by one bit in a medium. Higher bit rates pack more bits into a given transmission distance.",
+          "parentId": "sec_doc_1790181572484_eygm33_1_1",
+          "level": "concept",
+          "documentId": "doc_1790181572484_eygm33",
+          "documentName": "4. Physical Layer_.pdf",
+          "pageStart": 7,
+          "pageEnd": 9,
+          "chunkIds": [
+            "doc_1790181572484_eygm33_7",
+            "doc_1790181572484_eygm33_8",
+            "doc_1790181572484_eygm33_9"
+          ],
+          "keywords": [
+            "bit rate",
+            "bit length",
+            "bps",
+            "transmission distance"
+          ],
+          "order": 5
+        }
+      ],
+      "pageStart": 1,
+      "pageEnd": 9
+    },
+    {
+      "id": "con_doc_1790181572484_eygm33_4",
+      "title": "Digital Modulation and Encoding Assumptions",
+      "description": "Digital modulation converts bits into signals and received signals back into bits. The introductory model assumes discrete high and low signals for encoding binary 1 and 0.",
+      "parentId": "sec_doc_1790181572484_eygm33_1_2",
+      "level": "concept",
+      "documentId": "doc_1790181572484_eygm33",
+      "documentName": "4. Physical Layer_.pdf",
+      "pageStart": 10,
+      "pageEnd": 11,
+      "chunkIds": [
+        "doc_1790181572484_eygm33_10",
+        "doc_1790181572484_eygm33_11"
+      ],
+      "keywords": [
+        "digital modulation",
+        "data encoding",
+        "high signal",
+        "low signal"
+      ],
+      "order": 7
+    },
+    {
+      "id": "con_doc_1790181572484_eygm33_5",
+      "title": "Non-Return to Zero and Desynchronization",
+      "description": "Non-Return to Zero represents 1 with a high signal and 0 with a low signal. Long sequences without transitions make receiver clock recovery difficult and can cause desynchronization.",
+      "parentId": "sec_doc_1790181572484_eygm33_1_2",
+      "level": "concept",
+      "documentId": "doc_1790181572484_eygm33",
+      "documentName": "4. Physical Layer_.pdf",
+      "pageStart": 12,
+      "pageEnd": 13,
+      "chunkIds": [
+        "doc_1790181572484_eygm33_12",
+        "doc_1790181572484_eygm33_13"
+      ],
+      "keywords": [
+        "nrz",
+        "non-return to zero",
+        "desynchronization",
+        "clock recovery"
+      ],
+      "order": 8
+    },
+    {
+      "id": "con_doc_1790181572484_eygm33_6",
+      "title": "Non-Return to Zero Inverted",
+      "description": "NRZI represents a binary 1 by making a signal transition and a binary 0 by leaving the signal unchanged.",
+      "parentId": "sec_doc_1790181572484_eygm33_1_2",
+      "level": "concept",
+      "documentId": "doc_1790181572484_eygm33",
+      "documentName": "4. Physical Layer_.pdf",
+      "pageStart": 14,
+      "pageEnd": 14,
+      "chunkIds": [
+        "doc_1790181572484_eygm33_14"
+      ],
+      "keywords": [
+        "nrzi",
+        "signal transition",
+        "binary encoding",
+        "line coding"
+      ],
+      "order": 9
+    },
+    {
+      "id": "con_doc_1790181572484_eygm33_7",
+      "title": "Manchester Encoding",
+      "description": "Manchester encoding uses a high-to-low transition for 1 and a low-to-high transition for 0, providing regular transitions that support clock synchronization.",
+      "parentId": "sec_doc_1790181572484_eygm33_1_2",
+      "level": "concept",
+      "documentId": "doc_1790181572484_eygm33",
+      "documentName": "4. Physical Layer_.pdf",
+      "pageStart": 15,
+      "pageEnd": 15,
+      "chunkIds": [
+        "doc_1790181572484_eygm33_15"
+      ],
+      "keywords": [
+        "manchester",
+        "mid-bit transition",
+        "clock synchronization",
+        "line encoding"
+      ],
+      "order": 10
+    },
+    {
+      "id": "con_doc_1790181572484_eygm33_8",
+      "title": "4-bit/5-bit Encoding",
+      "description": "The 4-bit/5-bit technique maps four-bit data groups into five-bit codes to prevent problematic sequences of zeros when used with NRZI, including in 100 Mbps Ethernet.",
+      "parentId": "sec_doc_1790181572484_eygm33_1_2",
+      "level": "concept",
+      "documentId": "doc_1790181572484_eygm33",
+      "documentName": "4. Physical Layer_.pdf",
+      "pageStart": 16,
+      "pageEnd": 16,
+      "chunkIds": [
+        "doc_1790181572484_eygm33_16"
+      ],
+      "keywords": [
+        "4-bit/5-bit",
+        "4b/5b",
+        "nrzi",
+        "100 mbps ethernet"
+      ],
+      "order": 11
+    },
+    {
+      "id": "con_doc_1790181572484_eygm33_9",
+      "title": "Differential Encoding Strategies",
+      "description": "Differential encoding represents data through changes in signal state rather than relying only on absolute voltage levels.",
+      "parentId": "sec_doc_1790181572484_eygm33_1_2",
+      "level": "concept",
+      "documentId": "doc_1790181572484_eygm33",
+      "documentName": "4. Physical Layer_.pdf",
+      "pageStart": 17,
+      "pageEnd": 17,
+      "chunkIds": [
+        "doc_1790181572484_eygm33_17"
+      ],
+      "keywords": [
+        "differential encoding",
+        "signal change",
+        "transition",
+        "encoding strategy"
+      ],
+      "order": 12
+    },
+    {
+      "id": "sec_doc_1790181572484_eygm33_1_2",
+      "title": "Digital Data Encoding Techniques",
+      "description": "Examines how binary data is converted into physical signals and the synchronization properties of major line-encoding methods.",
+      "parentId": "unit_doc_1790181572484_eygm33_1",
+      "level": "section",
+      "documentId": "doc_1790181572484_eygm33",
+      "documentName": "4. Physical Layer_.pdf",
+      "chunkIds": [
+        "doc_1790181572484_eygm33_10",
+        "doc_1790181572484_eygm33_11",
+        "doc_1790181572484_eygm33_12",
+        "doc_1790181572484_eygm33_13",
+        "doc_1790181572484_eygm33_14",
+        "doc_1790181572484_eygm33_15",
+        "doc_1790181572484_eygm33_16",
+        "doc_1790181572484_eygm33_17"
+      ],
+      "keywords": [],
+      "order": 6,
+      "children": [
+        {
+          "id": "con_doc_1790181572484_eygm33_4",
+          "title": "Digital Modulation and Encoding Assumptions",
+          "description": "Digital modulation converts bits into signals and received signals back into bits. The introductory model assumes discrete high and low signals for encoding binary 1 and 0.",
+          "parentId": "sec_doc_1790181572484_eygm33_1_2",
+          "level": "concept",
+          "documentId": "doc_1790181572484_eygm33",
+          "documentName": "4. Physical Layer_.pdf",
+          "pageStart": 10,
+          "pageEnd": 11,
+          "chunkIds": [
+            "doc_1790181572484_eygm33_10",
+            "doc_1790181572484_eygm33_11"
+          ],
+          "keywords": [
+            "digital modulation",
+            "data encoding",
+            "high signal",
+            "low signal"
+          ],
+          "order": 7
+        },
+        {
+          "id": "con_doc_1790181572484_eygm33_5",
+          "title": "Non-Return to Zero and Desynchronization",
+          "description": "Non-Return to Zero represents 1 with a high signal and 0 with a low signal. Long sequences without transitions make receiver clock recovery difficult and can cause desynchronization.",
+          "parentId": "sec_doc_1790181572484_eygm33_1_2",
+          "level": "concept",
+          "documentId": "doc_1790181572484_eygm33",
+          "documentName": "4. Physical Layer_.pdf",
+          "pageStart": 12,
+          "pageEnd": 13,
+          "chunkIds": [
+            "doc_1790181572484_eygm33_12",
+            "doc_1790181572484_eygm33_13"
+          ],
+          "keywords": [
+            "nrz",
+            "non-return to zero",
+            "desynchronization",
+            "clock recovery"
+          ],
+          "order": 8
+        },
+        {
+          "id": "con_doc_1790181572484_eygm33_6",
+          "title": "Non-Return to Zero Inverted",
+          "description": "NRZI represents a binary 1 by making a signal transition and a binary 0 by leaving the signal unchanged.",
+          "parentId": "sec_doc_1790181572484_eygm33_1_2",
+          "level": "concept",
+          "documentId": "doc_1790181572484_eygm33",
+          "documentName": "4. Physical Layer_.pdf",
+          "pageStart": 14,
+          "pageEnd": 14,
+          "chunkIds": [
+            "doc_1790181572484_eygm33_14"
+          ],
+          "keywords": [
+            "nrzi",
+            "signal transition",
+            "binary encoding",
+            "line coding"
+          ],
+          "order": 9
+        },
+        {
+          "id": "con_doc_1790181572484_eygm33_7",
+          "title": "Manchester Encoding",
+          "description": "Manchester encoding uses a high-to-low transition for 1 and a low-to-high transition for 0, providing regular transitions that support clock synchronization.",
+          "parentId": "sec_doc_1790181572484_eygm33_1_2",
+          "level": "concept",
+          "documentId": "doc_1790181572484_eygm33",
+          "documentName": "4. Physical Layer_.pdf",
+          "pageStart": 15,
+          "pageEnd": 15,
+          "chunkIds": [
+            "doc_1790181572484_eygm33_15"
+          ],
+          "keywords": [
+            "manchester",
+            "mid-bit transition",
+            "clock synchronization",
+            "line encoding"
+          ],
+          "order": 10
+        },
+        {
+          "id": "con_doc_1790181572484_eygm33_8",
+          "title": "4-bit/5-bit Encoding",
+          "description": "The 4-bit/5-bit technique maps four-bit data groups into five-bit codes to prevent problematic sequences of zeros when used with NRZI, including in 100 Mbps Ethernet.",
+          "parentId": "sec_doc_1790181572484_eygm33_1_2",
+          "level": "concept",
+          "documentId": "doc_1790181572484_eygm33",
+          "documentName": "4. Physical Layer_.pdf",
+          "pageStart": 16,
+          "pageEnd": 16,
+          "chunkIds": [
+            "doc_1790181572484_eygm33_16"
+          ],
+          "keywords": [
+            "4-bit/5-bit",
+            "4b/5b",
+            "nrzi",
+            "100 mbps ethernet"
+          ],
+          "order": 11
+        },
+        {
+          "id": "con_doc_1790181572484_eygm33_9",
+          "title": "Differential Encoding Strategies",
+          "description": "Differential encoding represents data through changes in signal state rather than relying only on absolute voltage levels.",
+          "parentId": "sec_doc_1790181572484_eygm33_1_2",
+          "level": "concept",
+          "documentId": "doc_1790181572484_eygm33",
+          "documentName": "4. Physical Layer_.pdf",
+          "pageStart": 17,
+          "pageEnd": 17,
+          "chunkIds": [
+            "doc_1790181572484_eygm33_17"
+          ],
+          "keywords": [
+            "differential encoding",
+            "signal change",
+            "transition",
+            "encoding strategy"
+          ],
+          "order": 12
+        }
+      ],
+      "pageStart": 10,
+      "pageEnd": 17
+    },
+    {
+      "id": "con_doc_1790181572484_eygm33_10",
+      "title": "Asynchronous Transmission",
+      "description": "Asynchronous transmission sends data as individual bytes or characters, with timing established separately for each transmitted unit.",
+      "parentId": "sec_doc_1790181572484_eygm33_1_3",
+      "level": "concept",
+      "documentId": "doc_1790181572484_eygm33",
+      "documentName": "4. Physical Layer_.pdf",
+      "pageStart": 18,
+      "pageEnd": 19,
+      "chunkIds": [
+        "doc_1790181572484_eygm33_18",
+        "doc_1790181572484_eygm33_19"
+      ],
+      "keywords": [
+        "asynchronous transmission",
+        "byte",
+        "character",
+        "timing"
+      ],
+      "order": 14
+    },
+    {
+      "id": "con_doc_1790181572484_eygm33_11",
+      "title": "Synchronous Transmission",
+      "description": "Synchronous transmission sends data in blocks or frames using coordinated timing between the sender and receiver.",
+      "parentId": "sec_doc_1790181572484_eygm33_1_3",
+      "level": "concept",
+      "documentId": "doc_1790181572484_eygm33",
+      "documentName": "4. Physical Layer_.pdf",
+      "pageStart": 21,
+      "pageEnd": 21,
+      "chunkIds": [
+        "doc_1790181572484_eygm33_20"
+      ],
+      "keywords": [
+        "synchronous transmission",
+        "blocks",
+        "frames",
+        "synchronization"
+      ],
+      "order": 15
+    },
+    {
+      "id": "sec_doc_1790181572484_eygm33_1_3",
+      "title": "Asynchronous and Synchronous Transmission",
+      "description": "Compares character-oriented asynchronous transmission with block- or frame-oriented synchronous transmission.",
+      "parentId": "unit_doc_1790181572484_eygm33_1",
+      "level": "section",
+      "documentId": "doc_1790181572484_eygm33",
+      "documentName": "4. Physical Layer_.pdf",
+      "chunkIds": [
+        "doc_1790181572484_eygm33_18",
+        "doc_1790181572484_eygm33_19",
+        "doc_1790181572484_eygm33_20"
+      ],
+      "keywords": [],
+      "order": 13,
+      "children": [
+        {
+          "id": "con_doc_1790181572484_eygm33_10",
+          "title": "Asynchronous Transmission",
+          "description": "Asynchronous transmission sends data as individual bytes or characters, with timing established separately for each transmitted unit.",
+          "parentId": "sec_doc_1790181572484_eygm33_1_3",
+          "level": "concept",
+          "documentId": "doc_1790181572484_eygm33",
+          "documentName": "4. Physical Layer_.pdf",
+          "pageStart": 18,
+          "pageEnd": 19,
+          "chunkIds": [
+            "doc_1790181572484_eygm33_18",
+            "doc_1790181572484_eygm33_19"
+          ],
+          "keywords": [
+            "asynchronous transmission",
+            "byte",
+            "character",
+            "timing"
+          ],
+          "order": 14
+        },
+        {
+          "id": "con_doc_1790181572484_eygm33_11",
+          "title": "Synchronous Transmission",
+          "description": "Synchronous transmission sends data in blocks or frames using coordinated timing between the sender and receiver.",
+          "parentId": "sec_doc_1790181572484_eygm33_1_3",
+          "level": "concept",
+          "documentId": "doc_1790181572484_eygm33",
+          "documentName": "4. Physical Layer_.pdf",
+          "pageStart": 21,
+          "pageEnd": 21,
+          "chunkIds": [
+            "doc_1790181572484_eygm33_20"
+          ],
+          "keywords": [
+            "synchronous transmission",
+            "blocks",
+            "frames",
+            "synchronization"
+          ],
+          "order": 15
+        }
+      ],
+      "pageStart": 18,
+      "pageEnd": 21
+    },
+    {
+      "id": "unit_doc_1790181572484_eygm33_1",
+      "title": "Physical Layer Fundamentals and Data Encoding",
+      "description": "Introduces the role of the physical layer, analog and digital signals, transmission metrics, digital encoding techniques, and asynchronous and synchronous transmission.",
+      "level": "unit",
+      "documentId": "doc_1790181572484_eygm33",
+      "documentName": "4. Physical Layer_.pdf",
+      "chunkIds": [
+        "doc_1790181572484_eygm33_1",
+        "doc_1790181572484_eygm33_2",
+        "doc_1790181572484_eygm33_3",
+        "doc_1790181572484_eygm33_4",
+        "doc_1790181572484_eygm33_5",
+        "doc_1790181572484_eygm33_6",
+        "doc_1790181572484_eygm33_7",
+        "doc_1790181572484_eygm33_8",
+        "doc_1790181572484_eygm33_9",
+        "doc_1790181572484_eygm33_10",
+        "doc_1790181572484_eygm33_11",
+        "doc_1790181572484_eygm33_12",
+        "doc_1790181572484_eygm33_13",
+        "doc_1790181572484_eygm33_14",
+        "doc_1790181572484_eygm33_15",
+        "doc_1790181572484_eygm33_16",
+        "doc_1790181572484_eygm33_17",
+        "doc_1790181572484_eygm33_18",
+        "doc_1790181572484_eygm33_19",
+        "doc_1790181572484_eygm33_20"
+      ],
+      "keywords": [],
+      "order": 1,
+      "children": [
+        {
+          "id": "sec_doc_1790181572484_eygm33_1_1",
+          "title": "Physical Layer and Signal Fundamentals",
+          "description": "Explains the physical layer's role in carrying bits and introduces the basic forms and measurements of transmitted signals.",
+          "parentId": "unit_doc_1790181572484_eygm33_1",
+          "level": "section",
+          "documentId": "doc_1790181572484_eygm33",
+          "documentName": "4. Physical Layer_.pdf",
+          "chunkIds": [
+            "doc_1790181572484_eygm33_1",
+            "doc_1790181572484_eygm33_2",
+            "doc_1790181572484_eygm33_3",
+            "doc_1790181572484_eygm33_4",
+            "doc_1790181572484_eygm33_5",
+            "doc_1790181572484_eygm33_6",
+            "doc_1790181572484_eygm33_7",
+            "doc_1790181572484_eygm33_8",
+            "doc_1790181572484_eygm33_9"
+          ],
+          "keywords": [],
+          "order": 2,
+          "children": [
+            {
+              "id": "con_doc_1790181572484_eygm33_1",
+              "title": "Physical Layer Function",
+              "description": "The physical layer is the first and lowest layer of the OSI model and is responsible for carrying bits across a physical transmission medium.",
+              "parentId": "sec_doc_1790181572484_eygm33_1_1",
+              "level": "concept",
+              "documentId": "doc_1790181572484_eygm33",
+              "documentName": "4. Physical Layer_.pdf",
+              "pageStart": 1,
+              "pageEnd": 3,
+              "chunkIds": [
+                "doc_1790181572484_eygm33_1",
+                "doc_1790181572484_eygm33_2",
+                "doc_1790181572484_eygm33_3"
+              ],
+              "keywords": [
+                "physical layer",
+                "osi model",
+                "bits",
+                "physical medium"
+              ],
+              "order": 3
+            },
+            {
+              "id": "con_doc_1790181572484_eygm33_2",
+              "title": "Analog and Digital Signals",
+              "description": "An analog signal varies continuously and smoothly over time, whereas a digital signal uses discrete values, commonly represented as LOW and HIGH or 0 and 1.",
+              "parentId": "sec_doc_1790181572484_eygm33_1_1",
+              "level": "concept",
+              "documentId": "doc_1790181572484_eygm33",
+              "documentName": "4. Physical Layer_.pdf",
+              "pageStart": 4,
+              "pageEnd": 6,
+              "chunkIds": [
+                "doc_1790181572484_eygm33_4",
+                "doc_1790181572484_eygm33_5",
+                "doc_1790181572484_eygm33_6"
+              ],
+              "keywords": [
+                "analog signal",
+                "digital signal",
+                "continuous",
+                "discrete values"
+              ],
+              "order": 4
+            },
+            {
+              "id": "con_doc_1790181572484_eygm33_3",
+              "title": "Bit Rate and Bit Length",
+              "description": "Bit rate is the number of bits transmitted per second, while bit length is the physical distance occupied by one bit in a medium. Higher bit rates pack more bits into a given transmission distance.",
+              "parentId": "sec_doc_1790181572484_eygm33_1_1",
+              "level": "concept",
+              "documentId": "doc_1790181572484_eygm33",
+              "documentName": "4. Physical Layer_.pdf",
+              "pageStart": 7,
+              "pageEnd": 9,
+              "chunkIds": [
+                "doc_1790181572484_eygm33_7",
+                "doc_1790181572484_eygm33_8",
+                "doc_1790181572484_eygm33_9"
+              ],
+              "keywords": [
+                "bit rate",
+                "bit length",
+                "bps",
+                "transmission distance"
+              ],
+              "order": 5
+            }
+          ],
+          "pageStart": 1,
+          "pageEnd": 9
+        },
+        {
+          "id": "sec_doc_1790181572484_eygm33_1_2",
+          "title": "Digital Data Encoding Techniques",
+          "description": "Examines how binary data is converted into physical signals and the synchronization properties of major line-encoding methods.",
+          "parentId": "unit_doc_1790181572484_eygm33_1",
+          "level": "section",
+          "documentId": "doc_1790181572484_eygm33",
+          "documentName": "4. Physical Layer_.pdf",
+          "chunkIds": [
+            "doc_1790181572484_eygm33_10",
+            "doc_1790181572484_eygm33_11",
+            "doc_1790181572484_eygm33_12",
+            "doc_1790181572484_eygm33_13",
+            "doc_1790181572484_eygm33_14",
+            "doc_1790181572484_eygm33_15",
+            "doc_1790181572484_eygm33_16",
+            "doc_1790181572484_eygm33_17"
+          ],
+          "keywords": [],
+          "order": 6,
+          "children": [
+            {
+              "id": "con_doc_1790181572484_eygm33_4",
+              "title": "Digital Modulation and Encoding Assumptions",
+              "description": "Digital modulation converts bits into signals and received signals back into bits. The introductory model assumes discrete high and low signals for encoding binary 1 and 0.",
+              "parentId": "sec_doc_1790181572484_eygm33_1_2",
+              "level": "concept",
+              "documentId": "doc_1790181572484_eygm33",
+              "documentName": "4. Physical Layer_.pdf",
+              "pageStart": 10,
+              "pageEnd": 11,
+              "chunkIds": [
+                "doc_1790181572484_eygm33_10",
+                "doc_1790181572484_eygm33_11"
+              ],
+              "keywords": [
+                "digital modulation",
+                "data encoding",
+                "high signal",
+                "low signal"
+              ],
+              "order": 7
+            },
+            {
+              "id": "con_doc_1790181572484_eygm33_5",
+              "title": "Non-Return to Zero and Desynchronization",
+              "description": "Non-Return to Zero represents 1 with a high signal and 0 with a low signal. Long sequences without transitions make receiver clock recovery difficult and can cause desynchronization.",
+              "parentId": "sec_doc_1790181572484_eygm33_1_2",
+              "level": "concept",
+              "documentId": "doc_1790181572484_eygm33",
+              "documentName": "4. Physical Layer_.pdf",
+              "pageStart": 12,
+              "pageEnd": 13,
+              "chunkIds": [
+                "doc_1790181572484_eygm33_12",
+                "doc_1790181572484_eygm33_13"
+              ],
+              "keywords": [
+                "nrz",
+                "non-return to zero",
+                "desynchronization",
+                "clock recovery"
+              ],
+              "order": 8
+            },
+            {
+              "id": "con_doc_1790181572484_eygm33_6",
+              "title": "Non-Return to Zero Inverted",
+              "description": "NRZI represents a binary 1 by making a signal transition and a binary 0 by leaving the signal unchanged.",
+              "parentId": "sec_doc_1790181572484_eygm33_1_2",
+              "level": "concept",
+              "documentId": "doc_1790181572484_eygm33",
+              "documentName": "4. Physical Layer_.pdf",
+              "pageStart": 14,
+              "pageEnd": 14,
+              "chunkIds": [
+                "doc_1790181572484_eygm33_14"
+              ],
+              "keywords": [
+                "nrzi",
+                "signal transition",
+                "binary encoding",
+                "line coding"
+              ],
+              "order": 9
+            },
+            {
+              "id": "con_doc_1790181572484_eygm33_7",
+              "title": "Manchester Encoding",
+              "description": "Manchester encoding uses a high-to-low transition for 1 and a low-to-high transition for 0, providing regular transitions that support clock synchronization.",
+              "parentId": "sec_doc_1790181572484_eygm33_1_2",
+              "level": "concept",
+              "documentId": "doc_1790181572484_eygm33",
+              "documentName": "4. Physical Layer_.pdf",
+              "pageStart": 15,
+              "pageEnd": 15,
+              "chunkIds": [
+                "doc_1790181572484_eygm33_15"
+              ],
+              "keywords": [
+                "manchester",
+                "mid-bit transition",
+                "clock synchronization",
+                "line encoding"
+              ],
+              "order": 10
+            },
+            {
+              "id": "con_doc_1790181572484_eygm33_8",
+              "title": "4-bit/5-bit Encoding",
+              "description": "The 4-bit/5-bit technique maps four-bit data groups into five-bit codes to prevent problematic sequences of zeros when used with NRZI, including in 100 Mbps Ethernet.",
+              "parentId": "sec_doc_1790181572484_eygm33_1_2",
+              "level": "concept",
+              "documentId": "doc_1790181572484_eygm33",
+              "documentName": "4. Physical Layer_.pdf",
+              "pageStart": 16,
+              "pageEnd": 16,
+              "chunkIds": [
+                "doc_1790181572484_eygm33_16"
+              ],
+              "keywords": [
+                "4-bit/5-bit",
+                "4b/5b",
+                "nrzi",
+                "100 mbps ethernet"
+              ],
+              "order": 11
+            },
+            {
+              "id": "con_doc_1790181572484_eygm33_9",
+              "title": "Differential Encoding Strategies",
+              "description": "Differential encoding represents data through changes in signal state rather than relying only on absolute voltage levels.",
+              "parentId": "sec_doc_1790181572484_eygm33_1_2",
+              "level": "concept",
+              "documentId": "doc_1790181572484_eygm33",
+              "documentName": "4. Physical Layer_.pdf",
+              "pageStart": 17,
+              "pageEnd": 17,
+              "chunkIds": [
+                "doc_1790181572484_eygm33_17"
+              ],
+              "keywords": [
+                "differential encoding",
+                "signal change",
+                "transition",
+                "encoding strategy"
+              ],
+              "order": 12
+            }
+          ],
+          "pageStart": 10,
+          "pageEnd": 17
+        },
+        {
+          "id": "sec_doc_1790181572484_eygm33_1_3",
+          "title": "Asynchronous and Synchronous Transmission",
+          "description": "Compares character-oriented asynchronous transmission with block- or frame-oriented synchronous transmission.",
+          "parentId": "unit_doc_1790181572484_eygm33_1",
+          "level": "section",
+          "documentId": "doc_1790181572484_eygm33",
+          "documentName": "4. Physical Layer_.pdf",
+          "chunkIds": [
+            "doc_1790181572484_eygm33_18",
+            "doc_1790181572484_eygm33_19",
+            "doc_1790181572484_eygm33_20"
+          ],
+          "keywords": [],
+          "order": 13,
+          "children": [
+            {
+              "id": "con_doc_1790181572484_eygm33_10",
+              "title": "Asynchronous Transmission",
+              "description": "Asynchronous transmission sends data as individual bytes or characters, with timing established separately for each transmitted unit.",
+              "parentId": "sec_doc_1790181572484_eygm33_1_3",
+              "level": "concept",
+              "documentId": "doc_1790181572484_eygm33",
+              "documentName": "4. Physical Layer_.pdf",
+              "pageStart": 18,
+              "pageEnd": 19,
+              "chunkIds": [
+                "doc_1790181572484_eygm33_18",
+                "doc_1790181572484_eygm33_19"
+              ],
+              "keywords": [
+                "asynchronous transmission",
+                "byte",
+                "character",
+                "timing"
+              ],
+              "order": 14
+            },
+            {
+              "id": "con_doc_1790181572484_eygm33_11",
+              "title": "Synchronous Transmission",
+              "description": "Synchronous transmission sends data in blocks or frames using coordinated timing between the sender and receiver.",
+              "parentId": "sec_doc_1790181572484_eygm33_1_3",
+              "level": "concept",
+              "documentId": "doc_1790181572484_eygm33",
+              "documentName": "4. Physical Layer_.pdf",
+              "pageStart": 21,
+              "pageEnd": 21,
+              "chunkIds": [
+                "doc_1790181572484_eygm33_20"
+              ],
+              "keywords": [
+                "synchronous transmission",
+                "blocks",
+                "frames",
+                "synchronization"
+              ],
+              "order": 15
+            }
+          ],
+          "pageStart": 18,
+          "pageEnd": 21
+        }
+      ],
+      "pageStart": 1,
+      "pageEnd": 21
+    },
+    {
+      "id": "con_doc_1790181572484_eygm33_12",
+      "title": "Transmission Impairment Overview",
+      "description": "Transmission impairments are effects that degrade signals as they pass through a medium, principally attenuation, distortion, and noise.",
+      "parentId": "sec_doc_1790181572484_eygm33_2_4",
+      "level": "concept",
+      "documentId": "doc_1790181572484_eygm33",
+      "documentName": "4. Physical Layer_.pdf",
+      "pageStart": 23,
+      "pageEnd": 23,
+      "chunkIds": [
+        "doc_1790181572484_eygm33_21"
+      ],
+      "keywords": [
+        "transmission impairment",
+        "attenuation",
+        "distortion",
+        "noise"
+      ],
+      "order": 18
+    },
+    {
+      "id": "con_doc_1790181572484_eygm33_13",
+      "title": "Attenuation",
+      "description": "Attenuation is the loss of signal energy as a signal travels through a transmission medium, resulting in a weaker received signal.",
+      "parentId": "sec_doc_1790181572484_eygm33_2_4",
+      "level": "concept",
+      "documentId": "doc_1790181572484_eygm33",
+      "documentName": "4. Physical Layer_.pdf",
+      "pageStart": 24,
+      "pageEnd": 24,
+      "chunkIds": [
+        "doc_1790181572484_eygm33_22"
+      ],
+      "keywords": [
+        "attenuation",
+        "energy loss",
+        "weaker signal",
+        "transmission medium"
+      ],
+      "order": 19
+    },
+    {
+      "id": "con_doc_1790181572484_eygm33_14",
+      "title": "Distortion",
+      "description": "Distortion occurs when a signal changes its form or shape, particularly when components of a composite signal propagate differently.",
+      "parentId": "sec_doc_1790181572484_eygm33_2_4",
+      "level": "concept",
+      "documentId": "doc_1790181572484_eygm33",
+      "documentName": "4. Physical Layer_.pdf",
+      "pageStart": 26,
+      "pageEnd": 26,
+      "chunkIds": [
+        "doc_1790181572484_eygm33_23"
+      ],
+      "keywords": [
+        "distortion",
+        "signal shape",
+        "composite signal",
+        "propagation"
+      ],
+      "order": 20
+    },
+    {
+      "id": "con_doc_1790181572484_eygm33_15",
+      "title": "Noise",
+      "description": "Noise is unwanted energy that interferes with a signal during transmission. The material introduces multiple noise types, including thermal noise caused by random electron motion.",
+      "parentId": "sec_doc_1790181572484_eygm33_2_4",
+      "level": "concept",
+      "documentId": "doc_1790181572484_eygm33",
+      "documentName": "4. Physical Layer_.pdf",
+      "pageStart": 28,
+      "pageEnd": 28,
+      "chunkIds": [
+        "doc_1790181572484_eygm33_24"
+      ],
+      "keywords": [
+        "noise",
+        "thermal noise",
+        "interference",
+        "electrons"
+      ],
+      "order": 21
+    },
+    {
+      "id": "sec_doc_1790181572484_eygm33_2_4",
+      "title": "Transmission Impairments",
+      "description": "Describes attenuation, distortion, and noise as factors that reduce the quality of a transmitted signal.",
+      "parentId": "unit_doc_1790181572484_eygm33_2",
+      "level": "section",
+      "documentId": "doc_1790181572484_eygm33",
+      "documentName": "4. Physical Layer_.pdf",
+      "chunkIds": [
+        "doc_1790181572484_eygm33_21",
+        "doc_1790181572484_eygm33_22",
+        "doc_1790181572484_eygm33_23",
+        "doc_1790181572484_eygm33_24"
+      ],
+      "keywords": [],
+      "order": 17,
+      "children": [
+        {
+          "id": "con_doc_1790181572484_eygm33_12",
+          "title": "Transmission Impairment Overview",
+          "description": "Transmission impairments are effects that degrade signals as they pass through a medium, principally attenuation, distortion, and noise.",
+          "parentId": "sec_doc_1790181572484_eygm33_2_4",
+          "level": "concept",
+          "documentId": "doc_1790181572484_eygm33",
+          "documentName": "4. Physical Layer_.pdf",
+          "pageStart": 23,
+          "pageEnd": 23,
+          "chunkIds": [
+            "doc_1790181572484_eygm33_21"
+          ],
+          "keywords": [
+            "transmission impairment",
+            "attenuation",
+            "distortion",
+            "noise"
+          ],
+          "order": 18
+        },
+        {
+          "id": "con_doc_1790181572484_eygm33_13",
+          "title": "Attenuation",
+          "description": "Attenuation is the loss of signal energy as a signal travels through a transmission medium, resulting in a weaker received signal.",
+          "parentId": "sec_doc_1790181572484_eygm33_2_4",
+          "level": "concept",
+          "documentId": "doc_1790181572484_eygm33",
+          "documentName": "4. Physical Layer_.pdf",
+          "pageStart": 24,
+          "pageEnd": 24,
+          "chunkIds": [
+            "doc_1790181572484_eygm33_22"
+          ],
+          "keywords": [
+            "attenuation",
+            "energy loss",
+            "weaker signal",
+            "transmission medium"
+          ],
+          "order": 19
+        },
+        {
+          "id": "con_doc_1790181572484_eygm33_14",
+          "title": "Distortion",
+          "description": "Distortion occurs when a signal changes its form or shape, particularly when components of a composite signal propagate differently.",
+          "parentId": "sec_doc_1790181572484_eygm33_2_4",
+          "level": "concept",
+          "documentId": "doc_1790181572484_eygm33",
+          "documentName": "4. Physical Layer_.pdf",
+          "pageStart": 26,
+          "pageEnd": 26,
+          "chunkIds": [
+            "doc_1790181572484_eygm33_23"
+          ],
+          "keywords": [
+            "distortion",
+            "signal shape",
+            "composite signal",
+            "propagation"
+          ],
+          "order": 20
+        },
+        {
+          "id": "con_doc_1790181572484_eygm33_15",
+          "title": "Noise",
+          "description": "Noise is unwanted energy that interferes with a signal during transmission. The material introduces multiple noise types, including thermal noise caused by random electron motion.",
+          "parentId": "sec_doc_1790181572484_eygm33_2_4",
+          "level": "concept",
+          "documentId": "doc_1790181572484_eygm33",
+          "documentName": "4. Physical Layer_.pdf",
+          "pageStart": 28,
+          "pageEnd": 28,
+          "chunkIds": [
+            "doc_1790181572484_eygm33_24"
+          ],
+          "keywords": [
+            "noise",
+            "thermal noise",
+            "interference",
+            "electrons"
+          ],
+          "order": 21
+        }
+      ],
+      "pageStart": 23,
+      "pageEnd": 28
+    },
+    {
+      "id": "con_doc_1790181572484_eygm33_16",
+      "title": "Analog and Digital Signal Applications",
+      "description": "Applied examples examine continuous temperature measurements, analog and IP cameras, Internet data carried over radio waves, digitally transmitted information, and analog radio systems.",
+      "parentId": "sec_doc_1790181572484_eygm33_2_5",
+      "level": "concept",
+      "documentId": "doc_1790181572484_eygm33",
+      "documentName": "4. Physical Layer_.pdf",
+      "pageStart": 31,
+      "pageEnd": 44,
+      "chunkIds": [
+        "doc_1790181572484_eygm33_25",
+        "doc_1790181572484_eygm33_26",
+        "doc_1790181572484_eygm33_27",
+        "doc_1790181572484_eygm33_28",
+        "doc_1790181572484_eygm33_29",
+        "doc_1790181572484_eygm33_30",
+        "doc_1790181572484_eygm33_31",
+        "doc_1790181572484_eygm33_32",
+        "doc_1790181572484_eygm33_33",
+        "doc_1790181572484_eygm33_34",
+        "doc_1790181572484_eygm33_35",
+        "doc_1790181572484_eygm33_36",
+        "doc_1790181572484_eygm33_37",
+        "doc_1790181572484_eygm33_38"
+      ],
+      "keywords": [
+        "analog data",
+        "digital data",
+        "ip camera",
+        "wi-fi",
+        "fm radio"
+      ],
+      "order": 23
+    },
+    {
+      "id": "con_doc_1790181572484_eygm33_17",
+      "title": "Frequency and Bit Rate Measurement",
+      "description": "Hertz measures frequency or cycles per second, while bits per second measures the rate at which binary data is transmitted.",
+      "parentId": "sec_doc_1790181572484_eygm33_2_5",
+      "level": "concept",
+      "documentId": "doc_1790181572484_eygm33",
+      "documentName": "4. Physical Layer_.pdf",
+      "pageStart": 45,
+      "pageEnd": 46,
+      "chunkIds": [
+        "doc_1790181572484_eygm33_39",
+        "doc_1790181572484_eygm33_40"
+      ],
+      "keywords": [
+        "hertz",
+        "hz",
+        "bits per second",
+        "bps",
+        "frequency"
+      ],
+      "order": 24
+    },
+    {
+      "id": "sec_doc_1790181572484_eygm33_2_5",
+      "title": "Applied Signal Analysis",
+      "description": "Uses practical questions to distinguish analog and digital signals and clarify the quantities measured by hertz and bits per second.",
+      "parentId": "unit_doc_1790181572484_eygm33_2",
+      "level": "section",
+      "documentId": "doc_1790181572484_eygm33",
+      "documentName": "4. Physical Layer_.pdf",
+      "chunkIds": [
+        "doc_1790181572484_eygm33_25",
+        "doc_1790181572484_eygm33_26",
+        "doc_1790181572484_eygm33_27",
+        "doc_1790181572484_eygm33_28",
+        "doc_1790181572484_eygm33_29",
+        "doc_1790181572484_eygm33_30",
+        "doc_1790181572484_eygm33_31",
+        "doc_1790181572484_eygm33_32",
+        "doc_1790181572484_eygm33_33",
+        "doc_1790181572484_eygm33_34",
+        "doc_1790181572484_eygm33_35",
+        "doc_1790181572484_eygm33_36",
+        "doc_1790181572484_eygm33_37",
+        "doc_1790181572484_eygm33_38",
+        "doc_1790181572484_eygm33_39",
+        "doc_1790181572484_eygm33_40"
+      ],
+      "keywords": [],
+      "order": 22,
+      "children": [
+        {
+          "id": "con_doc_1790181572484_eygm33_16",
+          "title": "Analog and Digital Signal Applications",
+          "description": "Applied examples examine continuous temperature measurements, analog and IP cameras, Internet data carried over radio waves, digitally transmitted information, and analog radio systems.",
+          "parentId": "sec_doc_1790181572484_eygm33_2_5",
+          "level": "concept",
+          "documentId": "doc_1790181572484_eygm33",
+          "documentName": "4. Physical Layer_.pdf",
+          "pageStart": 31,
+          "pageEnd": 44,
+          "chunkIds": [
+            "doc_1790181572484_eygm33_25",
+            "doc_1790181572484_eygm33_26",
+            "doc_1790181572484_eygm33_27",
+            "doc_1790181572484_eygm33_28",
+            "doc_1790181572484_eygm33_29",
+            "doc_1790181572484_eygm33_30",
+            "doc_1790181572484_eygm33_31",
+            "doc_1790181572484_eygm33_32",
+            "doc_1790181572484_eygm33_33",
+            "doc_1790181572484_eygm33_34",
+            "doc_1790181572484_eygm33_35",
+            "doc_1790181572484_eygm33_36",
+            "doc_1790181572484_eygm33_37",
+            "doc_1790181572484_eygm33_38"
+          ],
+          "keywords": [
+            "analog data",
+            "digital data",
+            "ip camera",
+            "wi-fi",
+            "fm radio"
+          ],
+          "order": 23
+        },
+        {
+          "id": "con_doc_1790181572484_eygm33_17",
+          "title": "Frequency and Bit Rate Measurement",
+          "description": "Hertz measures frequency or cycles per second, while bits per second measures the rate at which binary data is transmitted.",
+          "parentId": "sec_doc_1790181572484_eygm33_2_5",
+          "level": "concept",
+          "documentId": "doc_1790181572484_eygm33",
+          "documentName": "4. Physical Layer_.pdf",
+          "pageStart": 45,
+          "pageEnd": 46,
+          "chunkIds": [
+            "doc_1790181572484_eygm33_39",
+            "doc_1790181572484_eygm33_40"
+          ],
+          "keywords": [
+            "hertz",
+            "hz",
+            "bits per second",
+            "bps",
+            "frequency"
+          ],
+          "order": 24
+        }
+      ],
+      "pageStart": 31,
+      "pageEnd": 46
+    },
+    {
+      "id": "con_doc_1790181572484_eygm33_18",
+      "title": "Nyquist Formula",
+      "description": "The Nyquist formula determines the maximum bit rate of a noiseless channel from its bandwidth and number of discrete signal levels: Maximum Bit Rate = 2B log2 L.",
+      "parentId": "sec_doc_1790181572484_eygm33_2_6",
+      "level": "concept",
+      "documentId": "doc_1790181572484_eygm33",
+      "documentName": "4. Physical Layer_.pdf",
+      "pageStart": 47,
+      "pageEnd": 47,
+      "chunkIds": [
+        "doc_1790181572484_eygm33_41"
+      ],
+      "keywords": [
+        "nyquist formula",
+        "maximum bit rate",
+        "bandwidth",
+        "signal levels"
+      ],
+      "order": 26
+    },
+    {
+      "id": "con_doc_1790181572484_eygm33_19",
+      "title": "Shannon Formula",
+      "description": "The Shannon formula determines channel capacity in the presence of noise using bandwidth and signal-to-noise ratio: Channel Capacity = B log2(1 + SNR).",
+      "parentId": "sec_doc_1790181572484_eygm33_2_6",
+      "level": "concept",
+      "documentId": "doc_1790181572484_eygm33",
+      "documentName": "4. Physical Layer_.pdf",
+      "pageStart": 48,
+      "pageEnd": 48,
+      "chunkIds": [
+        "doc_1790181572484_eygm33_42"
+      ],
+      "keywords": [
+        "shannon formula",
+        "channel capacity",
+        "snr",
+        "bandwidth",
+        "noise"
+      ],
+      "order": 27
+    },
+    {
+      "id": "sec_doc_1790181572484_eygm33_2_6",
+      "title": "Maximum Bit Rate and Channel Capacity",
+      "description": "Introduces formulas for determining theoretical transmission limits in noiseless and noisy channels.",
+      "parentId": "unit_doc_1790181572484_eygm33_2",
+      "level": "section",
+      "documentId": "doc_1790181572484_eygm33",
+      "documentName": "4. Physical Layer_.pdf",
+      "chunkIds": [
+        "doc_1790181572484_eygm33_41",
+        "doc_1790181572484_eygm33_42"
+      ],
+      "keywords": [],
+      "order": 25,
+      "children": [
+        {
+          "id": "con_doc_1790181572484_eygm33_18",
+          "title": "Nyquist Formula",
+          "description": "The Nyquist formula determines the maximum bit rate of a noiseless channel from its bandwidth and number of discrete signal levels: Maximum Bit Rate = 2B log2 L.",
+          "parentId": "sec_doc_1790181572484_eygm33_2_6",
+          "level": "concept",
+          "documentId": "doc_1790181572484_eygm33",
+          "documentName": "4. Physical Layer_.pdf",
+          "pageStart": 47,
+          "pageEnd": 47,
+          "chunkIds": [
+            "doc_1790181572484_eygm33_41"
+          ],
+          "keywords": [
+            "nyquist formula",
+            "maximum bit rate",
+            "bandwidth",
+            "signal levels"
+          ],
+          "order": 26
+        },
+        {
+          "id": "con_doc_1790181572484_eygm33_19",
+          "title": "Shannon Formula",
+          "description": "The Shannon formula determines channel capacity in the presence of noise using bandwidth and signal-to-noise ratio: Channel Capacity = B log2(1 + SNR).",
+          "parentId": "sec_doc_1790181572484_eygm33_2_6",
+          "level": "concept",
+          "documentId": "doc_1790181572484_eygm33",
+          "documentName": "4. Physical Layer_.pdf",
+          "pageStart": 48,
+          "pageEnd": 48,
+          "chunkIds": [
+            "doc_1790181572484_eygm33_42"
+          ],
+          "keywords": [
+            "shannon formula",
+            "channel capacity",
+            "snr",
+            "bandwidth",
+            "noise"
+          ],
+          "order": 27
+        }
+      ],
+      "pageStart": 47,
+      "pageEnd": 48
+    },
+    {
+      "id": "unit_doc_1790181572484_eygm33_2",
+      "title": "Transmission Impairments and Channel Capacity",
+      "description": "Explains the principal causes of signal degradation and the Nyquist and Shannon limits on data transmission.",
+      "level": "unit",
+      "documentId": "doc_1790181572484_eygm33",
+      "documentName": "4. Physical Layer_.pdf",
+      "chunkIds": [
+        "doc_1790181572484_eygm33_21",
+        "doc_1790181572484_eygm33_22",
+        "doc_1790181572484_eygm33_23",
+        "doc_1790181572484_eygm33_24",
+        "doc_1790181572484_eygm33_25",
+        "doc_1790181572484_eygm33_26",
+        "doc_1790181572484_eygm33_27",
+        "doc_1790181572484_eygm33_28",
+        "doc_1790181572484_eygm33_29",
+        "doc_1790181572484_eygm33_30",
+        "doc_1790181572484_eygm33_31",
+        "doc_1790181572484_eygm33_32",
+        "doc_1790181572484_eygm33_33",
+        "doc_1790181572484_eygm33_34",
+        "doc_1790181572484_eygm33_35",
+        "doc_1790181572484_eygm33_36",
+        "doc_1790181572484_eygm33_37",
+        "doc_1790181572484_eygm33_38",
+        "doc_1790181572484_eygm33_39",
+        "doc_1790181572484_eygm33_40",
+        "doc_1790181572484_eygm33_41",
+        "doc_1790181572484_eygm33_42"
+      ],
+      "keywords": [],
+      "order": 16,
+      "children": [
+        {
+          "id": "sec_doc_1790181572484_eygm33_2_4",
+          "title": "Transmission Impairments",
+          "description": "Describes attenuation, distortion, and noise as factors that reduce the quality of a transmitted signal.",
+          "parentId": "unit_doc_1790181572484_eygm33_2",
+          "level": "section",
+          "documentId": "doc_1790181572484_eygm33",
+          "documentName": "4. Physical Layer_.pdf",
+          "chunkIds": [
+            "doc_1790181572484_eygm33_21",
+            "doc_1790181572484_eygm33_22",
+            "doc_1790181572484_eygm33_23",
+            "doc_1790181572484_eygm33_24"
+          ],
+          "keywords": [],
+          "order": 17,
+          "children": [
+            {
+              "id": "con_doc_1790181572484_eygm33_12",
+              "title": "Transmission Impairment Overview",
+              "description": "Transmission impairments are effects that degrade signals as they pass through a medium, principally attenuation, distortion, and noise.",
+              "parentId": "sec_doc_1790181572484_eygm33_2_4",
+              "level": "concept",
+              "documentId": "doc_1790181572484_eygm33",
+              "documentName": "4. Physical Layer_.pdf",
+              "pageStart": 23,
+              "pageEnd": 23,
+              "chunkIds": [
+                "doc_1790181572484_eygm33_21"
+              ],
+              "keywords": [
+                "transmission impairment",
+                "attenuation",
+                "distortion",
+                "noise"
+              ],
+              "order": 18
+            },
+            {
+              "id": "con_doc_1790181572484_eygm33_13",
+              "title": "Attenuation",
+              "description": "Attenuation is the loss of signal energy as a signal travels through a transmission medium, resulting in a weaker received signal.",
+              "parentId": "sec_doc_1790181572484_eygm33_2_4",
+              "level": "concept",
+              "documentId": "doc_1790181572484_eygm33",
+              "documentName": "4. Physical Layer_.pdf",
+              "pageStart": 24,
+              "pageEnd": 24,
+              "chunkIds": [
+                "doc_1790181572484_eygm33_22"
+              ],
+              "keywords": [
+                "attenuation",
+                "energy loss",
+                "weaker signal",
+                "transmission medium"
+              ],
+              "order": 19
+            },
+            {
+              "id": "con_doc_1790181572484_eygm33_14",
+              "title": "Distortion",
+              "description": "Distortion occurs when a signal changes its form or shape, particularly when components of a composite signal propagate differently.",
+              "parentId": "sec_doc_1790181572484_eygm33_2_4",
+              "level": "concept",
+              "documentId": "doc_1790181572484_eygm33",
+              "documentName": "4. Physical Layer_.pdf",
+              "pageStart": 26,
+              "pageEnd": 26,
+              "chunkIds": [
+                "doc_1790181572484_eygm33_23"
+              ],
+              "keywords": [
+                "distortion",
+                "signal shape",
+                "composite signal",
+                "propagation"
+              ],
+              "order": 20
+            },
+            {
+              "id": "con_doc_1790181572484_eygm33_15",
+              "title": "Noise",
+              "description": "Noise is unwanted energy that interferes with a signal during transmission. The material introduces multiple noise types, including thermal noise caused by random electron motion.",
+              "parentId": "sec_doc_1790181572484_eygm33_2_4",
+              "level": "concept",
+              "documentId": "doc_1790181572484_eygm33",
+              "documentName": "4. Physical Layer_.pdf",
+              "pageStart": 28,
+              "pageEnd": 28,
+              "chunkIds": [
+                "doc_1790181572484_eygm33_24"
+              ],
+              "keywords": [
+                "noise",
+                "thermal noise",
+                "interference",
+                "electrons"
+              ],
+              "order": 21
+            }
+          ],
+          "pageStart": 23,
+          "pageEnd": 28
+        },
+        {
+          "id": "sec_doc_1790181572484_eygm33_2_5",
+          "title": "Applied Signal Analysis",
+          "description": "Uses practical questions to distinguish analog and digital signals and clarify the quantities measured by hertz and bits per second.",
+          "parentId": "unit_doc_1790181572484_eygm33_2",
+          "level": "section",
+          "documentId": "doc_1790181572484_eygm33",
+          "documentName": "4. Physical Layer_.pdf",
+          "chunkIds": [
+            "doc_1790181572484_eygm33_25",
+            "doc_1790181572484_eygm33_26",
+            "doc_1790181572484_eygm33_27",
+            "doc_1790181572484_eygm33_28",
+            "doc_1790181572484_eygm33_29",
+            "doc_1790181572484_eygm33_30",
+            "doc_1790181572484_eygm33_31",
+            "doc_1790181572484_eygm33_32",
+            "doc_1790181572484_eygm33_33",
+            "doc_1790181572484_eygm33_34",
+            "doc_1790181572484_eygm33_35",
+            "doc_1790181572484_eygm33_36",
+            "doc_1790181572484_eygm33_37",
+            "doc_1790181572484_eygm33_38",
+            "doc_1790181572484_eygm33_39",
+            "doc_1790181572484_eygm33_40"
+          ],
+          "keywords": [],
+          "order": 22,
+          "children": [
+            {
+              "id": "con_doc_1790181572484_eygm33_16",
+              "title": "Analog and Digital Signal Applications",
+              "description": "Applied examples examine continuous temperature measurements, analog and IP cameras, Internet data carried over radio waves, digitally transmitted information, and analog radio systems.",
+              "parentId": "sec_doc_1790181572484_eygm33_2_5",
+              "level": "concept",
+              "documentId": "doc_1790181572484_eygm33",
+              "documentName": "4. Physical Layer_.pdf",
+              "pageStart": 31,
+              "pageEnd": 44,
+              "chunkIds": [
+                "doc_1790181572484_eygm33_25",
+                "doc_1790181572484_eygm33_26",
+                "doc_1790181572484_eygm33_27",
+                "doc_1790181572484_eygm33_28",
+                "doc_1790181572484_eygm33_29",
+                "doc_1790181572484_eygm33_30",
+                "doc_1790181572484_eygm33_31",
+                "doc_1790181572484_eygm33_32",
+                "doc_1790181572484_eygm33_33",
+                "doc_1790181572484_eygm33_34",
+                "doc_1790181572484_eygm33_35",
+                "doc_1790181572484_eygm33_36",
+                "doc_1790181572484_eygm33_37",
+                "doc_1790181572484_eygm33_38"
+              ],
+              "keywords": [
+                "analog data",
+                "digital data",
+                "ip camera",
+                "wi-fi",
+                "fm radio"
+              ],
+              "order": 23
+            },
+            {
+              "id": "con_doc_1790181572484_eygm33_17",
+              "title": "Frequency and Bit Rate Measurement",
+              "description": "Hertz measures frequency or cycles per second, while bits per second measures the rate at which binary data is transmitted.",
+              "parentId": "sec_doc_1790181572484_eygm33_2_5",
+              "level": "concept",
+              "documentId": "doc_1790181572484_eygm33",
+              "documentName": "4. Physical Layer_.pdf",
+              "pageStart": 45,
+              "pageEnd": 46,
+              "chunkIds": [
+                "doc_1790181572484_eygm33_39",
+                "doc_1790181572484_eygm33_40"
+              ],
+              "keywords": [
+                "hertz",
+                "hz",
+                "bits per second",
+                "bps",
+                "frequency"
+              ],
+              "order": 24
+            }
+          ],
+          "pageStart": 31,
+          "pageEnd": 46
+        },
+        {
+          "id": "sec_doc_1790181572484_eygm33_2_6",
+          "title": "Maximum Bit Rate and Channel Capacity",
+          "description": "Introduces formulas for determining theoretical transmission limits in noiseless and noisy channels.",
+          "parentId": "unit_doc_1790181572484_eygm33_2",
+          "level": "section",
+          "documentId": "doc_1790181572484_eygm33",
+          "documentName": "4. Physical Layer_.pdf",
+          "chunkIds": [
+            "doc_1790181572484_eygm33_41",
+            "doc_1790181572484_eygm33_42"
+          ],
+          "keywords": [],
+          "order": 25,
+          "children": [
+            {
+              "id": "con_doc_1790181572484_eygm33_18",
+              "title": "Nyquist Formula",
+              "description": "The Nyquist formula determines the maximum bit rate of a noiseless channel from its bandwidth and number of discrete signal levels: Maximum Bit Rate = 2B log2 L.",
+              "parentId": "sec_doc_1790181572484_eygm33_2_6",
+              "level": "concept",
+              "documentId": "doc_1790181572484_eygm33",
+              "documentName": "4. Physical Layer_.pdf",
+              "pageStart": 47,
+              "pageEnd": 47,
+              "chunkIds": [
+                "doc_1790181572484_eygm33_41"
+              ],
+              "keywords": [
+                "nyquist formula",
+                "maximum bit rate",
+                "bandwidth",
+                "signal levels"
+              ],
+              "order": 26
+            },
+            {
+              "id": "con_doc_1790181572484_eygm33_19",
+              "title": "Shannon Formula",
+              "description": "The Shannon formula determines channel capacity in the presence of noise using bandwidth and signal-to-noise ratio: Channel Capacity = B log2(1 + SNR).",
+              "parentId": "sec_doc_1790181572484_eygm33_2_6",
+              "level": "concept",
+              "documentId": "doc_1790181572484_eygm33",
+              "documentName": "4. Physical Layer_.pdf",
+              "pageStart": 48,
+              "pageEnd": 48,
+              "chunkIds": [
+                "doc_1790181572484_eygm33_42"
+              ],
+              "keywords": [
+                "shannon formula",
+                "channel capacity",
+                "snr",
+                "bandwidth",
+                "noise"
+              ],
+              "order": 27
+            }
+          ],
+          "pageStart": 47,
+          "pageEnd": 48
+        }
+      ],
+      "pageStart": 23,
+      "pageEnd": 48
+    },
+    {
+      "id": "con_doc_1790181572484_eygm33_20",
+      "title": "Guided and Unguided Transmission Media",
+      "description": "Transmission media provide the path over which signals travel and are classified into guided media, which constrain signals to a physical path, and unguided media, which transmit through free space.",
+      "parentId": "sec_doc_1790181572484_eygm33_3_7",
+      "level": "concept",
+      "documentId": "doc_1790181572484_eygm33",
+      "documentName": "4. Physical Layer_.pdf",
+      "pageStart": 50,
+      "pageEnd": 52,
+      "chunkIds": [
+        "doc_1790181572484_eygm33_43",
+        "doc_1790181572484_eygm33_44",
+        "doc_1790181572484_eygm33_45"
+      ],
+      "keywords": [
+        "transmission medium",
+        "guided medium",
+        "unguided medium",
+        "physical layer"
+      ],
+      "order": 30
+    },
+    {
+      "id": "sec_doc_1790181572484_eygm33_3_7",
+      "title": "Classes of Transmission Medium",
+      "description": "Introduces transmission media as resources below and directly controlled by the physical layer and divides them into guided and unguided classes.",
+      "parentId": "unit_doc_1790181572484_eygm33_3",
+      "level": "section",
+      "documentId": "doc_1790181572484_eygm33",
+      "documentName": "4. Physical Layer_.pdf",
+      "chunkIds": [
+        "doc_1790181572484_eygm33_43",
+        "doc_1790181572484_eygm33_44",
+        "doc_1790181572484_eygm33_45"
+      ],
+      "keywords": [],
+      "order": 29,
+      "children": [
+        {
+          "id": "con_doc_1790181572484_eygm33_20",
+          "title": "Guided and Unguided Transmission Media",
+          "description": "Transmission media provide the path over which signals travel and are classified into guided media, which constrain signals to a physical path, and unguided media, which transmit through free space.",
+          "parentId": "sec_doc_1790181572484_eygm33_3_7",
+          "level": "concept",
+          "documentId": "doc_1790181572484_eygm33",
+          "documentName": "4. Physical Layer_.pdf",
+          "pageStart": 50,
+          "pageEnd": 52,
+          "chunkIds": [
+            "doc_1790181572484_eygm33_43",
+            "doc_1790181572484_eygm33_44",
+            "doc_1790181572484_eygm33_45"
+          ],
+          "keywords": [
+            "transmission medium",
+            "guided medium",
+            "unguided medium",
+            "physical layer"
+          ],
+          "order": 30
+        }
+      ],
+      "pageStart": 50,
+      "pageEnd": 52
+    },
+    {
+      "id": "con_doc_1790181572484_eygm33_21",
+      "title": "Twisted Pair Cable",
+      "description": "Twisted-pair cable contains two individually insulated conductors, usually copper. Its applications include telephone lines and low-cost LANs, and its forms include Unshielded Twisted Pair and shielded variants.",
+      "parentId": "sec_doc_1790181572484_eygm33_3_8",
+      "level": "concept",
+      "documentId": "doc_1790181572484_eygm33",
+      "documentName": "4. Physical Layer_.pdf",
+      "pageStart": 53,
+      "pageEnd": 56,
+      "chunkIds": [
+        "doc_1790181572484_eygm33_46",
+        "doc_1790181572484_eygm33_47",
+        "doc_1790181572484_eygm33_48",
+        "doc_1790181572484_eygm33_49"
+      ],
+      "keywords": [
+        "twisted pair",
+        "copper conductors",
+        "utp",
+        "telephone lines",
+        "lan"
+      ],
+      "order": 32
+    },
+    {
+      "id": "con_doc_1790181572484_eygm33_22",
+      "title": "Coaxial Cable",
+      "description": "Coaxial cable uses concentric conductors and carries higher-frequency signals than twisted pair. It provides higher bandwidth and strong noise immunity for communication applications.",
+      "parentId": "sec_doc_1790181572484_eygm33_3_8",
+      "level": "concept",
+      "documentId": "doc_1790181572484_eygm33",
+      "documentName": "4. Physical Layer_.pdf",
+      "pageStart": 57,
+      "pageEnd": 58,
+      "chunkIds": [
+        "doc_1790181572484_eygm33_50",
+        "doc_1790181572484_eygm33_51"
+      ],
+      "keywords": [
+        "coaxial cable",
+        "bandwidth",
+        "noise immunity",
+        "high frequency"
+      ],
+      "order": 33
+    },
+    {
+      "id": "con_doc_1790181572484_eygm33_23",
+      "title": "Fibre Optic Cable and Propagation Modes",
+      "description": "Fibre-optic cable uses a glass or plastic core and transmits information as light. Its propagation modes depend on the core and lower-density cladding, and the medium offers high bandwidth and low attenuation alongside stated disadvantages and applications.",
+      "parentId": "sec_doc_1790181572484_eygm33_3_8",
+      "level": "concept",
+      "documentId": "doc_1790181572484_eygm33",
+      "documentName": "4. Physical Layer_.pdf",
+      "pageStart": 59,
+      "pageEnd": 62,
+      "chunkIds": [
+        "doc_1790181572484_eygm33_52",
+        "doc_1790181572484_eygm33_53",
+        "doc_1790181572484_eygm33_54",
+        "doc_1790181572484_eygm33_55"
+      ],
+      "keywords": [
+        "fibre optic cable",
+        "light",
+        "core",
+        "cladding",
+        "propagation modes",
+        "attenuation"
+      ],
+      "order": 34
+    },
+    {
+      "id": "sec_doc_1790181572484_eygm33_3_8",
+      "title": "Guided Transmission Media",
+      "description": "Examines twisted-pair, coaxial, and fibre-optic cables as bounded media for signal transmission.",
+      "parentId": "unit_doc_1790181572484_eygm33_3",
+      "level": "section",
+      "documentId": "doc_1790181572484_eygm33",
+      "documentName": "4. Physical Layer_.pdf",
+      "chunkIds": [
+        "doc_1790181572484_eygm33_46",
+        "doc_1790181572484_eygm33_47",
+        "doc_1790181572484_eygm33_48",
+        "doc_1790181572484_eygm33_49",
+        "doc_1790181572484_eygm33_50",
+        "doc_1790181572484_eygm33_51",
+        "doc_1790181572484_eygm33_52",
+        "doc_1790181572484_eygm33_53",
+        "doc_1790181572484_eygm33_54",
+        "doc_1790181572484_eygm33_55"
+      ],
+      "keywords": [],
+      "order": 31,
+      "children": [
+        {
+          "id": "con_doc_1790181572484_eygm33_21",
+          "title": "Twisted Pair Cable",
+          "description": "Twisted-pair cable contains two individually insulated conductors, usually copper. Its applications include telephone lines and low-cost LANs, and its forms include Unshielded Twisted Pair and shielded variants.",
+          "parentId": "sec_doc_1790181572484_eygm33_3_8",
+          "level": "concept",
+          "documentId": "doc_1790181572484_eygm33",
+          "documentName": "4. Physical Layer_.pdf",
+          "pageStart": 53,
+          "pageEnd": 56,
+          "chunkIds": [
+            "doc_1790181572484_eygm33_46",
+            "doc_1790181572484_eygm33_47",
+            "doc_1790181572484_eygm33_48",
+            "doc_1790181572484_eygm33_49"
+          ],
+          "keywords": [
+            "twisted pair",
+            "copper conductors",
+            "utp",
+            "telephone lines",
+            "lan"
+          ],
+          "order": 32
+        },
+        {
+          "id": "con_doc_1790181572484_eygm33_22",
+          "title": "Coaxial Cable",
+          "description": "Coaxial cable uses concentric conductors and carries higher-frequency signals than twisted pair. It provides higher bandwidth and strong noise immunity for communication applications.",
+          "parentId": "sec_doc_1790181572484_eygm33_3_8",
+          "level": "concept",
+          "documentId": "doc_1790181572484_eygm33",
+          "documentName": "4. Physical Layer_.pdf",
+          "pageStart": 57,
+          "pageEnd": 58,
+          "chunkIds": [
+            "doc_1790181572484_eygm33_50",
+            "doc_1790181572484_eygm33_51"
+          ],
+          "keywords": [
+            "coaxial cable",
+            "bandwidth",
+            "noise immunity",
+            "high frequency"
+          ],
+          "order": 33
+        },
+        {
+          "id": "con_doc_1790181572484_eygm33_23",
+          "title": "Fibre Optic Cable and Propagation Modes",
+          "description": "Fibre-optic cable uses a glass or plastic core and transmits information as light. Its propagation modes depend on the core and lower-density cladding, and the medium offers high bandwidth and low attenuation alongside stated disadvantages and applications.",
+          "parentId": "sec_doc_1790181572484_eygm33_3_8",
+          "level": "concept",
+          "documentId": "doc_1790181572484_eygm33",
+          "documentName": "4. Physical Layer_.pdf",
+          "pageStart": 59,
+          "pageEnd": 62,
+          "chunkIds": [
+            "doc_1790181572484_eygm33_52",
+            "doc_1790181572484_eygm33_53",
+            "doc_1790181572484_eygm33_54",
+            "doc_1790181572484_eygm33_55"
+          ],
+          "keywords": [
+            "fibre optic cable",
+            "light",
+            "core",
+            "cladding",
+            "propagation modes",
+            "attenuation"
+          ],
+          "order": 34
+        }
+      ],
+      "pageStart": 53,
+      "pageEnd": 62
+    },
+    {
+      "id": "con_doc_1790181572484_eygm33_24",
+      "title": "Wireless Propagation Methods",
+      "description": "Unguided transmission uses electromagnetic waves traveling through free space. Propagation methods include ground propagation, in which lower-frequency radio waves follow the curvature of the Earth.",
+      "parentId": "sec_doc_1790181572484_eygm33_3_9",
+      "level": "concept",
+      "documentId": "doc_1790181572484_eygm33",
+      "documentName": "4. Physical Layer_.pdf",
+      "pageStart": 63,
+      "pageEnd": 64,
+      "chunkIds": [
+        "doc_1790181572484_eygm33_56",
+        "doc_1790181572484_eygm33_57"
+      ],
+      "keywords": [
+        "unguided transmission",
+        "ground propagation",
+        "electromagnetic waves",
+        "wireless"
+      ],
+      "order": 36
+    },
+    {
+      "id": "con_doc_1790181572484_eygm33_25",
+      "title": "Radio Waves",
+      "description": "Radio waves are electromagnetic waves in the approximate frequency range of 3 kHz to 1 GHz and are used for wireless communication.",
+      "parentId": "sec_doc_1790181572484_eygm33_3_9",
+      "level": "concept",
+      "documentId": "doc_1790181572484_eygm33",
+      "documentName": "4. Physical Layer_.pdf",
+      "pageStart": 65,
+      "pageEnd": 65,
+      "chunkIds": [
+        "doc_1790181572484_eygm33_58"
+      ],
+      "keywords": [
+        "radio waves",
+        "3 khz",
+        "1 ghz",
+        "electromagnetic waves"
+      ],
+      "order": 37
+    },
+    {
+      "id": "con_doc_1790181572484_eygm33_26",
+      "title": "Microwaves",
+      "description": "Microwaves occupy the approximate frequency range from 1 GHz to 300 GHz and are used as an unguided communication medium.",
+      "parentId": "sec_doc_1790181572484_eygm33_3_9",
+      "level": "concept",
+      "documentId": "doc_1790181572484_eygm33",
+      "documentName": "4. Physical Layer_.pdf",
+      "pageStart": 66,
+      "pageEnd": 66,
+      "chunkIds": [
+        "doc_1790181572484_eygm33_59"
+      ],
+      "keywords": [
+        "microwaves",
+        "1 ghz",
+        "300 ghz",
+        "wireless communication"
+      ],
+      "order": 38
+    },
+    {
+      "id": "con_doc_1790181572484_eygm33_27",
+      "title": "Infrared",
+      "description": "Infrared communication uses frequencies of approximately 300 GHz to 400 THz and is suited to short-range communication.",
+      "parentId": "sec_doc_1790181572484_eygm33_3_9",
+      "level": "concept",
+      "documentId": "doc_1790181572484_eygm33",
+      "documentName": "4. Physical Layer_.pdf",
+      "pageStart": 67,
+      "pageEnd": 67,
+      "chunkIds": [
+        "doc_1790181572484_eygm33_60"
+      ],
+      "keywords": [
+        "infrared",
+        "300 ghz",
+        "400 thz",
+        "short-range communication"
+      ],
+      "order": 39
+    },
+    {
+      "id": "sec_doc_1790181572484_eygm33_3_9",
+      "title": "Unguided Transmission Media",
+      "description": "Explains wireless propagation methods and the frequency ranges and communication properties of radio waves, microwaves, and infrared.",
+      "parentId": "unit_doc_1790181572484_eygm33_3",
+      "level": "section",
+      "documentId": "doc_1790181572484_eygm33",
+      "documentName": "4. Physical Layer_.pdf",
+      "chunkIds": [
+        "doc_1790181572484_eygm33_56",
+        "doc_1790181572484_eygm33_57",
+        "doc_1790181572484_eygm33_58",
+        "doc_1790181572484_eygm33_59",
+        "doc_1790181572484_eygm33_60"
+      ],
+      "keywords": [],
+      "order": 35,
+      "children": [
+        {
+          "id": "con_doc_1790181572484_eygm33_24",
+          "title": "Wireless Propagation Methods",
+          "description": "Unguided transmission uses electromagnetic waves traveling through free space. Propagation methods include ground propagation, in which lower-frequency radio waves follow the curvature of the Earth.",
+          "parentId": "sec_doc_1790181572484_eygm33_3_9",
+          "level": "concept",
+          "documentId": "doc_1790181572484_eygm33",
+          "documentName": "4. Physical Layer_.pdf",
+          "pageStart": 63,
+          "pageEnd": 64,
+          "chunkIds": [
+            "doc_1790181572484_eygm33_56",
+            "doc_1790181572484_eygm33_57"
+          ],
+          "keywords": [
+            "unguided transmission",
+            "ground propagation",
+            "electromagnetic waves",
+            "wireless"
+          ],
+          "order": 36
+        },
+        {
+          "id": "con_doc_1790181572484_eygm33_25",
+          "title": "Radio Waves",
+          "description": "Radio waves are electromagnetic waves in the approximate frequency range of 3 kHz to 1 GHz and are used for wireless communication.",
+          "parentId": "sec_doc_1790181572484_eygm33_3_9",
+          "level": "concept",
+          "documentId": "doc_1790181572484_eygm33",
+          "documentName": "4. Physical Layer_.pdf",
+          "pageStart": 65,
+          "pageEnd": 65,
+          "chunkIds": [
+            "doc_1790181572484_eygm33_58"
+          ],
+          "keywords": [
+            "radio waves",
+            "3 khz",
+            "1 ghz",
+            "electromagnetic waves"
+          ],
+          "order": 37
+        },
+        {
+          "id": "con_doc_1790181572484_eygm33_26",
+          "title": "Microwaves",
+          "description": "Microwaves occupy the approximate frequency range from 1 GHz to 300 GHz and are used as an unguided communication medium.",
+          "parentId": "sec_doc_1790181572484_eygm33_3_9",
+          "level": "concept",
+          "documentId": "doc_1790181572484_eygm33",
+          "documentName": "4. Physical Layer_.pdf",
+          "pageStart": 66,
+          "pageEnd": 66,
+          "chunkIds": [
+            "doc_1790181572484_eygm33_59"
+          ],
+          "keywords": [
+            "microwaves",
+            "1 ghz",
+            "300 ghz",
+            "wireless communication"
+          ],
+          "order": 38
+        },
+        {
+          "id": "con_doc_1790181572484_eygm33_27",
+          "title": "Infrared",
+          "description": "Infrared communication uses frequencies of approximately 300 GHz to 400 THz and is suited to short-range communication.",
+          "parentId": "sec_doc_1790181572484_eygm33_3_9",
+          "level": "concept",
+          "documentId": "doc_1790181572484_eygm33",
+          "documentName": "4. Physical Layer_.pdf",
+          "pageStart": 67,
+          "pageEnd": 67,
+          "chunkIds": [
+            "doc_1790181572484_eygm33_60"
+          ],
+          "keywords": [
+            "infrared",
+            "300 ghz",
+            "400 thz",
+            "short-range communication"
+          ],
+          "order": 39
+        }
+      ],
+      "pageStart": 63,
+      "pageEnd": 67
+    },
+    {
+      "id": "con_doc_1790181572484_eygm33_28",
+      "title": "Applied Channel Capacity and Fibre Propagation Analysis",
+      "description": "Review questions distinguish Nyquist and Shannon parameters and examine single-mode and multimode fibre, modal dispersion in step-index fibre, dispersion reduction in graded-index fibre, and total internal reflection.",
+      "parentId": "sec_doc_1790181572484_eygm33_3_10",
+      "level": "concept",
+      "documentId": "doc_1790181572484_eygm33",
+      "documentName": "4. Physical Layer_.pdf",
+      "pageStart": 69,
+      "pageEnd": 80,
+      "chunkIds": [
+        "doc_1790181572484_eygm33_61",
+        "doc_1790181572484_eygm33_62",
+        "doc_1790181572484_eygm33_63",
+        "doc_1790181572484_eygm33_64",
+        "doc_1790181572484_eygm33_65",
+        "doc_1790181572484_eygm33_66",
+        "doc_1790181572484_eygm33_67",
+        "doc_1790181572484_eygm33_68",
+        "doc_1790181572484_eygm33_69",
+        "doc_1790181572484_eygm33_70",
+        "doc_1790181572484_eygm33_71",
+        "doc_1790181572484_eygm33_72"
+      ],
+      "keywords": [
+        "nyquist",
+        "shannon capacity",
+        "single-mode fibre",
+        "multimode fibre",
+        "modal dispersion",
+        "graded-index fibre",
+        "total internal reflection"
+      ],
+      "order": 41
+    },
+    {
+      "id": "sec_doc_1790181572484_eygm33_3_10",
+      "title": "Channel Capacity and Optical Fibre Review",
+      "description": "Applies channel-capacity principles and compares optical-fibre propagation modes, modal dispersion, graded-index behavior, and total internal reflection.",
+      "parentId": "unit_doc_1790181572484_eygm33_3",
+      "level": "section",
+      "documentId": "doc_1790181572484_eygm33",
+      "documentName": "4. Physical Layer_.pdf",
+      "chunkIds": [
+        "doc_1790181572484_eygm33_61",
+        "doc_1790181572484_eygm33_62",
+        "doc_1790181572484_eygm33_63",
+        "doc_1790181572484_eygm33_64",
+        "doc_1790181572484_eygm33_65",
+        "doc_1790181572484_eygm33_66",
+        "doc_1790181572484_eygm33_67",
+        "doc_1790181572484_eygm33_68",
+        "doc_1790181572484_eygm33_69",
+        "doc_1790181572484_eygm33_70",
+        "doc_1790181572484_eygm33_71",
+        "doc_1790181572484_eygm33_72"
+      ],
+      "keywords": [],
+      "order": 40,
+      "children": [
+        {
+          "id": "con_doc_1790181572484_eygm33_28",
+          "title": "Applied Channel Capacity and Fibre Propagation Analysis",
+          "description": "Review questions distinguish Nyquist and Shannon parameters and examine single-mode and multimode fibre, modal dispersion in step-index fibre, dispersion reduction in graded-index fibre, and total internal reflection.",
+          "parentId": "sec_doc_1790181572484_eygm33_3_10",
+          "level": "concept",
+          "documentId": "doc_1790181572484_eygm33",
+          "documentName": "4. Physical Layer_.pdf",
+          "pageStart": 69,
+          "pageEnd": 80,
+          "chunkIds": [
+            "doc_1790181572484_eygm33_61",
+            "doc_1790181572484_eygm33_62",
+            "doc_1790181572484_eygm33_63",
+            "doc_1790181572484_eygm33_64",
+            "doc_1790181572484_eygm33_65",
+            "doc_1790181572484_eygm33_66",
+            "doc_1790181572484_eygm33_67",
+            "doc_1790181572484_eygm33_68",
+            "doc_1790181572484_eygm33_69",
+            "doc_1790181572484_eygm33_70",
+            "doc_1790181572484_eygm33_71",
+            "doc_1790181572484_eygm33_72"
+          ],
+          "keywords": [
+            "nyquist",
+            "shannon capacity",
+            "single-mode fibre",
+            "multimode fibre",
+            "modal dispersion",
+            "graded-index fibre",
+            "total internal reflection"
+          ],
+          "order": 41
+        }
+      ],
+      "pageStart": 69,
+      "pageEnd": 80
+    },
+    {
+      "id": "unit_doc_1790181572484_eygm33_3",
+      "title": "Transmission Media",
+      "description": "Classifies physical transmission media and examines guided cables, wireless media, propagation methods, and optical-fiber behavior.",
+      "level": "unit",
+      "documentId": "doc_1790181572484_eygm33",
+      "documentName": "4. Physical Layer_.pdf",
+      "chunkIds": [
+        "doc_1790181572484_eygm33_43",
+        "doc_1790181572484_eygm33_44",
+        "doc_1790181572484_eygm33_45",
+        "doc_1790181572484_eygm33_46",
+        "doc_1790181572484_eygm33_47",
+        "doc_1790181572484_eygm33_48",
+        "doc_1790181572484_eygm33_49",
+        "doc_1790181572484_eygm33_50",
+        "doc_1790181572484_eygm33_51",
+        "doc_1790181572484_eygm33_52",
+        "doc_1790181572484_eygm33_53",
+        "doc_1790181572484_eygm33_54",
+        "doc_1790181572484_eygm33_55",
+        "doc_1790181572484_eygm33_56",
+        "doc_1790181572484_eygm33_57",
+        "doc_1790181572484_eygm33_58",
+        "doc_1790181572484_eygm33_59",
+        "doc_1790181572484_eygm33_60",
+        "doc_1790181572484_eygm33_61",
+        "doc_1790181572484_eygm33_62",
+        "doc_1790181572484_eygm33_63",
+        "doc_1790181572484_eygm33_64",
+        "doc_1790181572484_eygm33_65",
+        "doc_1790181572484_eygm33_66",
+        "doc_1790181572484_eygm33_67",
+        "doc_1790181572484_eygm33_68",
+        "doc_1790181572484_eygm33_69",
+        "doc_1790181572484_eygm33_70",
+        "doc_1790181572484_eygm33_71",
+        "doc_1790181572484_eygm33_72"
+      ],
+      "keywords": [],
+      "order": 28,
+      "children": [
+        {
+          "id": "sec_doc_1790181572484_eygm33_3_7",
+          "title": "Classes of Transmission Medium",
+          "description": "Introduces transmission media as resources below and directly controlled by the physical layer and divides them into guided and unguided classes.",
+          "parentId": "unit_doc_1790181572484_eygm33_3",
+          "level": "section",
+          "documentId": "doc_1790181572484_eygm33",
+          "documentName": "4. Physical Layer_.pdf",
+          "chunkIds": [
+            "doc_1790181572484_eygm33_43",
+            "doc_1790181572484_eygm33_44",
+            "doc_1790181572484_eygm33_45"
+          ],
+          "keywords": [],
+          "order": 29,
+          "children": [
+            {
+              "id": "con_doc_1790181572484_eygm33_20",
+              "title": "Guided and Unguided Transmission Media",
+              "description": "Transmission media provide the path over which signals travel and are classified into guided media, which constrain signals to a physical path, and unguided media, which transmit through free space.",
+              "parentId": "sec_doc_1790181572484_eygm33_3_7",
+              "level": "concept",
+              "documentId": "doc_1790181572484_eygm33",
+              "documentName": "4. Physical Layer_.pdf",
+              "pageStart": 50,
+              "pageEnd": 52,
+              "chunkIds": [
+                "doc_1790181572484_eygm33_43",
+                "doc_1790181572484_eygm33_44",
+                "doc_1790181572484_eygm33_45"
+              ],
+              "keywords": [
+                "transmission medium",
+                "guided medium",
+                "unguided medium",
+                "physical layer"
+              ],
+              "order": 30
+            }
+          ],
+          "pageStart": 50,
+          "pageEnd": 52
+        },
+        {
+          "id": "sec_doc_1790181572484_eygm33_3_8",
+          "title": "Guided Transmission Media",
+          "description": "Examines twisted-pair, coaxial, and fibre-optic cables as bounded media for signal transmission.",
+          "parentId": "unit_doc_1790181572484_eygm33_3",
+          "level": "section",
+          "documentId": "doc_1790181572484_eygm33",
+          "documentName": "4. Physical Layer_.pdf",
+          "chunkIds": [
+            "doc_1790181572484_eygm33_46",
+            "doc_1790181572484_eygm33_47",
+            "doc_1790181572484_eygm33_48",
+            "doc_1790181572484_eygm33_49",
+            "doc_1790181572484_eygm33_50",
+            "doc_1790181572484_eygm33_51",
+            "doc_1790181572484_eygm33_52",
+            "doc_1790181572484_eygm33_53",
+            "doc_1790181572484_eygm33_54",
+            "doc_1790181572484_eygm33_55"
+          ],
+          "keywords": [],
+          "order": 31,
+          "children": [
+            {
+              "id": "con_doc_1790181572484_eygm33_21",
+              "title": "Twisted Pair Cable",
+              "description": "Twisted-pair cable contains two individually insulated conductors, usually copper. Its applications include telephone lines and low-cost LANs, and its forms include Unshielded Twisted Pair and shielded variants.",
+              "parentId": "sec_doc_1790181572484_eygm33_3_8",
+              "level": "concept",
+              "documentId": "doc_1790181572484_eygm33",
+              "documentName": "4. Physical Layer_.pdf",
+              "pageStart": 53,
+              "pageEnd": 56,
+              "chunkIds": [
+                "doc_1790181572484_eygm33_46",
+                "doc_1790181572484_eygm33_47",
+                "doc_1790181572484_eygm33_48",
+                "doc_1790181572484_eygm33_49"
+              ],
+              "keywords": [
+                "twisted pair",
+                "copper conductors",
+                "utp",
+                "telephone lines",
+                "lan"
+              ],
+              "order": 32
+            },
+            {
+              "id": "con_doc_1790181572484_eygm33_22",
+              "title": "Coaxial Cable",
+              "description": "Coaxial cable uses concentric conductors and carries higher-frequency signals than twisted pair. It provides higher bandwidth and strong noise immunity for communication applications.",
+              "parentId": "sec_doc_1790181572484_eygm33_3_8",
+              "level": "concept",
+              "documentId": "doc_1790181572484_eygm33",
+              "documentName": "4. Physical Layer_.pdf",
+              "pageStart": 57,
+              "pageEnd": 58,
+              "chunkIds": [
+                "doc_1790181572484_eygm33_50",
+                "doc_1790181572484_eygm33_51"
+              ],
+              "keywords": [
+                "coaxial cable",
+                "bandwidth",
+                "noise immunity",
+                "high frequency"
+              ],
+              "order": 33
+            },
+            {
+              "id": "con_doc_1790181572484_eygm33_23",
+              "title": "Fibre Optic Cable and Propagation Modes",
+              "description": "Fibre-optic cable uses a glass or plastic core and transmits information as light. Its propagation modes depend on the core and lower-density cladding, and the medium offers high bandwidth and low attenuation alongside stated disadvantages and applications.",
+              "parentId": "sec_doc_1790181572484_eygm33_3_8",
+              "level": "concept",
+              "documentId": "doc_1790181572484_eygm33",
+              "documentName": "4. Physical Layer_.pdf",
+              "pageStart": 59,
+              "pageEnd": 62,
+              "chunkIds": [
+                "doc_1790181572484_eygm33_52",
+                "doc_1790181572484_eygm33_53",
+                "doc_1790181572484_eygm33_54",
+                "doc_1790181572484_eygm33_55"
+              ],
+              "keywords": [
+                "fibre optic cable",
+                "light",
+                "core",
+                "cladding",
+                "propagation modes",
+                "attenuation"
+              ],
+              "order": 34
+            }
+          ],
+          "pageStart": 53,
+          "pageEnd": 62
+        },
+        {
+          "id": "sec_doc_1790181572484_eygm33_3_9",
+          "title": "Unguided Transmission Media",
+          "description": "Explains wireless propagation methods and the frequency ranges and communication properties of radio waves, microwaves, and infrared.",
+          "parentId": "unit_doc_1790181572484_eygm33_3",
+          "level": "section",
+          "documentId": "doc_1790181572484_eygm33",
+          "documentName": "4. Physical Layer_.pdf",
+          "chunkIds": [
+            "doc_1790181572484_eygm33_56",
+            "doc_1790181572484_eygm33_57",
+            "doc_1790181572484_eygm33_58",
+            "doc_1790181572484_eygm33_59",
+            "doc_1790181572484_eygm33_60"
+          ],
+          "keywords": [],
+          "order": 35,
+          "children": [
+            {
+              "id": "con_doc_1790181572484_eygm33_24",
+              "title": "Wireless Propagation Methods",
+              "description": "Unguided transmission uses electromagnetic waves traveling through free space. Propagation methods include ground propagation, in which lower-frequency radio waves follow the curvature of the Earth.",
+              "parentId": "sec_doc_1790181572484_eygm33_3_9",
+              "level": "concept",
+              "documentId": "doc_1790181572484_eygm33",
+              "documentName": "4. Physical Layer_.pdf",
+              "pageStart": 63,
+              "pageEnd": 64,
+              "chunkIds": [
+                "doc_1790181572484_eygm33_56",
+                "doc_1790181572484_eygm33_57"
+              ],
+              "keywords": [
+                "unguided transmission",
+                "ground propagation",
+                "electromagnetic waves",
+                "wireless"
+              ],
+              "order": 36
+            },
+            {
+              "id": "con_doc_1790181572484_eygm33_25",
+              "title": "Radio Waves",
+              "description": "Radio waves are electromagnetic waves in the approximate frequency range of 3 kHz to 1 GHz and are used for wireless communication.",
+              "parentId": "sec_doc_1790181572484_eygm33_3_9",
+              "level": "concept",
+              "documentId": "doc_1790181572484_eygm33",
+              "documentName": "4. Physical Layer_.pdf",
+              "pageStart": 65,
+              "pageEnd": 65,
+              "chunkIds": [
+                "doc_1790181572484_eygm33_58"
+              ],
+              "keywords": [
+                "radio waves",
+                "3 khz",
+                "1 ghz",
+                "electromagnetic waves"
+              ],
+              "order": 37
+            },
+            {
+              "id": "con_doc_1790181572484_eygm33_26",
+              "title": "Microwaves",
+              "description": "Microwaves occupy the approximate frequency range from 1 GHz to 300 GHz and are used as an unguided communication medium.",
+              "parentId": "sec_doc_1790181572484_eygm33_3_9",
+              "level": "concept",
+              "documentId": "doc_1790181572484_eygm33",
+              "documentName": "4. Physical Layer_.pdf",
+              "pageStart": 66,
+              "pageEnd": 66,
+              "chunkIds": [
+                "doc_1790181572484_eygm33_59"
+              ],
+              "keywords": [
+                "microwaves",
+                "1 ghz",
+                "300 ghz",
+                "wireless communication"
+              ],
+              "order": 38
+            },
+            {
+              "id": "con_doc_1790181572484_eygm33_27",
+              "title": "Infrared",
+              "description": "Infrared communication uses frequencies of approximately 300 GHz to 400 THz and is suited to short-range communication.",
+              "parentId": "sec_doc_1790181572484_eygm33_3_9",
+              "level": "concept",
+              "documentId": "doc_1790181572484_eygm33",
+              "documentName": "4. Physical Layer_.pdf",
+              "pageStart": 67,
+              "pageEnd": 67,
+              "chunkIds": [
+                "doc_1790181572484_eygm33_60"
+              ],
+              "keywords": [
+                "infrared",
+                "300 ghz",
+                "400 thz",
+                "short-range communication"
+              ],
+              "order": 39
+            }
+          ],
+          "pageStart": 63,
+          "pageEnd": 67
+        },
+        {
+          "id": "sec_doc_1790181572484_eygm33_3_10",
+          "title": "Channel Capacity and Optical Fibre Review",
+          "description": "Applies channel-capacity principles and compares optical-fibre propagation modes, modal dispersion, graded-index behavior, and total internal reflection.",
+          "parentId": "unit_doc_1790181572484_eygm33_3",
+          "level": "section",
+          "documentId": "doc_1790181572484_eygm33",
+          "documentName": "4. Physical Layer_.pdf",
+          "chunkIds": [
+            "doc_1790181572484_eygm33_61",
+            "doc_1790181572484_eygm33_62",
+            "doc_1790181572484_eygm33_63",
+            "doc_1790181572484_eygm33_64",
+            "doc_1790181572484_eygm33_65",
+            "doc_1790181572484_eygm33_66",
+            "doc_1790181572484_eygm33_67",
+            "doc_1790181572484_eygm33_68",
+            "doc_1790181572484_eygm33_69",
+            "doc_1790181572484_eygm33_70",
+            "doc_1790181572484_eygm33_71",
+            "doc_1790181572484_eygm33_72"
+          ],
+          "keywords": [],
+          "order": 40,
+          "children": [
+            {
+              "id": "con_doc_1790181572484_eygm33_28",
+              "title": "Applied Channel Capacity and Fibre Propagation Analysis",
+              "description": "Review questions distinguish Nyquist and Shannon parameters and examine single-mode and multimode fibre, modal dispersion in step-index fibre, dispersion reduction in graded-index fibre, and total internal reflection.",
+              "parentId": "sec_doc_1790181572484_eygm33_3_10",
+              "level": "concept",
+              "documentId": "doc_1790181572484_eygm33",
+              "documentName": "4. Physical Layer_.pdf",
+              "pageStart": 69,
+              "pageEnd": 80,
+              "chunkIds": [
+                "doc_1790181572484_eygm33_61",
+                "doc_1790181572484_eygm33_62",
+                "doc_1790181572484_eygm33_63",
+                "doc_1790181572484_eygm33_64",
+                "doc_1790181572484_eygm33_65",
+                "doc_1790181572484_eygm33_66",
+                "doc_1790181572484_eygm33_67",
+                "doc_1790181572484_eygm33_68",
+                "doc_1790181572484_eygm33_69",
+                "doc_1790181572484_eygm33_70",
+                "doc_1790181572484_eygm33_71",
+                "doc_1790181572484_eygm33_72"
+              ],
+              "keywords": [
+                "nyquist",
+                "shannon capacity",
+                "single-mode fibre",
+                "multimode fibre",
+                "modal dispersion",
+                "graded-index fibre",
+                "total internal reflection"
+              ],
+              "order": 41
+            }
+          ],
+          "pageStart": 69,
+          "pageEnd": 80
+        }
+      ],
+      "pageStart": 50,
+      "pageEnd": 80
+    },
+    {
+      "id": "con_doc_1790181572484_eygm33_29",
+      "title": "Switching Networks and Switching Methods",
+      "description": "A switching network is a collection of interconnected nodes and connections used for communication. Data can be switched using circuit switching or packet switching, with packet switching divided into datagram and virtual-circuit approaches.",
+      "parentId": "sec_doc_1790181572484_eygm33_4_11",
+      "level": "concept",
+      "documentId": "doc_1790181572484_eygm33",
+      "documentName": "4. Physical Layer_.pdf",
+      "pageStart": 81,
+      "pageEnd": 83,
+      "chunkIds": [
+        "doc_1790181572484_eygm33_73",
+        "doc_1790181572484_eygm33_74",
+        "doc_1790181572484_eygm33_75"
+      ],
+      "keywords": [
+        "switching network",
+        "nodes",
+        "circuit switching",
+        "packet switching",
+        "datagram",
+        "virtual circuit"
+      ],
+      "order": 44
+    },
+    {
+      "id": "sec_doc_1790181572484_eygm33_4_11",
+      "title": "Switching Network Foundations",
+      "description": "Defines a switching network and identifies the principal methods used to move data through interconnected nodes.",
+      "parentId": "unit_doc_1790181572484_eygm33_4",
+      "level": "section",
+      "documentId": "doc_1790181572484_eygm33",
+      "documentName": "4. Physical Layer_.pdf",
+      "chunkIds": [
+        "doc_1790181572484_eygm33_73",
+        "doc_1790181572484_eygm33_74",
+        "doc_1790181572484_eygm33_75"
+      ],
+      "keywords": [],
+      "order": 43,
+      "children": [
+        {
+          "id": "con_doc_1790181572484_eygm33_29",
+          "title": "Switching Networks and Switching Methods",
+          "description": "A switching network is a collection of interconnected nodes and connections used for communication. Data can be switched using circuit switching or packet switching, with packet switching divided into datagram and virtual-circuit approaches.",
+          "parentId": "sec_doc_1790181572484_eygm33_4_11",
+          "level": "concept",
+          "documentId": "doc_1790181572484_eygm33",
+          "documentName": "4. Physical Layer_.pdf",
+          "pageStart": 81,
+          "pageEnd": 83,
+          "chunkIds": [
+            "doc_1790181572484_eygm33_73",
+            "doc_1790181572484_eygm33_74",
+            "doc_1790181572484_eygm33_75"
+          ],
+          "keywords": [
+            "switching network",
+            "nodes",
+            "circuit switching",
+            "packet switching",
+            "datagram",
+            "virtual circuit"
+          ],
+          "order": 44
+        }
+      ],
+      "pageStart": 81,
+      "pageEnd": 83
+    },
+    {
+      "id": "con_doc_1790181572484_eygm33_30",
+      "title": "Circuit Switching",
+      "description": "Circuit switching establishes a dedicated communication path through circuit establishment, data transfer, and circuit disconnection phases. It can be inefficient because channel capacity remains dedicated for the connection's duration.",
+      "parentId": "sec_doc_1790181572484_eygm33_4_12",
+      "level": "concept",
+      "documentId": "doc_1790181572484_eygm33",
+      "documentName": "4. Physical Layer_.pdf",
+      "pageStart": 84,
+      "pageEnd": 85,
+      "chunkIds": [
+        "doc_1790181572484_eygm33_76",
+        "doc_1790181572484_eygm33_77"
+      ],
+      "keywords": [
+        "circuit switching",
+        "circuit establishment",
+        "data transfer",
+        "disconnection",
+        "dedicated capacity"
+      ],
+      "order": 46
+    },
+    {
+      "id": "con_doc_1790181572484_eygm33_31",
+      "title": "Packet Switching",
+      "description": "Packet switching divides a long message into packets and sends the packets through the network individually, allowing network resources to be shared.",
+      "parentId": "sec_doc_1790181572484_eygm33_4_12",
+      "level": "concept",
+      "documentId": "doc_1790181572484_eygm33",
+      "documentName": "4. Physical Layer_.pdf",
+      "pageStart": 86,
+      "pageEnd": 86,
+      "chunkIds": [
+        "doc_1790181572484_eygm33_78"
+      ],
+      "keywords": [
+        "packet switching",
+        "packets",
+        "message",
+        "shared resources"
+      ],
+      "order": 47
+    },
+    {
+      "id": "con_doc_1790181572484_eygm33_32",
+      "title": "Datagram Packet Switching",
+      "description": "Datagram switching is connectionless: no route is established before transmission, and individual packets may be handled independently.",
+      "parentId": "sec_doc_1790181572484_eygm33_4_12",
+      "level": "concept",
+      "documentId": "doc_1790181572484_eygm33",
+      "documentName": "4. Physical Layer_.pdf",
+      "pageStart": 87,
+      "pageEnd": 87,
+      "chunkIds": [
+        "doc_1790181572484_eygm33_79"
+      ],
+      "keywords": [
+        "datagram",
+        "connectionless",
+        "packet route",
+        "packet switching"
+      ],
+      "order": 48
+    },
+    {
+      "id": "con_doc_1790181572484_eygm33_33",
+      "title": "Virtual Circuit Packet Switching",
+      "description": "Virtual-circuit switching establishes a planned route before packets are sent, providing a connection-oriented path for the packet sequence.",
+      "parentId": "sec_doc_1790181572484_eygm33_4_12",
+      "level": "concept",
+      "documentId": "doc_1790181572484_eygm33",
+      "documentName": "4. Physical Layer_.pdf",
+      "pageStart": 88,
+      "pageEnd": 88,
+      "chunkIds": [
+        "doc_1790181572484_eygm33_80"
+      ],
+      "keywords": [
+        "virtual circuit",
+        "connection-oriented",
+        "preplanned route",
+        "packet sequence"
+      ],
+      "order": 49
+    },
+    {
+      "id": "con_doc_1790181572484_eygm33_34",
+      "title": "Applied Comparison of Switching Methods",
+      "description": "Review questions evaluate virtual-circuit behavior, the inefficiency of idle dedicated circuits, and the greater resource efficiency generally provided by packet switching.",
+      "parentId": "sec_doc_1790181572484_eygm33_4_12",
+      "level": "concept",
+      "documentId": "doc_1790181572484_eygm33",
+      "documentName": "4. Physical Layer_.pdf",
+      "pageStart": 91,
+      "pageEnd": 96,
+      "chunkIds": [
+        "doc_1790181572484_eygm33_81",
+        "doc_1790181572484_eygm33_82",
+        "doc_1790181572484_eygm33_83",
+        "doc_1790181572484_eygm33_84",
+        "doc_1790181572484_eygm33_85",
+        "doc_1790181572484_eygm33_86"
+      ],
+      "keywords": [
+        "virtual circuit",
+        "circuit switching",
+        "packet switching",
+        "idle capacity",
+        "efficiency"
+      ],
+      "order": 50
+    },
+    {
+      "id": "sec_doc_1790181572484_eygm33_4_12",
+      "title": "Circuit and Packet Switching",
+      "description": "Explains the operation, organization, and resource-use characteristics of circuit-switched and packet-switched communication.",
+      "parentId": "unit_doc_1790181572484_eygm33_4",
+      "level": "section",
+      "documentId": "doc_1790181572484_eygm33",
+      "documentName": "4. Physical Layer_.pdf",
+      "chunkIds": [
+        "doc_1790181572484_eygm33_76",
+        "doc_1790181572484_eygm33_77",
+        "doc_1790181572484_eygm33_78",
+        "doc_1790181572484_eygm33_79",
+        "doc_1790181572484_eygm33_80",
+        "doc_1790181572484_eygm33_81",
+        "doc_1790181572484_eygm33_82",
+        "doc_1790181572484_eygm33_83",
+        "doc_1790181572484_eygm33_84",
+        "doc_1790181572484_eygm33_85",
+        "doc_1790181572484_eygm33_86"
+      ],
+      "keywords": [],
+      "order": 45,
+      "children": [
+        {
+          "id": "con_doc_1790181572484_eygm33_30",
+          "title": "Circuit Switching",
+          "description": "Circuit switching establishes a dedicated communication path through circuit establishment, data transfer, and circuit disconnection phases. It can be inefficient because channel capacity remains dedicated for the connection's duration.",
+          "parentId": "sec_doc_1790181572484_eygm33_4_12",
+          "level": "concept",
+          "documentId": "doc_1790181572484_eygm33",
+          "documentName": "4. Physical Layer_.pdf",
+          "pageStart": 84,
+          "pageEnd": 85,
+          "chunkIds": [
+            "doc_1790181572484_eygm33_76",
+            "doc_1790181572484_eygm33_77"
+          ],
+          "keywords": [
+            "circuit switching",
+            "circuit establishment",
+            "data transfer",
+            "disconnection",
+            "dedicated capacity"
+          ],
+          "order": 46
+        },
+        {
+          "id": "con_doc_1790181572484_eygm33_31",
+          "title": "Packet Switching",
+          "description": "Packet switching divides a long message into packets and sends the packets through the network individually, allowing network resources to be shared.",
+          "parentId": "sec_doc_1790181572484_eygm33_4_12",
+          "level": "concept",
+          "documentId": "doc_1790181572484_eygm33",
+          "documentName": "4. Physical Layer_.pdf",
+          "pageStart": 86,
+          "pageEnd": 86,
+          "chunkIds": [
+            "doc_1790181572484_eygm33_78"
+          ],
+          "keywords": [
+            "packet switching",
+            "packets",
+            "message",
+            "shared resources"
+          ],
+          "order": 47
+        },
+        {
+          "id": "con_doc_1790181572484_eygm33_32",
+          "title": "Datagram Packet Switching",
+          "description": "Datagram switching is connectionless: no route is established before transmission, and individual packets may be handled independently.",
+          "parentId": "sec_doc_1790181572484_eygm33_4_12",
+          "level": "concept",
+          "documentId": "doc_1790181572484_eygm33",
+          "documentName": "4. Physical Layer_.pdf",
+          "pageStart": 87,
+          "pageEnd": 87,
+          "chunkIds": [
+            "doc_1790181572484_eygm33_79"
+          ],
+          "keywords": [
+            "datagram",
+            "connectionless",
+            "packet route",
+            "packet switching"
+          ],
+          "order": 48
+        },
+        {
+          "id": "con_doc_1790181572484_eygm33_33",
+          "title": "Virtual Circuit Packet Switching",
+          "description": "Virtual-circuit switching establishes a planned route before packets are sent, providing a connection-oriented path for the packet sequence.",
+          "parentId": "sec_doc_1790181572484_eygm33_4_12",
+          "level": "concept",
+          "documentId": "doc_1790181572484_eygm33",
+          "documentName": "4. Physical Layer_.pdf",
+          "pageStart": 88,
+          "pageEnd": 88,
+          "chunkIds": [
+            "doc_1790181572484_eygm33_80"
+          ],
+          "keywords": [
+            "virtual circuit",
+            "connection-oriented",
+            "preplanned route",
+            "packet sequence"
+          ],
+          "order": 49
+        },
+        {
+          "id": "con_doc_1790181572484_eygm33_34",
+          "title": "Applied Comparison of Switching Methods",
+          "description": "Review questions evaluate virtual-circuit behavior, the inefficiency of idle dedicated circuits, and the greater resource efficiency generally provided by packet switching.",
+          "parentId": "sec_doc_1790181572484_eygm33_4_12",
+          "level": "concept",
+          "documentId": "doc_1790181572484_eygm33",
+          "documentName": "4. Physical Layer_.pdf",
+          "pageStart": 91,
+          "pageEnd": 96,
+          "chunkIds": [
+            "doc_1790181572484_eygm33_81",
+            "doc_1790181572484_eygm33_82",
+            "doc_1790181572484_eygm33_83",
+            "doc_1790181572484_eygm33_84",
+            "doc_1790181572484_eygm33_85",
+            "doc_1790181572484_eygm33_86"
+          ],
+          "keywords": [
+            "virtual circuit",
+            "circuit switching",
+            "packet switching",
+            "idle capacity",
+            "efficiency"
+          ],
+          "order": 50
+        }
+      ],
+      "pageStart": 84,
+      "pageEnd": 96
+    },
+    {
+      "id": "unit_doc_1790181572484_eygm33_4",
+      "title": "Switching Networks",
+      "description": "Introduces communication networks and compares circuit switching with datagram and virtual-circuit forms of packet switching.",
+      "level": "unit",
+      "documentId": "doc_1790181572484_eygm33",
+      "documentName": "4. Physical Layer_.pdf",
+      "chunkIds": [
+        "doc_1790181572484_eygm33_73",
+        "doc_1790181572484_eygm33_74",
+        "doc_1790181572484_eygm33_75",
+        "doc_1790181572484_eygm33_76",
+        "doc_1790181572484_eygm33_77",
+        "doc_1790181572484_eygm33_78",
+        "doc_1790181572484_eygm33_79",
+        "doc_1790181572484_eygm33_80",
+        "doc_1790181572484_eygm33_81",
+        "doc_1790181572484_eygm33_82",
+        "doc_1790181572484_eygm33_83",
+        "doc_1790181572484_eygm33_84",
+        "doc_1790181572484_eygm33_85",
+        "doc_1790181572484_eygm33_86"
+      ],
+      "keywords": [],
+      "order": 42,
+      "children": [
+        {
+          "id": "sec_doc_1790181572484_eygm33_4_11",
+          "title": "Switching Network Foundations",
+          "description": "Defines a switching network and identifies the principal methods used to move data through interconnected nodes.",
+          "parentId": "unit_doc_1790181572484_eygm33_4",
+          "level": "section",
+          "documentId": "doc_1790181572484_eygm33",
+          "documentName": "4. Physical Layer_.pdf",
+          "chunkIds": [
+            "doc_1790181572484_eygm33_73",
+            "doc_1790181572484_eygm33_74",
+            "doc_1790181572484_eygm33_75"
+          ],
+          "keywords": [],
+          "order": 43,
+          "children": [
+            {
+              "id": "con_doc_1790181572484_eygm33_29",
+              "title": "Switching Networks and Switching Methods",
+              "description": "A switching network is a collection of interconnected nodes and connections used for communication. Data can be switched using circuit switching or packet switching, with packet switching divided into datagram and virtual-circuit approaches.",
+              "parentId": "sec_doc_1790181572484_eygm33_4_11",
+              "level": "concept",
+              "documentId": "doc_1790181572484_eygm33",
+              "documentName": "4. Physical Layer_.pdf",
+              "pageStart": 81,
+              "pageEnd": 83,
+              "chunkIds": [
+                "doc_1790181572484_eygm33_73",
+                "doc_1790181572484_eygm33_74",
+                "doc_1790181572484_eygm33_75"
+              ],
+              "keywords": [
+                "switching network",
+                "nodes",
+                "circuit switching",
+                "packet switching",
+                "datagram",
+                "virtual circuit"
+              ],
+              "order": 44
+            }
+          ],
+          "pageStart": 81,
+          "pageEnd": 83
+        },
+        {
+          "id": "sec_doc_1790181572484_eygm33_4_12",
+          "title": "Circuit and Packet Switching",
+          "description": "Explains the operation, organization, and resource-use characteristics of circuit-switched and packet-switched communication.",
+          "parentId": "unit_doc_1790181572484_eygm33_4",
+          "level": "section",
+          "documentId": "doc_1790181572484_eygm33",
+          "documentName": "4. Physical Layer_.pdf",
+          "chunkIds": [
+            "doc_1790181572484_eygm33_76",
+            "doc_1790181572484_eygm33_77",
+            "doc_1790181572484_eygm33_78",
+            "doc_1790181572484_eygm33_79",
+            "doc_1790181572484_eygm33_80",
+            "doc_1790181572484_eygm33_81",
+            "doc_1790181572484_eygm33_82",
+            "doc_1790181572484_eygm33_83",
+            "doc_1790181572484_eygm33_84",
+            "doc_1790181572484_eygm33_85",
+            "doc_1790181572484_eygm33_86"
+          ],
+          "keywords": [],
+          "order": 45,
+          "children": [
+            {
+              "id": "con_doc_1790181572484_eygm33_30",
+              "title": "Circuit Switching",
+              "description": "Circuit switching establishes a dedicated communication path through circuit establishment, data transfer, and circuit disconnection phases. It can be inefficient because channel capacity remains dedicated for the connection's duration.",
+              "parentId": "sec_doc_1790181572484_eygm33_4_12",
+              "level": "concept",
+              "documentId": "doc_1790181572484_eygm33",
+              "documentName": "4. Physical Layer_.pdf",
+              "pageStart": 84,
+              "pageEnd": 85,
+              "chunkIds": [
+                "doc_1790181572484_eygm33_76",
+                "doc_1790181572484_eygm33_77"
+              ],
+              "keywords": [
+                "circuit switching",
+                "circuit establishment",
+                "data transfer",
+                "disconnection",
+                "dedicated capacity"
+              ],
+              "order": 46
+            },
+            {
+              "id": "con_doc_1790181572484_eygm33_31",
+              "title": "Packet Switching",
+              "description": "Packet switching divides a long message into packets and sends the packets through the network individually, allowing network resources to be shared.",
+              "parentId": "sec_doc_1790181572484_eygm33_4_12",
+              "level": "concept",
+              "documentId": "doc_1790181572484_eygm33",
+              "documentName": "4. Physical Layer_.pdf",
+              "pageStart": 86,
+              "pageEnd": 86,
+              "chunkIds": [
+                "doc_1790181572484_eygm33_78"
+              ],
+              "keywords": [
+                "packet switching",
+                "packets",
+                "message",
+                "shared resources"
+              ],
+              "order": 47
+            },
+            {
+              "id": "con_doc_1790181572484_eygm33_32",
+              "title": "Datagram Packet Switching",
+              "description": "Datagram switching is connectionless: no route is established before transmission, and individual packets may be handled independently.",
+              "parentId": "sec_doc_1790181572484_eygm33_4_12",
+              "level": "concept",
+              "documentId": "doc_1790181572484_eygm33",
+              "documentName": "4. Physical Layer_.pdf",
+              "pageStart": 87,
+              "pageEnd": 87,
+              "chunkIds": [
+                "doc_1790181572484_eygm33_79"
+              ],
+              "keywords": [
+                "datagram",
+                "connectionless",
+                "packet route",
+                "packet switching"
+              ],
+              "order": 48
+            },
+            {
+              "id": "con_doc_1790181572484_eygm33_33",
+              "title": "Virtual Circuit Packet Switching",
+              "description": "Virtual-circuit switching establishes a planned route before packets are sent, providing a connection-oriented path for the packet sequence.",
+              "parentId": "sec_doc_1790181572484_eygm33_4_12",
+              "level": "concept",
+              "documentId": "doc_1790181572484_eygm33",
+              "documentName": "4. Physical Layer_.pdf",
+              "pageStart": 88,
+              "pageEnd": 88,
+              "chunkIds": [
+                "doc_1790181572484_eygm33_80"
+              ],
+              "keywords": [
+                "virtual circuit",
+                "connection-oriented",
+                "preplanned route",
+                "packet sequence"
+              ],
+              "order": 49
+            },
+            {
+              "id": "con_doc_1790181572484_eygm33_34",
+              "title": "Applied Comparison of Switching Methods",
+              "description": "Review questions evaluate virtual-circuit behavior, the inefficiency of idle dedicated circuits, and the greater resource efficiency generally provided by packet switching.",
+              "parentId": "sec_doc_1790181572484_eygm33_4_12",
+              "level": "concept",
+              "documentId": "doc_1790181572484_eygm33",
+              "documentName": "4. Physical Layer_.pdf",
+              "pageStart": 91,
+              "pageEnd": 96,
+              "chunkIds": [
+                "doc_1790181572484_eygm33_81",
+                "doc_1790181572484_eygm33_82",
+                "doc_1790181572484_eygm33_83",
+                "doc_1790181572484_eygm33_84",
+                "doc_1790181572484_eygm33_85",
+                "doc_1790181572484_eygm33_86"
+              ],
+              "keywords": [
+                "virtual circuit",
+                "circuit switching",
+                "packet switching",
+                "idle capacity",
+                "efficiency"
+              ],
+              "order": 50
+            }
+          ],
+          "pageStart": 84,
+          "pageEnd": 96
+        }
+      ],
+      "pageStart": 81,
+      "pageEnd": 96
+    }
+  ],
+  "tree": [
+    {
+      "id": "unit_doc_1790181572484_eygm33_1",
+      "title": "Physical Layer Fundamentals and Data Encoding",
+      "description": "Introduces the role of the physical layer, analog and digital signals, transmission metrics, digital encoding techniques, and asynchronous and synchronous transmission.",
+      "level": "unit",
+      "documentId": "doc_1790181572484_eygm33",
+      "documentName": "4. Physical Layer_.pdf",
+      "chunkIds": [
+        "doc_1790181572484_eygm33_1",
+        "doc_1790181572484_eygm33_2",
+        "doc_1790181572484_eygm33_3",
+        "doc_1790181572484_eygm33_4",
+        "doc_1790181572484_eygm33_5",
+        "doc_1790181572484_eygm33_6",
+        "doc_1790181572484_eygm33_7",
+        "doc_1790181572484_eygm33_8",
+        "doc_1790181572484_eygm33_9",
+        "doc_1790181572484_eygm33_10",
+        "doc_1790181572484_eygm33_11",
+        "doc_1790181572484_eygm33_12",
+        "doc_1790181572484_eygm33_13",
+        "doc_1790181572484_eygm33_14",
+        "doc_1790181572484_eygm33_15",
+        "doc_1790181572484_eygm33_16",
+        "doc_1790181572484_eygm33_17",
+        "doc_1790181572484_eygm33_18",
+        "doc_1790181572484_eygm33_19",
+        "doc_1790181572484_eygm33_20"
+      ],
+      "keywords": [],
+      "order": 1,
+      "children": [
+        {
+          "id": "sec_doc_1790181572484_eygm33_1_1",
+          "title": "Physical Layer and Signal Fundamentals",
+          "description": "Explains the physical layer's role in carrying bits and introduces the basic forms and measurements of transmitted signals.",
+          "parentId": "unit_doc_1790181572484_eygm33_1",
+          "level": "section",
+          "documentId": "doc_1790181572484_eygm33",
+          "documentName": "4. Physical Layer_.pdf",
+          "chunkIds": [
+            "doc_1790181572484_eygm33_1",
+            "doc_1790181572484_eygm33_2",
+            "doc_1790181572484_eygm33_3",
+            "doc_1790181572484_eygm33_4",
+            "doc_1790181572484_eygm33_5",
+            "doc_1790181572484_eygm33_6",
+            "doc_1790181572484_eygm33_7",
+            "doc_1790181572484_eygm33_8",
+            "doc_1790181572484_eygm33_9"
+          ],
+          "keywords": [],
+          "order": 2,
+          "children": [
+            {
+              "id": "con_doc_1790181572484_eygm33_1",
+              "title": "Physical Layer Function",
+              "description": "The physical layer is the first and lowest layer of the OSI model and is responsible for carrying bits across a physical transmission medium.",
+              "parentId": "sec_doc_1790181572484_eygm33_1_1",
+              "level": "concept",
+              "documentId": "doc_1790181572484_eygm33",
+              "documentName": "4. Physical Layer_.pdf",
+              "pageStart": 1,
+              "pageEnd": 3,
+              "chunkIds": [
+                "doc_1790181572484_eygm33_1",
+                "doc_1790181572484_eygm33_2",
+                "doc_1790181572484_eygm33_3"
+              ],
+              "keywords": [
+                "physical layer",
+                "osi model",
+                "bits",
+                "physical medium"
+              ],
+              "order": 3
+            },
+            {
+              "id": "con_doc_1790181572484_eygm33_2",
+              "title": "Analog and Digital Signals",
+              "description": "An analog signal varies continuously and smoothly over time, whereas a digital signal uses discrete values, commonly represented as LOW and HIGH or 0 and 1.",
+              "parentId": "sec_doc_1790181572484_eygm33_1_1",
+              "level": "concept",
+              "documentId": "doc_1790181572484_eygm33",
+              "documentName": "4. Physical Layer_.pdf",
+              "pageStart": 4,
+              "pageEnd": 6,
+              "chunkIds": [
+                "doc_1790181572484_eygm33_4",
+                "doc_1790181572484_eygm33_5",
+                "doc_1790181572484_eygm33_6"
+              ],
+              "keywords": [
+                "analog signal",
+                "digital signal",
+                "continuous",
+                "discrete values"
+              ],
+              "order": 4
+            },
+            {
+              "id": "con_doc_1790181572484_eygm33_3",
+              "title": "Bit Rate and Bit Length",
+              "description": "Bit rate is the number of bits transmitted per second, while bit length is the physical distance occupied by one bit in a medium. Higher bit rates pack more bits into a given transmission distance.",
+              "parentId": "sec_doc_1790181572484_eygm33_1_1",
+              "level": "concept",
+              "documentId": "doc_1790181572484_eygm33",
+              "documentName": "4. Physical Layer_.pdf",
+              "pageStart": 7,
+              "pageEnd": 9,
+              "chunkIds": [
+                "doc_1790181572484_eygm33_7",
+                "doc_1790181572484_eygm33_8",
+                "doc_1790181572484_eygm33_9"
+              ],
+              "keywords": [
+                "bit rate",
+                "bit length",
+                "bps",
+                "transmission distance"
+              ],
+              "order": 5
+            }
+          ],
+          "pageStart": 1,
+          "pageEnd": 9
+        },
+        {
+          "id": "sec_doc_1790181572484_eygm33_1_2",
+          "title": "Digital Data Encoding Techniques",
+          "description": "Examines how binary data is converted into physical signals and the synchronization properties of major line-encoding methods.",
+          "parentId": "unit_doc_1790181572484_eygm33_1",
+          "level": "section",
+          "documentId": "doc_1790181572484_eygm33",
+          "documentName": "4. Physical Layer_.pdf",
+          "chunkIds": [
+            "doc_1790181572484_eygm33_10",
+            "doc_1790181572484_eygm33_11",
+            "doc_1790181572484_eygm33_12",
+            "doc_1790181572484_eygm33_13",
+            "doc_1790181572484_eygm33_14",
+            "doc_1790181572484_eygm33_15",
+            "doc_1790181572484_eygm33_16",
+            "doc_1790181572484_eygm33_17"
+          ],
+          "keywords": [],
+          "order": 6,
+          "children": [
+            {
+              "id": "con_doc_1790181572484_eygm33_4",
+              "title": "Digital Modulation and Encoding Assumptions",
+              "description": "Digital modulation converts bits into signals and received signals back into bits. The introductory model assumes discrete high and low signals for encoding binary 1 and 0.",
+              "parentId": "sec_doc_1790181572484_eygm33_1_2",
+              "level": "concept",
+              "documentId": "doc_1790181572484_eygm33",
+              "documentName": "4. Physical Layer_.pdf",
+              "pageStart": 10,
+              "pageEnd": 11,
+              "chunkIds": [
+                "doc_1790181572484_eygm33_10",
+                "doc_1790181572484_eygm33_11"
+              ],
+              "keywords": [
+                "digital modulation",
+                "data encoding",
+                "high signal",
+                "low signal"
+              ],
+              "order": 7
+            },
+            {
+              "id": "con_doc_1790181572484_eygm33_5",
+              "title": "Non-Return to Zero and Desynchronization",
+              "description": "Non-Return to Zero represents 1 with a high signal and 0 with a low signal. Long sequences without transitions make receiver clock recovery difficult and can cause desynchronization.",
+              "parentId": "sec_doc_1790181572484_eygm33_1_2",
+              "level": "concept",
+              "documentId": "doc_1790181572484_eygm33",
+              "documentName": "4. Physical Layer_.pdf",
+              "pageStart": 12,
+              "pageEnd": 13,
+              "chunkIds": [
+                "doc_1790181572484_eygm33_12",
+                "doc_1790181572484_eygm33_13"
+              ],
+              "keywords": [
+                "nrz",
+                "non-return to zero",
+                "desynchronization",
+                "clock recovery"
+              ],
+              "order": 8
+            },
+            {
+              "id": "con_doc_1790181572484_eygm33_6",
+              "title": "Non-Return to Zero Inverted",
+              "description": "NRZI represents a binary 1 by making a signal transition and a binary 0 by leaving the signal unchanged.",
+              "parentId": "sec_doc_1790181572484_eygm33_1_2",
+              "level": "concept",
+              "documentId": "doc_1790181572484_eygm33",
+              "documentName": "4. Physical Layer_.pdf",
+              "pageStart": 14,
+              "pageEnd": 14,
+              "chunkIds": [
+                "doc_1790181572484_eygm33_14"
+              ],
+              "keywords": [
+                "nrzi",
+                "signal transition",
+                "binary encoding",
+                "line coding"
+              ],
+              "order": 9
+            },
+            {
+              "id": "con_doc_1790181572484_eygm33_7",
+              "title": "Manchester Encoding",
+              "description": "Manchester encoding uses a high-to-low transition for 1 and a low-to-high transition for 0, providing regular transitions that support clock synchronization.",
+              "parentId": "sec_doc_1790181572484_eygm33_1_2",
+              "level": "concept",
+              "documentId": "doc_1790181572484_eygm33",
+              "documentName": "4. Physical Layer_.pdf",
+              "pageStart": 15,
+              "pageEnd": 15,
+              "chunkIds": [
+                "doc_1790181572484_eygm33_15"
+              ],
+              "keywords": [
+                "manchester",
+                "mid-bit transition",
+                "clock synchronization",
+                "line encoding"
+              ],
+              "order": 10
+            },
+            {
+              "id": "con_doc_1790181572484_eygm33_8",
+              "title": "4-bit/5-bit Encoding",
+              "description": "The 4-bit/5-bit technique maps four-bit data groups into five-bit codes to prevent problematic sequences of zeros when used with NRZI, including in 100 Mbps Ethernet.",
+              "parentId": "sec_doc_1790181572484_eygm33_1_2",
+              "level": "concept",
+              "documentId": "doc_1790181572484_eygm33",
+              "documentName": "4. Physical Layer_.pdf",
+              "pageStart": 16,
+              "pageEnd": 16,
+              "chunkIds": [
+                "doc_1790181572484_eygm33_16"
+              ],
+              "keywords": [
+                "4-bit/5-bit",
+                "4b/5b",
+                "nrzi",
+                "100 mbps ethernet"
+              ],
+              "order": 11
+            },
+            {
+              "id": "con_doc_1790181572484_eygm33_9",
+              "title": "Differential Encoding Strategies",
+              "description": "Differential encoding represents data through changes in signal state rather than relying only on absolute voltage levels.",
+              "parentId": "sec_doc_1790181572484_eygm33_1_2",
+              "level": "concept",
+              "documentId": "doc_1790181572484_eygm33",
+              "documentName": "4. Physical Layer_.pdf",
+              "pageStart": 17,
+              "pageEnd": 17,
+              "chunkIds": [
+                "doc_1790181572484_eygm33_17"
+              ],
+              "keywords": [
+                "differential encoding",
+                "signal change",
+                "transition",
+                "encoding strategy"
+              ],
+              "order": 12
+            }
+          ],
+          "pageStart": 10,
+          "pageEnd": 17
+        },
+        {
+          "id": "sec_doc_1790181572484_eygm33_1_3",
+          "title": "Asynchronous and Synchronous Transmission",
+          "description": "Compares character-oriented asynchronous transmission with block- or frame-oriented synchronous transmission.",
+          "parentId": "unit_doc_1790181572484_eygm33_1",
+          "level": "section",
+          "documentId": "doc_1790181572484_eygm33",
+          "documentName": "4. Physical Layer_.pdf",
+          "chunkIds": [
+            "doc_1790181572484_eygm33_18",
+            "doc_1790181572484_eygm33_19",
+            "doc_1790181572484_eygm33_20"
+          ],
+          "keywords": [],
+          "order": 13,
+          "children": [
+            {
+              "id": "con_doc_1790181572484_eygm33_10",
+              "title": "Asynchronous Transmission",
+              "description": "Asynchronous transmission sends data as individual bytes or characters, with timing established separately for each transmitted unit.",
+              "parentId": "sec_doc_1790181572484_eygm33_1_3",
+              "level": "concept",
+              "documentId": "doc_1790181572484_eygm33",
+              "documentName": "4. Physical Layer_.pdf",
+              "pageStart": 18,
+              "pageEnd": 19,
+              "chunkIds": [
+                "doc_1790181572484_eygm33_18",
+                "doc_1790181572484_eygm33_19"
+              ],
+              "keywords": [
+                "asynchronous transmission",
+                "byte",
+                "character",
+                "timing"
+              ],
+              "order": 14
+            },
+            {
+              "id": "con_doc_1790181572484_eygm33_11",
+              "title": "Synchronous Transmission",
+              "description": "Synchronous transmission sends data in blocks or frames using coordinated timing between the sender and receiver.",
+              "parentId": "sec_doc_1790181572484_eygm33_1_3",
+              "level": "concept",
+              "documentId": "doc_1790181572484_eygm33",
+              "documentName": "4. Physical Layer_.pdf",
+              "pageStart": 21,
+              "pageEnd": 21,
+              "chunkIds": [
+                "doc_1790181572484_eygm33_20"
+              ],
+              "keywords": [
+                "synchronous transmission",
+                "blocks",
+                "frames",
+                "synchronization"
+              ],
+              "order": 15
+            }
+          ],
+          "pageStart": 18,
+          "pageEnd": 21
+        }
+      ],
+      "pageStart": 1,
+      "pageEnd": 21
+    },
+    {
+      "id": "unit_doc_1790181572484_eygm33_2",
+      "title": "Transmission Impairments and Channel Capacity",
+      "description": "Explains the principal causes of signal degradation and the Nyquist and Shannon limits on data transmission.",
+      "level": "unit",
+      "documentId": "doc_1790181572484_eygm33",
+      "documentName": "4. Physical Layer_.pdf",
+      "chunkIds": [
+        "doc_1790181572484_eygm33_21",
+        "doc_1790181572484_eygm33_22",
+        "doc_1790181572484_eygm33_23",
+        "doc_1790181572484_eygm33_24",
+        "doc_1790181572484_eygm33_25",
+        "doc_1790181572484_eygm33_26",
+        "doc_1790181572484_eygm33_27",
+        "doc_1790181572484_eygm33_28",
+        "doc_1790181572484_eygm33_29",
+        "doc_1790181572484_eygm33_30",
+        "doc_1790181572484_eygm33_31",
+        "doc_1790181572484_eygm33_32",
+        "doc_1790181572484_eygm33_33",
+        "doc_1790181572484_eygm33_34",
+        "doc_1790181572484_eygm33_35",
+        "doc_1790181572484_eygm33_36",
+        "doc_1790181572484_eygm33_37",
+        "doc_1790181572484_eygm33_38",
+        "doc_1790181572484_eygm33_39",
+        "doc_1790181572484_eygm33_40",
+        "doc_1790181572484_eygm33_41",
+        "doc_1790181572484_eygm33_42"
+      ],
+      "keywords": [],
+      "order": 16,
+      "children": [
+        {
+          "id": "sec_doc_1790181572484_eygm33_2_4",
+          "title": "Transmission Impairments",
+          "description": "Describes attenuation, distortion, and noise as factors that reduce the quality of a transmitted signal.",
+          "parentId": "unit_doc_1790181572484_eygm33_2",
+          "level": "section",
+          "documentId": "doc_1790181572484_eygm33",
+          "documentName": "4. Physical Layer_.pdf",
+          "chunkIds": [
+            "doc_1790181572484_eygm33_21",
+            "doc_1790181572484_eygm33_22",
+            "doc_1790181572484_eygm33_23",
+            "doc_1790181572484_eygm33_24"
+          ],
+          "keywords": [],
+          "order": 17,
+          "children": [
+            {
+              "id": "con_doc_1790181572484_eygm33_12",
+              "title": "Transmission Impairment Overview",
+              "description": "Transmission impairments are effects that degrade signals as they pass through a medium, principally attenuation, distortion, and noise.",
+              "parentId": "sec_doc_1790181572484_eygm33_2_4",
+              "level": "concept",
+              "documentId": "doc_1790181572484_eygm33",
+              "documentName": "4. Physical Layer_.pdf",
+              "pageStart": 23,
+              "pageEnd": 23,
+              "chunkIds": [
+                "doc_1790181572484_eygm33_21"
+              ],
+              "keywords": [
+                "transmission impairment",
+                "attenuation",
+                "distortion",
+                "noise"
+              ],
+              "order": 18
+            },
+            {
+              "id": "con_doc_1790181572484_eygm33_13",
+              "title": "Attenuation",
+              "description": "Attenuation is the loss of signal energy as a signal travels through a transmission medium, resulting in a weaker received signal.",
+              "parentId": "sec_doc_1790181572484_eygm33_2_4",
+              "level": "concept",
+              "documentId": "doc_1790181572484_eygm33",
+              "documentName": "4. Physical Layer_.pdf",
+              "pageStart": 24,
+              "pageEnd": 24,
+              "chunkIds": [
+                "doc_1790181572484_eygm33_22"
+              ],
+              "keywords": [
+                "attenuation",
+                "energy loss",
+                "weaker signal",
+                "transmission medium"
+              ],
+              "order": 19
+            },
+            {
+              "id": "con_doc_1790181572484_eygm33_14",
+              "title": "Distortion",
+              "description": "Distortion occurs when a signal changes its form or shape, particularly when components of a composite signal propagate differently.",
+              "parentId": "sec_doc_1790181572484_eygm33_2_4",
+              "level": "concept",
+              "documentId": "doc_1790181572484_eygm33",
+              "documentName": "4. Physical Layer_.pdf",
+              "pageStart": 26,
+              "pageEnd": 26,
+              "chunkIds": [
+                "doc_1790181572484_eygm33_23"
+              ],
+              "keywords": [
+                "distortion",
+                "signal shape",
+                "composite signal",
+                "propagation"
+              ],
+              "order": 20
+            },
+            {
+              "id": "con_doc_1790181572484_eygm33_15",
+              "title": "Noise",
+              "description": "Noise is unwanted energy that interferes with a signal during transmission. The material introduces multiple noise types, including thermal noise caused by random electron motion.",
+              "parentId": "sec_doc_1790181572484_eygm33_2_4",
+              "level": "concept",
+              "documentId": "doc_1790181572484_eygm33",
+              "documentName": "4. Physical Layer_.pdf",
+              "pageStart": 28,
+              "pageEnd": 28,
+              "chunkIds": [
+                "doc_1790181572484_eygm33_24"
+              ],
+              "keywords": [
+                "noise",
+                "thermal noise",
+                "interference",
+                "electrons"
+              ],
+              "order": 21
+            }
+          ],
+          "pageStart": 23,
+          "pageEnd": 28
+        },
+        {
+          "id": "sec_doc_1790181572484_eygm33_2_5",
+          "title": "Applied Signal Analysis",
+          "description": "Uses practical questions to distinguish analog and digital signals and clarify the quantities measured by hertz and bits per second.",
+          "parentId": "unit_doc_1790181572484_eygm33_2",
+          "level": "section",
+          "documentId": "doc_1790181572484_eygm33",
+          "documentName": "4. Physical Layer_.pdf",
+          "chunkIds": [
+            "doc_1790181572484_eygm33_25",
+            "doc_1790181572484_eygm33_26",
+            "doc_1790181572484_eygm33_27",
+            "doc_1790181572484_eygm33_28",
+            "doc_1790181572484_eygm33_29",
+            "doc_1790181572484_eygm33_30",
+            "doc_1790181572484_eygm33_31",
+            "doc_1790181572484_eygm33_32",
+            "doc_1790181572484_eygm33_33",
+            "doc_1790181572484_eygm33_34",
+            "doc_1790181572484_eygm33_35",
+            "doc_1790181572484_eygm33_36",
+            "doc_1790181572484_eygm33_37",
+            "doc_1790181572484_eygm33_38",
+            "doc_1790181572484_eygm33_39",
+            "doc_1790181572484_eygm33_40"
+          ],
+          "keywords": [],
+          "order": 22,
+          "children": [
+            {
+              "id": "con_doc_1790181572484_eygm33_16",
+              "title": "Analog and Digital Signal Applications",
+              "description": "Applied examples examine continuous temperature measurements, analog and IP cameras, Internet data carried over radio waves, digitally transmitted information, and analog radio systems.",
+              "parentId": "sec_doc_1790181572484_eygm33_2_5",
+              "level": "concept",
+              "documentId": "doc_1790181572484_eygm33",
+              "documentName": "4. Physical Layer_.pdf",
+              "pageStart": 31,
+              "pageEnd": 44,
+              "chunkIds": [
+                "doc_1790181572484_eygm33_25",
+                "doc_1790181572484_eygm33_26",
+                "doc_1790181572484_eygm33_27",
+                "doc_1790181572484_eygm33_28",
+                "doc_1790181572484_eygm33_29",
+                "doc_1790181572484_eygm33_30",
+                "doc_1790181572484_eygm33_31",
+                "doc_1790181572484_eygm33_32",
+                "doc_1790181572484_eygm33_33",
+                "doc_1790181572484_eygm33_34",
+                "doc_1790181572484_eygm33_35",
+                "doc_1790181572484_eygm33_36",
+                "doc_1790181572484_eygm33_37",
+                "doc_1790181572484_eygm33_38"
+              ],
+              "keywords": [
+                "analog data",
+                "digital data",
+                "ip camera",
+                "wi-fi",
+                "fm radio"
+              ],
+              "order": 23
+            },
+            {
+              "id": "con_doc_1790181572484_eygm33_17",
+              "title": "Frequency and Bit Rate Measurement",
+              "description": "Hertz measures frequency or cycles per second, while bits per second measures the rate at which binary data is transmitted.",
+              "parentId": "sec_doc_1790181572484_eygm33_2_5",
+              "level": "concept",
+              "documentId": "doc_1790181572484_eygm33",
+              "documentName": "4. Physical Layer_.pdf",
+              "pageStart": 45,
+              "pageEnd": 46,
+              "chunkIds": [
+                "doc_1790181572484_eygm33_39",
+                "doc_1790181572484_eygm33_40"
+              ],
+              "keywords": [
+                "hertz",
+                "hz",
+                "bits per second",
+                "bps",
+                "frequency"
+              ],
+              "order": 24
+            }
+          ],
+          "pageStart": 31,
+          "pageEnd": 46
+        },
+        {
+          "id": "sec_doc_1790181572484_eygm33_2_6",
+          "title": "Maximum Bit Rate and Channel Capacity",
+          "description": "Introduces formulas for determining theoretical transmission limits in noiseless and noisy channels.",
+          "parentId": "unit_doc_1790181572484_eygm33_2",
+          "level": "section",
+          "documentId": "doc_1790181572484_eygm33",
+          "documentName": "4. Physical Layer_.pdf",
+          "chunkIds": [
+            "doc_1790181572484_eygm33_41",
+            "doc_1790181572484_eygm33_42"
+          ],
+          "keywords": [],
+          "order": 25,
+          "children": [
+            {
+              "id": "con_doc_1790181572484_eygm33_18",
+              "title": "Nyquist Formula",
+              "description": "The Nyquist formula determines the maximum bit rate of a noiseless channel from its bandwidth and number of discrete signal levels: Maximum Bit Rate = 2B log2 L.",
+              "parentId": "sec_doc_1790181572484_eygm33_2_6",
+              "level": "concept",
+              "documentId": "doc_1790181572484_eygm33",
+              "documentName": "4. Physical Layer_.pdf",
+              "pageStart": 47,
+              "pageEnd": 47,
+              "chunkIds": [
+                "doc_1790181572484_eygm33_41"
+              ],
+              "keywords": [
+                "nyquist formula",
+                "maximum bit rate",
+                "bandwidth",
+                "signal levels"
+              ],
+              "order": 26
+            },
+            {
+              "id": "con_doc_1790181572484_eygm33_19",
+              "title": "Shannon Formula",
+              "description": "The Shannon formula determines channel capacity in the presence of noise using bandwidth and signal-to-noise ratio: Channel Capacity = B log2(1 + SNR).",
+              "parentId": "sec_doc_1790181572484_eygm33_2_6",
+              "level": "concept",
+              "documentId": "doc_1790181572484_eygm33",
+              "documentName": "4. Physical Layer_.pdf",
+              "pageStart": 48,
+              "pageEnd": 48,
+              "chunkIds": [
+                "doc_1790181572484_eygm33_42"
+              ],
+              "keywords": [
+                "shannon formula",
+                "channel capacity",
+                "snr",
+                "bandwidth",
+                "noise"
+              ],
+              "order": 27
+            }
+          ],
+          "pageStart": 47,
+          "pageEnd": 48
+        }
+      ],
+      "pageStart": 23,
+      "pageEnd": 48
+    },
+    {
+      "id": "unit_doc_1790181572484_eygm33_3",
+      "title": "Transmission Media",
+      "description": "Classifies physical transmission media and examines guided cables, wireless media, propagation methods, and optical-fiber behavior.",
+      "level": "unit",
+      "documentId": "doc_1790181572484_eygm33",
+      "documentName": "4. Physical Layer_.pdf",
+      "chunkIds": [
+        "doc_1790181572484_eygm33_43",
+        "doc_1790181572484_eygm33_44",
+        "doc_1790181572484_eygm33_45",
+        "doc_1790181572484_eygm33_46",
+        "doc_1790181572484_eygm33_47",
+        "doc_1790181572484_eygm33_48",
+        "doc_1790181572484_eygm33_49",
+        "doc_1790181572484_eygm33_50",
+        "doc_1790181572484_eygm33_51",
+        "doc_1790181572484_eygm33_52",
+        "doc_1790181572484_eygm33_53",
+        "doc_1790181572484_eygm33_54",
+        "doc_1790181572484_eygm33_55",
+        "doc_1790181572484_eygm33_56",
+        "doc_1790181572484_eygm33_57",
+        "doc_1790181572484_eygm33_58",
+        "doc_1790181572484_eygm33_59",
+        "doc_1790181572484_eygm33_60",
+        "doc_1790181572484_eygm33_61",
+        "doc_1790181572484_eygm33_62",
+        "doc_1790181572484_eygm33_63",
+        "doc_1790181572484_eygm33_64",
+        "doc_1790181572484_eygm33_65",
+        "doc_1790181572484_eygm33_66",
+        "doc_1790181572484_eygm33_67",
+        "doc_1790181572484_eygm33_68",
+        "doc_1790181572484_eygm33_69",
+        "doc_1790181572484_eygm33_70",
+        "doc_1790181572484_eygm33_71",
+        "doc_1790181572484_eygm33_72"
+      ],
+      "keywords": [],
+      "order": 28,
+      "children": [
+        {
+          "id": "sec_doc_1790181572484_eygm33_3_7",
+          "title": "Classes of Transmission Medium",
+          "description": "Introduces transmission media as resources below and directly controlled by the physical layer and divides them into guided and unguided classes.",
+          "parentId": "unit_doc_1790181572484_eygm33_3",
+          "level": "section",
+          "documentId": "doc_1790181572484_eygm33",
+          "documentName": "4. Physical Layer_.pdf",
+          "chunkIds": [
+            "doc_1790181572484_eygm33_43",
+            "doc_1790181572484_eygm33_44",
+            "doc_1790181572484_eygm33_45"
+          ],
+          "keywords": [],
+          "order": 29,
+          "children": [
+            {
+              "id": "con_doc_1790181572484_eygm33_20",
+              "title": "Guided and Unguided Transmission Media",
+              "description": "Transmission media provide the path over which signals travel and are classified into guided media, which constrain signals to a physical path, and unguided media, which transmit through free space.",
+              "parentId": "sec_doc_1790181572484_eygm33_3_7",
+              "level": "concept",
+              "documentId": "doc_1790181572484_eygm33",
+              "documentName": "4. Physical Layer_.pdf",
+              "pageStart": 50,
+              "pageEnd": 52,
+              "chunkIds": [
+                "doc_1790181572484_eygm33_43",
+                "doc_1790181572484_eygm33_44",
+                "doc_1790181572484_eygm33_45"
+              ],
+              "keywords": [
+                "transmission medium",
+                "guided medium",
+                "unguided medium",
+                "physical layer"
+              ],
+              "order": 30
+            }
+          ],
+          "pageStart": 50,
+          "pageEnd": 52
+        },
+        {
+          "id": "sec_doc_1790181572484_eygm33_3_8",
+          "title": "Guided Transmission Media",
+          "description": "Examines twisted-pair, coaxial, and fibre-optic cables as bounded media for signal transmission.",
+          "parentId": "unit_doc_1790181572484_eygm33_3",
+          "level": "section",
+          "documentId": "doc_1790181572484_eygm33",
+          "documentName": "4. Physical Layer_.pdf",
+          "chunkIds": [
+            "doc_1790181572484_eygm33_46",
+            "doc_1790181572484_eygm33_47",
+            "doc_1790181572484_eygm33_48",
+            "doc_1790181572484_eygm33_49",
+            "doc_1790181572484_eygm33_50",
+            "doc_1790181572484_eygm33_51",
+            "doc_1790181572484_eygm33_52",
+            "doc_1790181572484_eygm33_53",
+            "doc_1790181572484_eygm33_54",
+            "doc_1790181572484_eygm33_55"
+          ],
+          "keywords": [],
+          "order": 31,
+          "children": [
+            {
+              "id": "con_doc_1790181572484_eygm33_21",
+              "title": "Twisted Pair Cable",
+              "description": "Twisted-pair cable contains two individually insulated conductors, usually copper. Its applications include telephone lines and low-cost LANs, and its forms include Unshielded Twisted Pair and shielded variants.",
+              "parentId": "sec_doc_1790181572484_eygm33_3_8",
+              "level": "concept",
+              "documentId": "doc_1790181572484_eygm33",
+              "documentName": "4. Physical Layer_.pdf",
+              "pageStart": 53,
+              "pageEnd": 56,
+              "chunkIds": [
+                "doc_1790181572484_eygm33_46",
+                "doc_1790181572484_eygm33_47",
+                "doc_1790181572484_eygm33_48",
+                "doc_1790181572484_eygm33_49"
+              ],
+              "keywords": [
+                "twisted pair",
+                "copper conductors",
+                "utp",
+                "telephone lines",
+                "lan"
+              ],
+              "order": 32
+            },
+            {
+              "id": "con_doc_1790181572484_eygm33_22",
+              "title": "Coaxial Cable",
+              "description": "Coaxial cable uses concentric conductors and carries higher-frequency signals than twisted pair. It provides higher bandwidth and strong noise immunity for communication applications.",
+              "parentId": "sec_doc_1790181572484_eygm33_3_8",
+              "level": "concept",
+              "documentId": "doc_1790181572484_eygm33",
+              "documentName": "4. Physical Layer_.pdf",
+              "pageStart": 57,
+              "pageEnd": 58,
+              "chunkIds": [
+                "doc_1790181572484_eygm33_50",
+                "doc_1790181572484_eygm33_51"
+              ],
+              "keywords": [
+                "coaxial cable",
+                "bandwidth",
+                "noise immunity",
+                "high frequency"
+              ],
+              "order": 33
+            },
+            {
+              "id": "con_doc_1790181572484_eygm33_23",
+              "title": "Fibre Optic Cable and Propagation Modes",
+              "description": "Fibre-optic cable uses a glass or plastic core and transmits information as light. Its propagation modes depend on the core and lower-density cladding, and the medium offers high bandwidth and low attenuation alongside stated disadvantages and applications.",
+              "parentId": "sec_doc_1790181572484_eygm33_3_8",
+              "level": "concept",
+              "documentId": "doc_1790181572484_eygm33",
+              "documentName": "4. Physical Layer_.pdf",
+              "pageStart": 59,
+              "pageEnd": 62,
+              "chunkIds": [
+                "doc_1790181572484_eygm33_52",
+                "doc_1790181572484_eygm33_53",
+                "doc_1790181572484_eygm33_54",
+                "doc_1790181572484_eygm33_55"
+              ],
+              "keywords": [
+                "fibre optic cable",
+                "light",
+                "core",
+                "cladding",
+                "propagation modes",
+                "attenuation"
+              ],
+              "order": 34
+            }
+          ],
+          "pageStart": 53,
+          "pageEnd": 62
+        },
+        {
+          "id": "sec_doc_1790181572484_eygm33_3_9",
+          "title": "Unguided Transmission Media",
+          "description": "Explains wireless propagation methods and the frequency ranges and communication properties of radio waves, microwaves, and infrared.",
+          "parentId": "unit_doc_1790181572484_eygm33_3",
+          "level": "section",
+          "documentId": "doc_1790181572484_eygm33",
+          "documentName": "4. Physical Layer_.pdf",
+          "chunkIds": [
+            "doc_1790181572484_eygm33_56",
+            "doc_1790181572484_eygm33_57",
+            "doc_1790181572484_eygm33_58",
+            "doc_1790181572484_eygm33_59",
+            "doc_1790181572484_eygm33_60"
+          ],
+          "keywords": [],
+          "order": 35,
+          "children": [
+            {
+              "id": "con_doc_1790181572484_eygm33_24",
+              "title": "Wireless Propagation Methods",
+              "description": "Unguided transmission uses electromagnetic waves traveling through free space. Propagation methods include ground propagation, in which lower-frequency radio waves follow the curvature of the Earth.",
+              "parentId": "sec_doc_1790181572484_eygm33_3_9",
+              "level": "concept",
+              "documentId": "doc_1790181572484_eygm33",
+              "documentName": "4. Physical Layer_.pdf",
+              "pageStart": 63,
+              "pageEnd": 64,
+              "chunkIds": [
+                "doc_1790181572484_eygm33_56",
+                "doc_1790181572484_eygm33_57"
+              ],
+              "keywords": [
+                "unguided transmission",
+                "ground propagation",
+                "electromagnetic waves",
+                "wireless"
+              ],
+              "order": 36
+            },
+            {
+              "id": "con_doc_1790181572484_eygm33_25",
+              "title": "Radio Waves",
+              "description": "Radio waves are electromagnetic waves in the approximate frequency range of 3 kHz to 1 GHz and are used for wireless communication.",
+              "parentId": "sec_doc_1790181572484_eygm33_3_9",
+              "level": "concept",
+              "documentId": "doc_1790181572484_eygm33",
+              "documentName": "4. Physical Layer_.pdf",
+              "pageStart": 65,
+              "pageEnd": 65,
+              "chunkIds": [
+                "doc_1790181572484_eygm33_58"
+              ],
+              "keywords": [
+                "radio waves",
+                "3 khz",
+                "1 ghz",
+                "electromagnetic waves"
+              ],
+              "order": 37
+            },
+            {
+              "id": "con_doc_1790181572484_eygm33_26",
+              "title": "Microwaves",
+              "description": "Microwaves occupy the approximate frequency range from 1 GHz to 300 GHz and are used as an unguided communication medium.",
+              "parentId": "sec_doc_1790181572484_eygm33_3_9",
+              "level": "concept",
+              "documentId": "doc_1790181572484_eygm33",
+              "documentName": "4. Physical Layer_.pdf",
+              "pageStart": 66,
+              "pageEnd": 66,
+              "chunkIds": [
+                "doc_1790181572484_eygm33_59"
+              ],
+              "keywords": [
+                "microwaves",
+                "1 ghz",
+                "300 ghz",
+                "wireless communication"
+              ],
+              "order": 38
+            },
+            {
+              "id": "con_doc_1790181572484_eygm33_27",
+              "title": "Infrared",
+              "description": "Infrared communication uses frequencies of approximately 300 GHz to 400 THz and is suited to short-range communication.",
+              "parentId": "sec_doc_1790181572484_eygm33_3_9",
+              "level": "concept",
+              "documentId": "doc_1790181572484_eygm33",
+              "documentName": "4. Physical Layer_.pdf",
+              "pageStart": 67,
+              "pageEnd": 67,
+              "chunkIds": [
+                "doc_1790181572484_eygm33_60"
+              ],
+              "keywords": [
+                "infrared",
+                "300 ghz",
+                "400 thz",
+                "short-range communication"
+              ],
+              "order": 39
+            }
+          ],
+          "pageStart": 63,
+          "pageEnd": 67
+        },
+        {
+          "id": "sec_doc_1790181572484_eygm33_3_10",
+          "title": "Channel Capacity and Optical Fibre Review",
+          "description": "Applies channel-capacity principles and compares optical-fibre propagation modes, modal dispersion, graded-index behavior, and total internal reflection.",
+          "parentId": "unit_doc_1790181572484_eygm33_3",
+          "level": "section",
+          "documentId": "doc_1790181572484_eygm33",
+          "documentName": "4. Physical Layer_.pdf",
+          "chunkIds": [
+            "doc_1790181572484_eygm33_61",
+            "doc_1790181572484_eygm33_62",
+            "doc_1790181572484_eygm33_63",
+            "doc_1790181572484_eygm33_64",
+            "doc_1790181572484_eygm33_65",
+            "doc_1790181572484_eygm33_66",
+            "doc_1790181572484_eygm33_67",
+            "doc_1790181572484_eygm33_68",
+            "doc_1790181572484_eygm33_69",
+            "doc_1790181572484_eygm33_70",
+            "doc_1790181572484_eygm33_71",
+            "doc_1790181572484_eygm33_72"
+          ],
+          "keywords": [],
+          "order": 40,
+          "children": [
+            {
+              "id": "con_doc_1790181572484_eygm33_28",
+              "title": "Applied Channel Capacity and Fibre Propagation Analysis",
+              "description": "Review questions distinguish Nyquist and Shannon parameters and examine single-mode and multimode fibre, modal dispersion in step-index fibre, dispersion reduction in graded-index fibre, and total internal reflection.",
+              "parentId": "sec_doc_1790181572484_eygm33_3_10",
+              "level": "concept",
+              "documentId": "doc_1790181572484_eygm33",
+              "documentName": "4. Physical Layer_.pdf",
+              "pageStart": 69,
+              "pageEnd": 80,
+              "chunkIds": [
+                "doc_1790181572484_eygm33_61",
+                "doc_1790181572484_eygm33_62",
+                "doc_1790181572484_eygm33_63",
+                "doc_1790181572484_eygm33_64",
+                "doc_1790181572484_eygm33_65",
+                "doc_1790181572484_eygm33_66",
+                "doc_1790181572484_eygm33_67",
+                "doc_1790181572484_eygm33_68",
+                "doc_1790181572484_eygm33_69",
+                "doc_1790181572484_eygm33_70",
+                "doc_1790181572484_eygm33_71",
+                "doc_1790181572484_eygm33_72"
+              ],
+              "keywords": [
+                "nyquist",
+                "shannon capacity",
+                "single-mode fibre",
+                "multimode fibre",
+                "modal dispersion",
+                "graded-index fibre",
+                "total internal reflection"
+              ],
+              "order": 41
+            }
+          ],
+          "pageStart": 69,
+          "pageEnd": 80
+        }
+      ],
+      "pageStart": 50,
+      "pageEnd": 80
+    },
+    {
+      "id": "unit_doc_1790181572484_eygm33_4",
+      "title": "Switching Networks",
+      "description": "Introduces communication networks and compares circuit switching with datagram and virtual-circuit forms of packet switching.",
+      "level": "unit",
+      "documentId": "doc_1790181572484_eygm33",
+      "documentName": "4. Physical Layer_.pdf",
+      "chunkIds": [
+        "doc_1790181572484_eygm33_73",
+        "doc_1790181572484_eygm33_74",
+        "doc_1790181572484_eygm33_75",
+        "doc_1790181572484_eygm33_76",
+        "doc_1790181572484_eygm33_77",
+        "doc_1790181572484_eygm33_78",
+        "doc_1790181572484_eygm33_79",
+        "doc_1790181572484_eygm33_80",
+        "doc_1790181572484_eygm33_81",
+        "doc_1790181572484_eygm33_82",
+        "doc_1790181572484_eygm33_83",
+        "doc_1790181572484_eygm33_84",
+        "doc_1790181572484_eygm33_85",
+        "doc_1790181572484_eygm33_86"
+      ],
+      "keywords": [],
+      "order": 42,
+      "children": [
+        {
+          "id": "sec_doc_1790181572484_eygm33_4_11",
+          "title": "Switching Network Foundations",
+          "description": "Defines a switching network and identifies the principal methods used to move data through interconnected nodes.",
+          "parentId": "unit_doc_1790181572484_eygm33_4",
+          "level": "section",
+          "documentId": "doc_1790181572484_eygm33",
+          "documentName": "4. Physical Layer_.pdf",
+          "chunkIds": [
+            "doc_1790181572484_eygm33_73",
+            "doc_1790181572484_eygm33_74",
+            "doc_1790181572484_eygm33_75"
+          ],
+          "keywords": [],
+          "order": 43,
+          "children": [
+            {
+              "id": "con_doc_1790181572484_eygm33_29",
+              "title": "Switching Networks and Switching Methods",
+              "description": "A switching network is a collection of interconnected nodes and connections used for communication. Data can be switched using circuit switching or packet switching, with packet switching divided into datagram and virtual-circuit approaches.",
+              "parentId": "sec_doc_1790181572484_eygm33_4_11",
+              "level": "concept",
+              "documentId": "doc_1790181572484_eygm33",
+              "documentName": "4. Physical Layer_.pdf",
+              "pageStart": 81,
+              "pageEnd": 83,
+              "chunkIds": [
+                "doc_1790181572484_eygm33_73",
+                "doc_1790181572484_eygm33_74",
+                "doc_1790181572484_eygm33_75"
+              ],
+              "keywords": [
+                "switching network",
+                "nodes",
+                "circuit switching",
+                "packet switching",
+                "datagram",
+                "virtual circuit"
+              ],
+              "order": 44
+            }
+          ],
+          "pageStart": 81,
+          "pageEnd": 83
+        },
+        {
+          "id": "sec_doc_1790181572484_eygm33_4_12",
+          "title": "Circuit and Packet Switching",
+          "description": "Explains the operation, organization, and resource-use characteristics of circuit-switched and packet-switched communication.",
+          "parentId": "unit_doc_1790181572484_eygm33_4",
+          "level": "section",
+          "documentId": "doc_1790181572484_eygm33",
+          "documentName": "4. Physical Layer_.pdf",
+          "chunkIds": [
+            "doc_1790181572484_eygm33_76",
+            "doc_1790181572484_eygm33_77",
+            "doc_1790181572484_eygm33_78",
+            "doc_1790181572484_eygm33_79",
+            "doc_1790181572484_eygm33_80",
+            "doc_1790181572484_eygm33_81",
+            "doc_1790181572484_eygm33_82",
+            "doc_1790181572484_eygm33_83",
+            "doc_1790181572484_eygm33_84",
+            "doc_1790181572484_eygm33_85",
+            "doc_1790181572484_eygm33_86"
+          ],
+          "keywords": [],
+          "order": 45,
+          "children": [
+            {
+              "id": "con_doc_1790181572484_eygm33_30",
+              "title": "Circuit Switching",
+              "description": "Circuit switching establishes a dedicated communication path through circuit establishment, data transfer, and circuit disconnection phases. It can be inefficient because channel capacity remains dedicated for the connection's duration.",
+              "parentId": "sec_doc_1790181572484_eygm33_4_12",
+              "level": "concept",
+              "documentId": "doc_1790181572484_eygm33",
+              "documentName": "4. Physical Layer_.pdf",
+              "pageStart": 84,
+              "pageEnd": 85,
+              "chunkIds": [
+                "doc_1790181572484_eygm33_76",
+                "doc_1790181572484_eygm33_77"
+              ],
+              "keywords": [
+                "circuit switching",
+                "circuit establishment",
+                "data transfer",
+                "disconnection",
+                "dedicated capacity"
+              ],
+              "order": 46
+            },
+            {
+              "id": "con_doc_1790181572484_eygm33_31",
+              "title": "Packet Switching",
+              "description": "Packet switching divides a long message into packets and sends the packets through the network individually, allowing network resources to be shared.",
+              "parentId": "sec_doc_1790181572484_eygm33_4_12",
+              "level": "concept",
+              "documentId": "doc_1790181572484_eygm33",
+              "documentName": "4. Physical Layer_.pdf",
+              "pageStart": 86,
+              "pageEnd": 86,
+              "chunkIds": [
+                "doc_1790181572484_eygm33_78"
+              ],
+              "keywords": [
+                "packet switching",
+                "packets",
+                "message",
+                "shared resources"
+              ],
+              "order": 47
+            },
+            {
+              "id": "con_doc_1790181572484_eygm33_32",
+              "title": "Datagram Packet Switching",
+              "description": "Datagram switching is connectionless: no route is established before transmission, and individual packets may be handled independently.",
+              "parentId": "sec_doc_1790181572484_eygm33_4_12",
+              "level": "concept",
+              "documentId": "doc_1790181572484_eygm33",
+              "documentName": "4. Physical Layer_.pdf",
+              "pageStart": 87,
+              "pageEnd": 87,
+              "chunkIds": [
+                "doc_1790181572484_eygm33_79"
+              ],
+              "keywords": [
+                "datagram",
+                "connectionless",
+                "packet route",
+                "packet switching"
+              ],
+              "order": 48
+            },
+            {
+              "id": "con_doc_1790181572484_eygm33_33",
+              "title": "Virtual Circuit Packet Switching",
+              "description": "Virtual-circuit switching establishes a planned route before packets are sent, providing a connection-oriented path for the packet sequence.",
+              "parentId": "sec_doc_1790181572484_eygm33_4_12",
+              "level": "concept",
+              "documentId": "doc_1790181572484_eygm33",
+              "documentName": "4. Physical Layer_.pdf",
+              "pageStart": 88,
+              "pageEnd": 88,
+              "chunkIds": [
+                "doc_1790181572484_eygm33_80"
+              ],
+              "keywords": [
+                "virtual circuit",
+                "connection-oriented",
+                "preplanned route",
+                "packet sequence"
+              ],
+              "order": 49
+            },
+            {
+              "id": "con_doc_1790181572484_eygm33_34",
+              "title": "Applied Comparison of Switching Methods",
+              "description": "Review questions evaluate virtual-circuit behavior, the inefficiency of idle dedicated circuits, and the greater resource efficiency generally provided by packet switching.",
+              "parentId": "sec_doc_1790181572484_eygm33_4_12",
+              "level": "concept",
+              "documentId": "doc_1790181572484_eygm33",
+              "documentName": "4. Physical Layer_.pdf",
+              "pageStart": 91,
+              "pageEnd": 96,
+              "chunkIds": [
+                "doc_1790181572484_eygm33_81",
+                "doc_1790181572484_eygm33_82",
+                "doc_1790181572484_eygm33_83",
+                "doc_1790181572484_eygm33_84",
+                "doc_1790181572484_eygm33_85",
+                "doc_1790181572484_eygm33_86"
+              ],
+              "keywords": [
+                "virtual circuit",
+                "circuit switching",
+                "packet switching",
+                "idle capacity",
+                "efficiency"
+              ],
+              "order": 50
+            }
+          ],
+          "pageStart": 84,
+          "pageEnd": 96
+        }
+      ],
+      "pageStart": 81,
+      "pageEnd": 96
+    }
+  ],
+  "generatedAt": "2026-09-23T16:40:35.655Z"
+}
