@@ -1,295 +1,348 @@
 # LearnSphere
-### AI Academic Learning Workspace — Learn from your documents. Understand your images. Ask anything.
 
-A university evaluation-ready AI educational workspace powered by **Microsoft Foundry**, **Azure OpenAI (`gpt-5.6-sol`)**, **Azure OpenAI Embeddings (`text-embedding-3-small`)**, **Azure AI Search (`learning-chunks`)**, **Azure Speech**, and **Vision**.
+LearnSphere is a web-based learning assistant that helps students study directly from their own course material. Students upload PDFs or text documents, and the system uses Azure AI services to answer questions, run quizzes, teach live classes, and analyze diagrams — all grounded in the uploaded content.
 
-Built for the **AI-103 Azure AI Engineer / Cognitive Services** evaluation rubric.
+Built as a capstone project for the **AI-103: Azure AI Engineer** course.
 
----
-
-## 1. Problem
-Students and learners frequently struggle with dense, unstructured technical course materials (syllabi, lecture notes, textbook chapters, network packet captures, system architecture diagrams). Generic chatbots hallucinate facts, invent fake citations, cannot verify page numbers, lack multimodal understanding of course diagrams, and fail to distinguish when a question is outside the scope of their assigned curriculum.
+**Repository:** [github.com/HRXMN0/LearnSphere](https://github.com/HRXMN0/LearnSphere)
 
 ---
 
-## 2. Solution
-**LearnSphere** bridges this gap by delivering:
-- **Grounded RAG with Hallucination Mitigation**: Retrieval-Augmented Generation strictly anchored in user-uploaded course documents with verifiable, page-level citations.
-- **Strict Grounding Refusal ("I Don't Know" behavior)**: Explicit refusal to guess or hallucinate when requested information is absent from selected documents.
-- **Robust Document Isolation**: Granular multi-document selection with Azure AI Search `vectorFilterMode: "preFilter"` on `documentId` preventing cross-talk between distinct subjects.
-- **Dynamic Quiz Generation**: Auto-generated diagnostic assessments constructed directly from retrieved course material chunks using Azure OpenAI.
-- **AI Live Class**: Grounded interactive classroom experience where an AI instructor leads discussions, verifies comprehension, and generates downloadable lecture notes.
-- **Multimodal Visual Analysis Pipeline**: Structured breakdown and educational explanation of technical diagrams, protocol sequences, and labels using Azure OpenAI.
-- **Course Topic Maps**: Dynamic Unit → Section → Concept hierarchical breakdown grounded directly in indexed documents.
-- **Real-Time Insights & Mastery**: Data-driven learning analytics tracking questions, document ingestion, quiz scores, and diagnostic study hours.
+## What problem are we solving?
+
+Students deal with dense course PDFs — lecture notes, textbook chapters, technical diagrams — and often need more than just reading them:
+
+- They need **explanations** in simpler language, with examples and analogies.
+- They need **practice questions** generated from the actual syllabus, not generic ones.
+- They need **traceable answers** — knowing exactly which page a fact came from.
+- Generic chatbots answer beyond the provided material and can invent facts. Students need answers **bounded to their course content**, with honest refusal when the material doesn't cover a topic.
 
 ---
 
-## 3. Architecture
+## What does LearnSphere do?
+
+### Ask
+
+Students type a question about their selected course material. The backend retrieves relevant chunks from Azure AI Search, passes them as context to GPT-5.6 Sol, and returns a structured answer with page-level citations. If the selected documents don't contain enough evidence, the system tells the student rather than guessing.
+
+### AI Live Class
+
+A 1-to-1 interactive teaching experience:
+
+1. Student selects a document (and optionally a specific unit, section, or concept from the Course Topic Map).
+2. The AI teacher builds a lesson plan from the document's topic map (3–6 concepts per session).
+3. The teacher proactively lectures through each concept — writing structured notes on a teaching board and speaking through the explanation.
+4. The student can interrupt at any time to ask a question using voice or text.
+5. Student speech is captured via the browser microphone, sent to **Azure Speech-to-Text** for transcription, and the question is answered using RAG retrieval from the selected material.
+6. **GPT-5.6 Sol** generates the teaching response, and **Azure Speech (Text-to-Speech)** converts it to spoken audio.
+7. The lesson stays scoped to the selected material — the AI teacher won't wander off-topic.
+8. At the end, students can export class notes and transcripts as PDF or text.
+
+### Practice & Quizzes
+
+Students generate multiple-choice quizzes from their uploaded documents. They pick a topic, difficulty level, and number of questions. The backend retrieves relevant chunks and asks GPT-5.6 Sol to create questions grounded in that content.
+
+Quiz results (score, weak topics, strong topics) are recorded by the analytics service and feed into the Learning Insights dashboard. Students can see which topics they need to revise.
+
+### Vision
+
+Students upload an image — a diagram, flowchart, circuit schematic, or handwritten notes — and the system analyzes it using Azure OpenAI's vision capabilities (multimodal input to GPT-5.6 Sol). The analysis returns:
+
+- A descriptive title and visual summary
+- Key concepts identified in the image
+- Step-by-step breakdown (if the image depicts a sequential process)
+- Important labels extracted from the image
+- A detailed educational explanation
+
+Students can also ask follow-up questions about the same image. Analyzed visuals can be indexed into Azure AI Search so they become part of the retrievable knowledge base.
+
+### Course Topic Map
+
+When a document is uploaded, the system builds a hierarchical topic map:
+
+**Document → Unit → Section → Concept**
+
+Each concept node is linked to specific chunk IDs and page ranges from the index. This map is shared across features:
+
+- **Ask** can scope retrieval to a specific concept's chunks.
+- **AI Live Class** uses the map to build its lesson plan.
+- **Practice** can generate quizzes focused on a specific section or concept.
+
+The topic map is cached on disk and in memory so it doesn't need to be regenerated on every request.
+
+### Learning Insights
+
+The backend tracks learning events (questions asked, documents indexed, quizzes completed, study sessions ended, live classes ended) in a persistent JSON file. The Insights dashboard computes:
+
+- Total questions asked (and today's count)
+- Documents indexed
+- Quizzes completed and average score
+- Study hours (from session and class durations, capped at 2 hours per session)
+- Weekly activity chart
+- Per-topic mastery derived from quiz performance
+- Recommended focus areas based on lowest mastery scores
+
+All analytics are computed server-side from real event data — no hardcoded numbers.
+
+---
+
+## How the RAG pipeline works
+
 ```
-                                 ┌───────────────────────────────┐
-                                 │       React 18 + Vite         │
-                                 │   Tailwind CSS / TypeScript   │
-                                 │      (Frontend Port 5173)     │
-                                 └───────────────┬───────────────┘
-                                                 │ Reverse Proxy (/api)
-                                                 ▼
-                                 ┌───────────────────────────────┐
-                                 │        Express Backend        │
-                                 │     TypeScript / Node ESM     │
-                                 │      (Server Port 3001)       │
-                                 └───────┬───────────────┬───────┘
-                                         │               │
-                 ┌───────────────────────┘               └──────────────────────┐
-                 ▼                                                              ▼
-   ┌───────────────────────────┐                                  ┌───────────────────────────┐
-   │    Document Ingestion     │                                  │   RAG & Query Pipeline    │
-   │  - Multer Memory Storage  │                                  │  - Query Embeddings Gen   │
-   │  - Local PDF Parsing      │                                  │  - Hybrid Search Filter   │
-   │  - Token-Safe Chunking    │                                  │  - Grounding Refusal Guard│
-   └─────────────┬─────────────┘                                  └─────────────┬─────────────┘
-                 │                                                              │
-                 ▼                                                              ▼
-   ┌───────────────────────────┐                                  ┌───────────────────────────┐
-   │    Azure OpenAI Service   │                                  │      Azure AI Search      │
-   │ - text-embedding-3-small  │ ◄────── Embeddings / Vectors ──► │  - Service: learning-     │
-   │   (1536 dims, Global Std) │                                  │    assistant-search       │
-   │ - gpt-4.1-mini            │ ◄────── Grounded Generation ──── │  - Index: learning-chunks │
-   │   (Foundry proj-default)  │                                  │  - HNSW Cosine Similarity │
-   └───────────────────────────┘                                  └───────────────────────────┘
+PDF upload
+  → local text extraction (pdf-parse, page-by-page)
+  → page-aware chunking (~600 tokens per chunk, ~90 token overlap)
+  → embedding via text-embedding-3-small (1536 dimensions)
+  → indexed into Azure AI Search (learning-chunks index)
+
+Student asks a question
+  → query embedded via text-embedding-3-small
+  → hybrid search (vector + full-text) with documentId filter
+  → top-K chunks retrieved
+  → chunks passed as context to GPT-5.6 Sol
+  → structured grounded response with page-level citations
+```
+
+**Key principle:** The course material determines *what* is taught; the model determines *how* it is explained.
+
+**Document isolation:** When a student selects specific documents, the search query includes an OData filter on `documentId`. Chunks from unselected documents are never retrieved.
+
+**Grounded refusal:** If the retrieved chunks don't contain enough evidence to answer the question, the system sets `isGrounded: false` and responds with: *"I couldn't find enough information about this topic in your selected learning materials."* It does not invent an answer.
+
+---
+
+## Architecture
+
+```
+┌─────────────────────────────┐
+│   React 18 + Vite + TS      │
+│   Tailwind CSS               │
+│   (Frontend — port 5173)     │
+└──────────────┬──────────────┘
+               │  /api proxy
+               ▼
+┌─────────────────────────────┐
+│   Express Backend (Node)     │
+│   TypeScript / ESM           │
+│   (Server — port 3001)       │
+└──┬─────────┬─────────┬──────┘
+   │         │         │
+   ▼         ▼         ▼
+┌────────┐ ┌────────┐ ┌────────────┐
+│ Azure  │ │ Azure  │ │ Azure      │
+│ OpenAI │ │ AI     │ │ Speech     │
+│        │ │ Search │ │ Service    │
+│ GPT-5.6│ │        │ │            │
+│ Sol    │ │ Index: │ │ STT + TTS  │
+│        │ │learning│ │ Korea      │
+│ text-  │ │-chunks │ │ Central    │
+│embedding│ │        │ │            │
+│-3-small│ │        │ │            │
+└────────┘ └────────┘ └────────────┘
+```
+
+The frontend communicates with the backend through a Vite reverse proxy on `/api`. All Azure credentials stay server-side — the frontend never sees API keys.
+
+---
+
+## Microsoft Azure / AI-103 services
+
+| Service | How we use it |
+|---|---|
+| **Azure OpenAI — GPT-5.6 Sol** | Chat completions for grounded answers, quiz generation, AI Live Class teaching, and vision analysis |
+| **Azure OpenAI — text-embedding-3-small** | 1536-dimensional embeddings for document chunks and query vectors |
+| **Azure AI Search** | Hybrid search (vector + keyword) over the `learning-chunks` index with OData document filters |
+| **Azure Speech — Speech-to-Text** | Transcribes student voice input during AI Live Class |
+| **Azure Speech — Text-to-Speech** | Converts AI teacher responses to spoken audio (en-US-JennyNeural voice) |
+
+**AI-103 concepts demonstrated:**
+
+- **Generative AI**: GPT-5.6 Sol for structured educational responses
+- **Embeddings**: text-embedding-3-small for semantic vector representations
+- **Vector search**: HNSW cosine similarity on `contentVector` field
+- **Hybrid retrieval**: Combined vector + full-text search with document-level filtering
+- **RAG (Retrieval-Augmented Generation)**: Grounding model responses in retrieved course material
+- **Multimodal / Vision**: Image analysis via multimodal chat completions
+- **Speech**: Real-time STT and TTS via Azure Speech REST APIs
+- **Responsible AI**: Grounded refusal, source citations, document isolation, no hallucination policy
+
+---
+
+## Course Topic Map and grounded teaching
+
+The Course Topic Map creates a structured hierarchy from each document's indexed chunks. GPT-5.6 Sol analyzes chunk outlines and organizes them into Units → Sections → Concepts, each linked to specific chunk IDs and page ranges.
+
+This creates a clear boundary:
+
+- **What to teach** comes from the uploaded learning material (the chunks and their content).
+- **How to explain it** comes from GPT-5.6 Sol (structured explanations, analogies, step-by-step breakdowns).
+
+When a student selects a specific concept in the topic map, retrieval is scoped to that concept's chunk IDs. The AI Live Class uses this to plan a curriculum of 3–6 concepts and teaches them in order, staying within the document's content.
+
+---
+
+## Project structure
+
+```
+├── src/                          # React frontend
+│   ├── components/
+│   │   ├── workspace/            # Chat, message display, knowledge sidebar
+│   │   ├── classroom/            # AI Live Class UI
+│   │   ├── quiz/                 # Quiz generator and runner
+│   │   ├── vision/               # Image upload and analysis view
+│   │   ├── analytics/            # Learning Insights dashboard
+│   │   ├── documents/            # Document upload and management
+│   │   ├── visual/               # Flowchart / mind map / diagram views
+│   │   ├── evaluation/           # Responsible AI modal, test suite modal
+│   │   ├── layout/               # Sidebar, guided tour
+│   │   ├── landing/              # Landing page
+│   │   ├── common/               # Shared UI components
+│   │   └── settings/             # Settings panel
+│   ├── services/                 # Frontend API clients
+│   ├── context/                  # React context providers
+│   ├── types/                    # TypeScript type definitions
+│   └── utils/                    # Utility functions
+├── server/                       # Express backend
+│   ├── index.ts                  # API routes and server entry point
+│   ├── config.ts                 # Azure configuration and health check
+│   ├── test-suite.ts             # RAG verification test suite
+│   └── services/
+│       ├── ragPipeline.ts        # Document ingestion, retrieval, answering
+│       ├── azureOpenAIService.ts # Azure OpenAI REST client
+│       ├── azureSearchService.ts # Azure AI Search indexing and querying
+│       ├── speechService.ts      # Azure Speech STT and TTS
+│       ├── aiClassService.ts     # AI Live Class session management
+│       ├── courseTopicMapService.ts # Topic map generation and caching
+│       ├── analyticsService.ts   # Event tracking and insights computation
+│       ├── chunker.ts            # Page-aware document chunking
+│       ├── documentParser.ts     # PDF and text extraction
+│       ├── documentProfiler.ts   # Document topic/subject profiling
+│       ├── visualService.ts      # Flowchart/mindmap/diagram generation
+│       ├── studySessionService.ts # Self-paced study sessions
+│       └── pdfExportService.ts   # PDF export for notes and transcripts
+├── scripts/                      # Diagnostic and testing scripts
+├── public/                       # Static assets
+├── .env.example                  # Environment variable template
+└── package.json
 ```
 
 ---
 
-## 4. Data Flow
+## Setup
 
-### Ingestion Flow (`POST /api/documents/upload`):
-1. **Upload & Validation**: User uploads PDF/text document (validated for MIME type and 45MB limit).
-2. **Local Text Extraction**: Extracted page-by-page preserving accurate physical page numbers.
-3. **Chunking**: Chunked deterministically into ~600 token blocks with ~90 token overlap.
-4. **Vector Embedding**: Each chunk text is sent to Azure OpenAI `text-embedding-3-small` returning a 1536-dimensional embedding vector.
-5. **Search Indexing**: Chunks and vectors are batch-uploaded to Azure AI Search index `learning-chunks`.
-
-### Retrieval & Answering Flow (`POST /api/chat`):
-1. **Query Embedding**: The user question is vectorized via `text-embedding-3-small`.
-2. **Azure AI Search Retrieval**: Hybrid query (Vector search on `contentVector` + full-text search) filtered by active `documentId`s using `vectorFilterMode: "preFilter"`.
-3. **Evidence-Based Grounding Guard**: If no chunks are retrieved or if the retrieved chunks lack sufficient evidence, the system triggers the grounded refusal message rather than guessing.
-4. **Grounded Synthesis**: Retrieved chunk text is passed as context to `gpt-4.1-mini` with strict system grounding constraints.
-5. **Citation Construction**: The backend constructs citations directly from retrieved search documents (`documentId`, `documentName`, `pageNumber`).
-
----
-
-## 5. Actual Azure Services & Deployments
-- **Microsoft Foundry Project**: `proj-default`
-- **Chat Deployment**:
-  - Deployment Name: `gpt-4.1-mini`
-  - Model: GPT-4.1 Mini
-  - Deployment Type: Global Standard
-  - Status: Succeeded
-- **Embedding Deployment**:
-  - Deployment Name: `text-embedding-3-small`
-  - Model: Text Embedding 3 Small
-  - Dimensions: 1536
-  - Deployment Type: Global Standard
-  - Status: Succeeded
-- **Azure AI Search**:
-  - Service Name: `learning-assistant-search`
-  - Endpoint: `https://learning-assistant-search.search.windows.net`
-  - Region: UAE North (Free Tier)
-  - Index Name: `learning-chunks`
-
----
-
-## 6. Search Index Schema (`learning-chunks`)
-The Azure AI Search index `learning-chunks` is structured as follows:
-
-| Field Name | Type | Key | Searchable | Filterable | Sortable | Retrievable | Description |
-|---|---|---|---|---|---|---|---|
-| `id` | `Edm.String` | Yes | No | No | No | Yes | Unique chunk identifier (`${docId}_${chunkIndex}`) |
-| `documentId` | `Edm.String` | No | No | Yes | No | Yes | Parent document ID for isolation filtering |
-| `documentName` | `Edm.String` | No | No | Yes | No | Yes | Original file name for citations |
-| `pageNumber` | `Edm.Int32` | No | No | Yes | Yes | Yes | Source page number from source PDF |
-| `chunkIndex` | `Edm.Int32` | No | No | Yes | Yes | Yes | Chunk order index within document |
-| `content` | `Edm.String` | No | Yes | No | No | Yes | Searchable chunk text body |
-| `contentVector` | `Collection(Edm.Single)` | No | No (Vector Searchable) | No | No | No | 1536-dimensional HNSW cosine vector |
-
-*Vector algorithm parameters: HNSW, m=4, efConstruction=400, efSearch=500, Cosine metric.*
-
----
-
-## 7. Hybrid Search & Relevance Gating Implementation
-
-### Candidate Selection
-The search pipeline performs hybrid retrieval combining dense vector similarity (`contentVector`) and full-text keyword matching.
-
-### Document Isolation via Pre-Filter
-When specific documents are selected, the query applies an OData filter:
-```json
-{
-  "search": "query terms",
-  "filter": "(documentId eq 'doc_1') or (documentId eq 'doc_2')",
-  "vectorQueries": [
-    {
-      "kind": "vector",
-      "vector": [/* 1536-dim embedding */],
-      "fields": "contentVector",
-      "k": 4,
-      "vectorFilterMode": "preFilter"
-    }
-  ]
-}
-```
-Setting `vectorFilterMode: "preFilter"` guarantees that Azure AI Search eliminates non-matching documents **before** nearest-neighbor vector candidates are computed, preventing cross-document contamination.
-
-### Score Semantics (RRF vs Cosine)
-Azure AI Search hybrid search uses **Reciprocal Rank Fusion (RRF)**:
-$$\text{RRF Score} = \sum_{m \in M} \frac{1}{60 + r_m}$$
-Because hybrid `@search.score` represents rank reciprocal sums (typically between `0.01` and `0.04`) rather than normalized cosine similarities (`0.0` to `1.0`), the system **does not** apply a naive numerical score cutoff on the RRF score.
-
-### Grounding & Refusal Logic
-Relevance gating is implemented as an evidence-based decision:
-1. **Index Match Check**: If Azure AI Search returns 0 chunks matching the pre-filtered query, the system immediately refuses to answer without calling the LLM.
-2. **Context-Grounded Evidence Decision**: When candidate chunks are returned, `gpt-4.1-mini` is instructed with mandatory grounding rules:
-   - Answer using *only* facts present in the retrieved context.
-   - If the context does not contain sufficient evidence to answer reliably, emit the standardized refusal:
-     > *"I couldn't find enough information about this topic in your selected learning materials."*
-3. **Citation Cleansing**: Whenever the refusal message is issued, `citations` are cleared (`[]`) and `isGrounded` is flagged `false`.
-
----
-
-## 8. Citation Design
-- Citations are **never generated by the LLM**; they are assembled directly by the backend from retrieved Azure AI Search documents.
-- Structure:
-  ```json
-  {
-    "documentId": "doc_1726938210_a8bc",
-    "documentName": "Computer-Networks-Transport-Layer.pdf",
-    "pageNumber": 14,
-    "chunkId": "doc_1726938210_a8bc_3",
-    "excerpt": "TCP initiates connection teardown using FIN segments...",
-    "searchScore": 0.0328
-  }
-  ```
-- Clicking any citation in the UI opens the Source Preview Modal with a 4-step retrieval breakdown (Query Vectorization → Search Indexing → Semantic Chunk → Grounded LLM Response).
-
----
-
-## 9. API Versions Actually Used
-- **Azure OpenAI**: Uses current Azure OpenAI v1 REST routing (`/openai/v1/embeddings`, `/openai/v1/chat/completions`) with deployment passed in the request payload (`model: gpt-4.1-mini`), with automatic fallback to `/openai/deployments/{deployment}/...` for compatibility across both Foundry project endpoints and Azure OpenAI resources.
-- **Azure AI Search**: Uses stable General Availability vector search API version `2024-07-01` (`/indexes/{index}/docs/search?api-version=2024-07-01`), supporting `vectorQueries`, `contentVector`, and `vectorFilterMode: "preFilter"`.
-
----
-
-## 10. Local Setup & Environment Configuration
-
-### Prerequisites
-- Node.js (v18+ recommended)
-- npm (v9+)
-
-### Installation
 ```bash
-# Clone the repository
-git clone <repo-url>
-cd multimodal-learning-assistant
-
-# Install frontend and backend dependencies
+git clone https://github.com/HRXMN0/LearnSphere.git
+cd LearnSphere
 npm install
 ```
 
-### Environment Variables
-Azure credentials are kept exclusively server-side in `server/.env` (which is gitignored). 
+Create `server/.env` with your Azure credentials:
 
-Create `server/.env` with your real Azure credentials:
 ```env
 PORT=3001
 
-# Azure OpenAI / Microsoft Foundry
-AZURE_OPENAI_ENDPOINT=https://your-openai-resource.openai.azure.com/
-AZURE_OPENAI_API_KEY=your_azure_openai_api_key_here
-AZURE_OPENAI_CHAT_DEPLOYMENT=gpt-4.1-mini
+# Azure OpenAI
+AZURE_OPENAI_ENDPOINT=https://<your-resource>.services.ai.azure.com/
+AZURE_OPENAI_API_KEY=
+AZURE_OPENAI_CHAT_DEPLOYMENT=gpt-5.6-sol
 AZURE_OPENAI_EMBEDDING_DEPLOYMENT=text-embedding-3-small
+AZURE_OPENAI_API_VERSION=2024-06-01
 
-# Azure AI Search (UAE North / Free Tier)
-AZURE_SEARCH_ENDPOINT=https://learning-assistant-search.search.windows.net
-AZURE_SEARCH_API_KEY=your_azure_search_admin_key_here
+# Azure AI Search
+AZURE_SEARCH_ENDPOINT=https://<your-search-service>.search.windows.net
+AZURE_SEARCH_API_KEY=
 AZURE_SEARCH_INDEX=learning-chunks
+AZURE_SEARCH_API_VERSION=2024-07-01
 
-# Document Processing Mode
+# Document Processing
 DOCUMENT_PROCESSING_MODE=local
+
+# Azure Speech
+AZURE_SPEECH_KEY=
+AZURE_SPEECH_REGION=koreacentral
 ```
 
-> **Security Note**: Never commit `server/.env` to source control. `.env.example` contains placeholders only.
+> **⚠️ `server/.env` must never be committed to version control.** It contains Azure API keys. The `.gitignore` should exclude it.
 
 ---
 
-## 11. Running Frontend & Backend
+## Running the project
 
-### Start Backend (Port 3001):
 ```bash
+# Start the Vite dev server (frontend)
+npm run dev
+
+# Start the Express backend (in a separate terminal)
 npm run server
 ```
 
-### Start Frontend (Port 5173):
-```bash
-npm run dev
-```
-The Vite development server runs on `http://localhost:5173` with an automatic proxy forwarding `/api` calls to `http://localhost:3001`.
+The frontend runs on `http://localhost:5173` and proxies `/api` requests to the backend on port 3001.
 
 ---
 
-## 12. Verification Status & Test Suite
+## Testing
 
-### Status by Capability:
-| Capability | Implementation Status | Live Verification Status |
-|---|---|---|
-| **Health Check (`GET /api/health`)** | Implemented | **VERIFIED LIVE** (Connected to OpenAI & Search, index: `learning-chunks`) |
-| **Input Validation & Error Boundaries** | Implemented | **VERIFIED LIVE** (Rejects empty files & invalid inputs cleanly) |
-| **Schema Compliance (`learning-chunks`)** | Implemented | **VERIFIED LIVE** (1536-dim vector, deterministic chunking) |
-| **RAG Ingestion (`POST /api/documents/upload`)** | Implemented | **VERIFIED LIVE** (`text-embedding-3-small` embeddings + Azure AI Search indexation) |
-| **RAG Retrieval & Chat (`POST /api/chat`)** | Implemented | **VERIFIED LIVE** (Hybrid retrieval + `gpt-4.1-mini` grounded response + citations) |
-| **Document Isolation (`documentId` filter)** | Implemented | **VERIFIED LIVE** (Restricts candidates to active documents only) |
-| **Document Deletion (`DELETE /api/documents/:id`)** | Implemented | **VERIFIED LIVE** (Purges all document chunks from Azure AI Search) |
-| **Dynamic Quiz Generation (`POST /api/quiz`)** | Implemented | **VERIFIED LIVE** (Generated dynamically from retrieved chunk context) |
-| **Multimodal Vision (`POST /api/vision/analyze`)** | Implemented | **VERIFIED LIVE** (`gpt-4.1-mini` multimodal diagram analysis via base64) |
+The project includes a RAG verification test suite:
 
-### Automated Test Suite:
-Run the verification test suite:
 ```bash
 npm run test:rag
 ```
-The test suite validates:
-1. **TEST 8 (Invalid file validation)**: Empty/corrupted files rejected with clean 400 error. [PASS]
-2. **TEST 9 (Azure credentials verification)**: Confirms active credentials and connection. [PASS]
-3. **CHUNKING SCHEMA**: Deterministic chunking strictly matching `learning-chunks` schema. [PASS]
-4. **TEST 1 (Real Ingestion)**: Ingests new text document, generates 1536-dim embeddings via `text-embedding-3-small`, and indexes in `learning-chunks`. [PASS]
-5. **TEST 4 (Document Coexistence)**: Ingests second document; verifies multiple documents coexist in index. [PASS]
-6. **TEST 2 (Grounded Question)**: Answers supported question with verified source citation and page number. [PASS]
-7. **TEST 3 (Refusal on Out-of-Scope)**: Refuses to guess or hallucinate when context lacks evidence. [PASS]
-8. **TEST 5 (Document Isolation)**: Selected Document A does not retrieve Document B content. [PASS]
-9. **TEST 7 (Dynamic Quiz Generation)**: Generates MCQs dynamically from retrieved chunks. [PASS]
-10. **TEST 6 (Document Deletion)**: Purges all chunks for deleted document from Azure AI Search. [PASS]
+
+This runs `server/test-suite.ts`, which executes:
+
+| Test | What it verifies |
+|---|---|
+| **Chunking Schema** | Generated chunks match the `learning-chunks` index schema (id, documentId, documentName, pageNumber, chunkIndex, content) |
+| **Test 1** | Upload and index a new document into Azure AI Search |
+| **Test 2** | Grounded RAG answer with real page-level citations |
+| **Test 3** | Out-of-scope question triggers grounded refusal (not hallucination) |
+| **Test 4** | Second document coexists with the first in the same index |
+| **Test 5** | Document isolation — filtering by documentId prevents cross-document retrieval |
+| **Test 6** | Document deletion purges chunks from the index |
+| **Test 7** | Dynamic quiz generation from retrieved document chunks |
+| **Test 8** | Invalid/empty file upload is rejected cleanly |
+| **Test 9** | Missing Azure credentials produce a configuration error, not a mock fallback |
+
+Tests 1–7 require live Azure credentials. Tests 8, 9, and Chunking Schema run without credentials.
 
 ---
 
-## 13. Responsible AI & Transparency
-- **Credential Safety**: No API keys or secrets are ever exposed to the client-side bundle or logged to stdout.
-- **Hallucination Mitigation**: Low temperature (`0.2`), strict system prompt grounding, and automated refusal when evidence is absent.
-- **Citation Transparency**: Page-level auditability allows students to verify every claim against their original syllabus or textbook.
-- **AI-Generated Content Disclaimers**: UI explicitly notes that responses and quizzes are AI-generated and should be checked when accuracy matters.
+## Responsible AI
+
+Measures implemented in the current codebase:
+
+- **API keys stay server-side.** The frontend never handles Azure credentials.
+- **Document-scoped retrieval.** Answers are filtered to the student's selected documents only.
+- **Grounded answers with citations.** Every response includes the source document name and page number.
+- **Grounded refusal.** When evidence is insufficient, the system says so instead of making something up.
+- **No mock fallback.** If Azure services are unavailable, the system returns an explicit configuration error — it does not generate fake answers.
+- **Transparency.** Responses are clearly AI-generated. Students are expected to verify important information against their original materials.
+- **Quiz evaluation is server-side.** Scoring happens on the backend to prevent client-side manipulation.
 
 ---
 
-## 14. Limitations
-- **Local PDF Parsing**: Scanned PDFs that consist solely of raster images without embedded text layers require OCR before indexing.
-- **Token Quota**: Azure Free Tier Search and Global Standard quota may throttle high-frequency parallel batch indexing.
-- **Live Credentials Required**: In LIVE mode, the application requires real Azure keys; it will not fabricate mock responses when unconfigured.
+## Limitations
+
+- **Scanned PDFs** (image-only pages) will produce little or no extracted text since the current parser (`pdf-parse`) does not perform OCR.
+- **All features require configured Azure services.** Without valid Azure OpenAI, AI Search, and Speech keys, the application cannot function.
+- **Voice workflows have latency.** The round-trip through Azure Speech STT → RAG retrieval → GPT generation → Azure Speech TTS adds noticeable delay during AI Live Class.
+- **Azure free-tier quotas** may throttle requests under heavy use.
+- **Session data is in-memory.** AI Live Class sessions and study sessions are stored in server memory and are lost on server restart. Analytics events are persisted to a local JSON file.
+- **Topic map generation** requires a GPT call per document, which can take several seconds for large documents.
 
 ---
 
-## 15. Third-Party Resources & Licenses
-- **React 18**: MIT License
-- **Vite**: MIT License
-- **Tailwind CSS**: MIT License
-- **Lucide Icons**: ISC License
-- **pdf-parse**: MIT License
-- **Express**: MIT License
+## Future improvements
+
+- **OCR integration** (e.g., Azure Document Intelligence) for scanned PDFs and handwritten notes.
+- **Persistent session storage** using a database instead of in-memory maps.
+- **Multi-language support** for speech and document processing beyond English.
+- **Collaborative features** — sharing topic maps or quiz results between students.
+- **Streaming responses** to reduce perceived latency for long answers and AI Live Class teaching.
+- **Fine-grained access control** if deployed for multiple users or classrooms.
+
+---
+
+## Team / Project context
+
+LearnSphere was built as a university capstone project for the **AI-103: Azure AI Engineer** course. The goal was to demonstrate practical use of Azure AI services (OpenAI, AI Search, Speech, Vision) in a real application that solves an actual student problem — studying from course materials with traceable, grounded AI assistance.

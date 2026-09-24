@@ -14,9 +14,15 @@ export class AnalyticsService {
   private writePromise: Promise<void> = Promise.resolve();
 
   constructor() {
-    const storageDir = path.join(process.cwd(), 'server', 'storage');
-    if (!fs.existsSync(storageDir)) {
-      fs.mkdirSync(storageDir, { recursive: true });
+    const storageDir = process.env.VERCEL
+      ? path.join('/tmp', 'learnsphere-storage')
+      : path.join(process.cwd(), 'server', 'storage');
+    try {
+      if (!fs.existsSync(storageDir)) {
+        fs.mkdirSync(storageDir, { recursive: true });
+      }
+    } catch (err) {
+      console.warn('[AnalyticsService] Could not create storage directory:', err);
     }
     this.storageFile = path.join(storageDir, 'learning_activity.json');
     this.loadEvents();

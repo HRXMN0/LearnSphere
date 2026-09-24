@@ -1,0 +1,241 @@
+[
+  {
+    "id": "evt_q_1790220370655_8wq481",
+    "type": "question_submitted",
+    "timestamp": "2026-09-24T03:26:10.655Z",
+    "documentId": "doc_1790179959759_9yknof",
+    "metadata": {
+      "question": "explain network layer."
+    }
+  },
+  {
+    "id": "evt_q_1790220397223_q484gv",
+    "type": "question_submitted",
+    "timestamp": "2026-09-24T03:26:37.223Z",
+    "documentId": "doc_1790179959759_9yknof",
+    "metadata": {
+      "question": "Explain this simply"
+    }
+  },
+  {
+    "id": "evt_quiz_quiz-1790220457936",
+    "type": "quiz_completed",
+    "timestamp": "2026-09-24T03:27:37.952Z",
+    "documentId": "doc_1790179959759_9yknof",
+    "topic": "Introduction to the Network Layer",
+    "metadata": {
+      "quizId": "quiz-1790220457936",
+      "score": 1,
+      "totalQuestions": 5,
+      "percentage": 20,
+      "topicBreakdown": {
+        "Comprehensive Review: 7. intro to network layer.pdf": {
+          "total": 5,
+          "correct": 1
+        }
+      },
+      "weakTopics": [
+        "Comprehensive Review: 7. intro to network layer.pdf"
+      ],
+      "strongTopics": [
+        "Comprehensive Review: 7. intro to network layer.pdf"
+      ]
+    }
+  },
+  {
+    "id": "evt_doc_doc_1790220472616_ph16w6",
+    "type": "document_indexed",
+    "timestamp": "2026-09-24T03:28:40.111Z",
+    "documentId": "doc_1790220472616_ph16w6",
+    "metadata": {
+      "documentName": "Ethernet (1).pdf",
+      "size": "0.97 MB",
+      "chunksCount": 38
+    }
+  },
+  {
+    "id": "evt_q_1790236311880_venso4",
+    "type": "question_submitted",
+    "timestamp": "2026-09-24T07:51:51.880Z",
+    "documentId": "doc_1790181572484_eygm33",
+    "metadata": {
+      "question": "what is physical layer"
+    }
+  },
+  {
+    "id": "evt_q_1790236348999_l98cbi",
+    "type": "question_submitted",
+    "timestamp": "2026-09-24T07:52:28.999Z",
+    "documentId": "doc_1790220472616_ph16w6",
+    "metadata": {
+      "question": "what is ethernet"
+    }
+  },
+  {
+    "id": "evt_quiz_quiz-1790236581985",
+    "type": "quiz_completed",
+    "timestamp": "2026-09-24T07:56:21.988Z",
+    "documentId": "doc_1790220472616_ph16w6",
+    "topic": "The Language of Networks: An Introduction to IEEE 802.3 and 802.11 Standards",
+    "metadata": {
+      "quizId": "quiz-1790236581985",
+      "score": 2,
+      "totalQuestions": 5,
+      "percentage": 40,
+      "topicBreakdown": {
+        "Comprehensive Review: Ethernet (1).pdf": {
+          "total": 5,
+          "correct": 2
+        }
+      },
+      "weakTopics": [
+        "Comprehensive Review: Ethernet (1).pdf"
+      ],
+      "strongTopics": [
+        "Comprehensive Review: Ethernet (1).pdf"
+      ]
+    }
+  },
+  {
+    "id": "evt_doc_doc_1790237922420_uqx5ed",
+    "type": "document_indexed",
+    "timestamp": "2026-09-24T08:19:28.187Z",
+    "documentId": "doc_1790237922420_uqx5ed",
+    "metadata": {
+      "documentName": "Ethernet (1).pdf",
+      "size": "0.97 MB",
+      "chunksCount": 38
+    }
+  },
+  {
+    "id": "evt_q_1790238756930_jpemqh",
+    "type": "question_submitted",
+    "timestamp": "2026-09-24T08:32:36.930Z",
+    "documentId": "doc_1790237922420_uqx5ed",
+    "metadata": {
+      "question": "What is Ethernet?"
+    }
+  },
+  {
+    "id": "evt_q_1790238788647_0dye4f",
+    "type": "question_submitted",
+    "timestamp": "2026-09-24T08:33:08.647Z",
+    "documentId": "doc_1790237922420_uqx5ed",
+    "metadata": {
+      "question": "Give me the summary of this PDF."
+    }
+  },
+  {
+    "id": "evt_doc_doc_1790239049090_qmgwrb",
+    "type": "document_indexed",
+    "timestamp": "2026-09-24T08:38:20.857Z",
+    "documentId": "doc_1790239049090_qmgwrb",
+    "metadata": {
+      "documentName": "7. intro to network layer.pdf",
+      "size": "4.93 MB",
+      "chunksCount": 57
+    }
+  },
+  {
+    "id": "evt_doc_doc_1790239146441_sc7456",
+    "type": "document_indexed",
+    "timestamp": "2026-09-24T08:39:49.818Z",
+    "documentId": "doc_1790239146441_sc7456",
+    "metadata": {
+      "documentName": "Ethernet (1).pdf",
+      "size": "0.97 MB",
+      "chunksCount": 38
+    }
+  },
+  {
+    "id": "evt_q_1790239531604_ojtf4m",
+    "type": "question_submitted",
+    "timestamp": "2026-09-24T08:45:31.604Z",
+    "documentId": "doc_1790239146441_sc7456",
+    "metadata": {
+      "question": "Regarding \"Ethernet (1).pdf\": what is ethernet"
+    }
+  },
+  {
+    "id": "evt_quiz_quiz-1790240136913",
+    "type": "quiz_completed",
+    "timestamp": "2026-09-24T08:55:36.916Z",
+    "documentId": "doc_1790239146441_sc7456",
+    "topic": "Applied Review of Ethernet and Wireless LAN",
+    "metadata": {
+      "quizId": "quiz-1790240136913",
+      "score": 2,
+      "totalQuestions": 5,
+      "percentage": 40,
+      "topicBreakdown": {
+        "Applied Review of Ethernet and Wireless LAN": {
+          "total": 5,
+          "correct": 2
+        }
+      },
+      "weakTopics": [
+        "Applied Review of Ethernet and Wireless LAN"
+      ],
+      "strongTopics": [
+        "Applied Review of Ethernet and Wireless LAN"
+      ]
+    }
+  },
+  {
+    "id": "evt_class_cls_1790240910970_sbra6",
+    "type": "live_class_ended",
+    "timestamp": "2026-09-24T09:08:44.199Z",
+    "documentId": "doc_1790239146441_sc7456",
+    "metadata": {
+      "classId": "cls_1790240910970_sbra6",
+      "durationSeconds": 13,
+      "documentName": "Ethernet (1).pdf",
+      "topicsCovered": [
+        "IEEE 802.3 and IEEE 802.11 Standards"
+      ]
+    }
+  },
+  {
+    "id": "evt_q_1790241807592_ux7ji4",
+    "type": "question_submitted",
+    "timestamp": "2026-09-24T09:23:27.592Z",
+    "documentId": "doc_1790239146441_sc7456",
+    "metadata": {
+      "question": "what is ethernet?"
+    }
+  },
+  {
+    "id": "evt_q_1790241846145_54krmf",
+    "type": "question_submitted",
+    "timestamp": "2026-09-24T09:24:06.145Z",
+    "documentId": "doc_1790239146441_sc7456",
+    "metadata": {
+      "question": "how to make a paneer butter masala"
+    }
+  },
+  {
+    "id": "evt_quiz_quiz-1790242136407",
+    "type": "quiz_completed",
+    "timestamp": "2026-09-24T09:28:56.412Z",
+    "documentId": "doc_1790239146441_sc7456",
+    "topic": "The Language of Networks: An Introduction to IEEE 802.3 and 802.11 Standards",
+    "metadata": {
+      "quizId": "quiz-1790242136407",
+      "score": 4,
+      "totalQuestions": 5,
+      "percentage": 80,
+      "topicBreakdown": {
+        "Comprehensive Review: Ethernet (1).pdf": {
+          "total": 5,
+          "correct": 4
+        }
+      },
+      "weakTopics": [
+        "Comprehensive Review: Ethernet (1).pdf"
+      ],
+      "strongTopics": [
+        "Comprehensive Review: Ethernet (1).pdf"
+      ]
+    }
+  }
+]

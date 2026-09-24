@@ -1,9 +1,16 @@
 import dotenv from 'dotenv';
 import path from 'path';
 
-// Load .env from current directory or server directory
-dotenv.config({ path: path.resolve(process.cwd(), '.env') });
-dotenv.config({ path: path.resolve(process.cwd(), 'server', '.env') });
+// Load .env from current directory or server directory (local development only).
+// On Vercel, environment variables are injected from the dashboard — dotenv is not needed.
+if (!process.env.VERCEL) {
+  try {
+    dotenv.config({ path: path.resolve(process.cwd(), '.env') });
+    dotenv.config({ path: path.resolve(process.cwd(), 'server', '.env') });
+  } catch {
+    // .env files may not exist; that's fine if env vars are set externally.
+  }
+}
 
 export interface AzureConfig {
   openAI: {

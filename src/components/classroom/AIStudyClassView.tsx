@@ -25,6 +25,8 @@ import {
   Layers,
   ArrowRight,
   Radio,
+  MessageCircle,
+  User,
 } from 'lucide-react';
 import { useLearning } from '../../context/LearningContext';
 import { useApp } from '../../context/AppContext';
@@ -82,6 +84,13 @@ export const AIStudyClassView: React.FC = () => {
 
   // Auto-Progression Pacing Timer (between teaching steps)
   const autoAdvanceTimerRef = useRef<NodeJS.Timeout | null>(null);
+
+  // Student Input & Conversation Transcript
+  const [textInput, setTextInput] = useState<string>('');
+  const [isProcessingQuestion, setIsProcessingQuestion] = useState<boolean>(false);
+  const [conversationLog, setConversationLog] = useState<Array<{ role: 'teacher' | 'student'; text: string; timestamp: string }>>([]);
+  const [micError, setMicError] = useState<string | null>(null);
+  const conversationEndRef = useRef<HTMLDivElement | null>(null);
 
   // Understanding Check & UI panels
   const [selectedOption, setSelectedOption] = useState<string | null>(null);
@@ -230,12 +239,21 @@ export const AIStudyClassView: React.FC = () => {
       recognition.onstart = () => {
         setMicAvailable(true);
         setIsMicInitializing(false);
+        setMicError(null);
       };
 
       recognition.onerror = (event: any) => {
         setIsMicInitializing(false);
         if (event.error === 'not-allowed' || event.error === 'service-not-allowed') {
           setMicAvailable(false);
+          setMicError('Microphone permission denied. You can still type your questions below.');
+        } else if (event.error === 'no-speech') {
+          // Ignore no-speech, recognition auto-restarts
+        } else if (event.error === 'network') {
+          setMicError('Speech recognition network error. You can still type your questions below.');
+        } else if (event.error === 'audio-capture') {
+          setMicAvailable(false);
+          setMicError('No microphone device found. You can still type your questions below.');
         }
       };
 
@@ -302,10 +320,17 @@ export const AIStudyClassView: React.FC = () => {
     }
   };
 
-  // 6. Handle Student Interruption (Natural Speech)
-  const handleStudentInterruption = async (question: string) => {
-    if (!session) return;
+  // 6. Unified Student Question Handler (Both Voice & Text converge here)
+  const handleStudentQuestion = async (question: string) => {
+    if (!session || !question.trim() || isProcessingQuestion) return;
+    const trimmed = question.trim();
+    setIsProcessingQuestion(true);
     clearAutoAdvanceTimer();
+
+    // Add student turn to conversation log
+    const now = new Date();
+    const ts = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+    setConversationLog(prev => [...prev, { role: 'student', text: trimmed, timestamp: ts }]);
 
     // Immediately pause teacher audio
     if (audioPlayerRef.current) {
@@ -315,9 +340,13 @@ export const AIStudyClassView: React.FC = () => {
     setTeacherState('THINKING');
 
     try {
-      const res = await AIClassAPI.interrupt(session.classId, question);
+      const res = await AIClassAPI.interrupt(session.classId, trimmed);
       setSession(res.session);
       setCurrentSpeechText(res.teacherResponse);
+
+      // Add teacher response to conversation log
+      const ts2 = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+      setConversationLog(prev => [...prev, { role: 'teacher', text: res.teacherResponse, timestamp: ts2 }]);
 
       if (res.audioUrl) {
         playTeacherVoice(res.audioUrl);
@@ -329,8 +358,29 @@ export const AIStudyClassView: React.FC = () => {
       addToast('Teacher could not process question. Continuing lecture.', 'warning');
       setTeacherState('LISTENING');
       scheduleAutoProgression();
+    } finally {
+      setIsProcessingQuestion(false);
     }
   };
+
+  // Legacy alias for speech recognition handler
+  const handleStudentInterruption = handleStudentQuestion;
+
+  // Handle text input submission
+  const handleTextSubmit = (e?: React.FormEvent) => {
+    if (e) e.preventDefault();
+    if (!textInput.trim() || isProcessingQuestion) return;
+    const question = textInput.trim();
+    setTextInput('');
+    handleStudentQuestion(question);
+  };
+
+  // Auto-scroll conversation log when new entries are added
+  useEffect(() => {
+    if (conversationEndRef.current) {
+      conversationEndRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, [conversationLog.length]);
 
   // 7. Explicit Student Action: Start Class
   const handleStartClass = async () => {
@@ -467,14 +517,27 @@ export const AIStudyClassView: React.FC = () => {
   const toggleMicMute = () => {
     const nextMuted = !isMicMuted;
     setIsMicMuted(nextMuted);
+    setMicError(null);
     if (nextMuted) {
       setIsStudentSpeaking(false);
       setInterimTranscript('');
-      addToast('Microphone muted. The teacher will not hear background noise.', 'info');
     } else {
-      addToast('Microphone active. Speak naturally anytime to ask questions.', 'success');
+      // If speech recognition is not started yet, try to init
+      if (!speechRecognitionRef.current) {
+        initSpeechRecognition();
+      }
     }
   };
+
+  // Derive current mic state for UI display
+  const micState: 'IDLE' | 'LISTENING' | 'PROCESSING' | 'ERROR' = 
+    !micAvailable ? 'ERROR' :
+    micError ? 'ERROR' :
+    isMicInitializing ? 'PROCESSING' :
+    isProcessingQuestion ? 'PROCESSING' :
+    isMicMuted ? 'IDLE' :
+    isStudentSpeaking ? 'LISTENING' :
+    'LISTENING';
 
   // 11. Submit Answer to Understanding Check
   const handleSubmitCheck = async (answer: string) => {
@@ -1155,34 +1218,9 @@ export const AIStudyClassView: React.FC = () => {
             )}
           </div>
 
-          {/* TEACHING BOARD BOTTOM BAR: CLEAN NATURAL CONTROLS */}
+          {/* TEACHING BOARD CONTROLS BAR */}
           <div className="pt-3 border-t border-white/10 flex items-center justify-between text-xs">
             <div className="flex items-center gap-2.5">
-              {/* ONLY ONE MICROPHONE CONTROL (MUTE/UNMUTE) OR PREPARING */}
-              {isMicInitializing ? (
-                <button
-                  disabled
-                  className="px-3 py-1.5 rounded-xl font-semibold flex items-center gap-1.5 transition-colors shadow-xs bg-amber-900/60 text-amber-200 border border-amber-700/50"
-                  title="Initializing microphone"
-                >
-                  <span className="animate-spin text-xs">◌</span>
-                  <span>Preparing microphone...</span>
-                </button>
-              ) : (
-                <button
-                  onClick={toggleMicMute}
-                  className={`px-3 py-1.5 rounded-xl font-semibold flex items-center gap-1.5 transition-colors shadow-xs ${
-                    isMicMuted
-                      ? 'bg-rose-900/80 text-rose-200 border border-rose-700 hover:bg-rose-900'
-                      : 'bg-emerald-700 hover:bg-emerald-600 text-white'
-                  }`}
-                  title={isMicMuted ? 'Click to unmute microphone' : 'Mute student microphone'}
-                >
-                  {isMicMuted ? <MicOff className="w-4 h-4" /> : <Mic className="w-4 h-4" />}
-                  <span>{isMicMuted ? 'Mic Muted' : 'Mic On'}</span>
-                </button>
-              )}
-
               {/* Pause Class */}
               <button
                 onClick={togglePause}
@@ -1211,10 +1249,167 @@ export const AIStudyClassView: React.FC = () => {
                 <span>{isGeneratingVisual ? 'Generating...' : 'Visualize'}</span>
               </button>
             </div>
+          </div>
 
-            <div className="flex items-center gap-2 text-[11px] text-gray-400 font-mono">
-              <Radio className="w-3 h-3 text-emerald-400 animate-pulse" />
-              <span>{isMicMuted ? 'Mic Muted' : 'Speak naturally anytime to ask'}</span>
+          {/* ================================================ */}
+          {/* LIVE TRANSCRIPT + STUDENT INPUT AREA              */}
+          {/* ================================================ */}
+          <div className="mt-2 border-t border-white/10 pt-2 flex flex-col" style={{ maxHeight: '40%' }}>
+            {/* Conversation Transcript */}
+            {conversationLog.length > 0 && (
+              <div className="flex-shrink overflow-y-auto mb-2 space-y-1.5 max-h-36 pr-1 scroll-smooth">
+                <div className="flex items-center gap-1.5 text-[10px] font-mono uppercase tracking-widest text-indigo-300/70 font-bold mb-1">
+                  <MessageCircle className="w-3 h-3" />
+                  <span>Live Transcript</span>
+                </div>
+                {conversationLog.map((entry, idx) => (
+                  <div key={idx} className={`flex items-start gap-2 text-xs px-2.5 py-1.5 rounded-lg ${
+                    entry.role === 'teacher'
+                      ? 'bg-indigo-950/50 border border-indigo-500/20'
+                      : 'bg-emerald-950/50 border border-emerald-500/20'
+                  }`}>
+                    <span className={`font-mono font-bold text-[10px] uppercase flex-shrink-0 mt-0.5 ${
+                      entry.role === 'teacher' ? 'text-indigo-300' : 'text-emerald-300'
+                    }`}>
+                      {entry.role === 'teacher' ? 'Teacher' : 'You'}
+                    </span>
+                    <p className={`leading-relaxed ${
+                      entry.role === 'teacher' ? 'text-indigo-100/90' : 'text-emerald-100/90'
+                    }`}>
+                      {entry.text.length > 200 ? entry.text.slice(0, 200) + '…' : entry.text}
+                    </p>
+                    <span className="text-[9px] text-gray-500 font-mono flex-shrink-0 mt-0.5">{entry.timestamp}</span>
+                  </div>
+                ))}
+                <div ref={conversationEndRef} />
+              </div>
+            )}
+
+            {/* Mic State Indicator + Interim Transcript */}
+            {(isStudentSpeaking || isProcessingQuestion || micError) && (
+              <div className="mb-2">
+                {micError ? (
+                  <div className="flex items-center gap-2 px-3 py-2 rounded-xl bg-rose-950/40 border border-rose-500/30 text-rose-200 text-xs">
+                    <AlertCircle className="w-4 h-4 flex-shrink-0" />
+                    <span>{micError}</span>
+                  </div>
+                ) : isProcessingQuestion ? (
+                  <div className="flex items-center gap-2 px-3 py-2 rounded-xl bg-amber-950/40 border border-amber-500/30 text-amber-200 text-xs">
+                    <span className="animate-spin text-sm">◌</span>
+                    <span>Understanding your question...</span>
+                  </div>
+                ) : isStudentSpeaking && interimTranscript ? (
+                  <div className="px-3 py-2 rounded-xl bg-emerald-950/40 border border-emerald-500/30 text-xs space-y-1">
+                    <div className="flex items-center gap-2">
+                      <span className="relative flex h-3 w-3">
+                        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-rose-400 opacity-75"></span>
+                        <span className="relative inline-flex rounded-full h-3 w-3 bg-rose-500"></span>
+                      </span>
+                      <span className="font-mono font-bold text-[10px] uppercase tracking-wider text-emerald-300">Listening...</span>
+                      {/* Simple waveform indicator */}
+                      <div className="flex items-center gap-0.5 h-4">
+                        {[1,2,3,4,5].map(i => (
+                          <div key={i} className="w-0.5 bg-emerald-400 rounded-full" style={{
+                            height: `${8 + Math.sin(Date.now() / (150 + i * 30)) * 8}px`,
+                            animation: `pulse ${0.4 + i * 0.1}s ease-in-out infinite alternate`,
+                          }} />
+                        ))}
+                      </div>
+                    </div>
+                    <p className="text-emerald-100/90 italic pl-5">"{interimTranscript}"</p>
+                  </div>
+                ) : null}
+              </div>
+            )}
+
+            {/* Student Input Area: Mic + Text + Send */}
+            <form onSubmit={handleTextSubmit} className="flex items-center gap-2 flex-shrink-0">
+              {/* Microphone Button with clear state */}
+              <button
+                type="button"
+                onClick={toggleMicMute}
+                disabled={isMicInitializing}
+                className={`relative flex-shrink-0 w-10 h-10 rounded-xl flex items-center justify-center transition-all shadow-xs ${
+                  isMicInitializing
+                    ? 'bg-amber-900/60 text-amber-200 border border-amber-700/50 cursor-wait'
+                  : !micAvailable
+                    ? 'bg-rose-900/60 text-rose-300 border border-rose-700/50'
+                  : isMicMuted
+                    ? 'bg-white/10 text-gray-400 border border-white/20 hover:bg-white/15'
+                    : isStudentSpeaking
+                    ? 'bg-rose-600 text-white border border-rose-400 ring-2 ring-rose-400/50'
+                    : 'bg-emerald-700 text-white border border-emerald-500 hover:bg-emerald-600'
+                }`}
+                title={
+                  isMicInitializing ? 'Preparing microphone...' :
+                  !micAvailable ? 'Microphone unavailable' :
+                  isMicMuted ? 'Click to enable microphone' :
+                  isStudentSpeaking ? 'Listening...' :
+                  'Microphone active — click to mute'
+                }
+              >
+                {isMicInitializing ? (
+                  <span className="animate-spin text-sm">◌</span>
+                ) : isMicMuted || !micAvailable ? (
+                  <MicOff className="w-4.5 h-4.5" />
+                ) : (
+                  <Mic className="w-4.5 h-4.5" />
+                )}
+                {/* Pulsing ring when actively listening */}
+                {!isMicMuted && micAvailable && !isMicInitializing && isStudentSpeaking && (
+                  <span className="absolute inset-0 rounded-xl border-2 border-rose-400 animate-ping opacity-50" />
+                )}
+              </button>
+
+              {/* Text Input */}
+              <div className="flex-1 relative">
+                <input
+                  type="text"
+                  value={textInput}
+                  onChange={(e) => setTextInput(e.target.value)}
+                  placeholder={
+                    teacherState === 'PAUSED' ? 'Class is paused...' :
+                    isProcessingQuestion ? 'Processing your question...' :
+                    'Ask your teacher something...'
+                  }
+                  disabled={isProcessingQuestion || teacherState === 'PAUSED'}
+                  className="w-full px-3.5 py-2.5 rounded-xl bg-white/10 border border-white/20 text-white text-xs placeholder:text-gray-500 focus:outline-none focus:ring-1 focus:ring-indigo-400/50 focus:border-indigo-400/50 transition-all disabled:opacity-50"
+                  onKeyDown={(e) => {
+                    if (e.key === 'Enter' && !e.shiftKey) {
+                      e.preventDefault();
+                      handleTextSubmit();
+                    }
+                  }}
+                />
+              </div>
+
+              {/* Send Button */}
+              <button
+                type="submit"
+                disabled={!textInput.trim() || isProcessingQuestion || teacherState === 'PAUSED'}
+                className="flex-shrink-0 w-10 h-10 rounded-xl bg-indigo-600 hover:bg-indigo-500 disabled:bg-white/10 disabled:text-gray-600 text-white flex items-center justify-center transition-all shadow-xs disabled:cursor-not-allowed"
+                title="Send question"
+              >
+                <Send className="w-4 h-4" />
+              </button>
+            </form>
+
+            {/* Mic status line */}
+            <div className="flex items-center justify-between mt-1.5 px-1 text-[10px] font-mono text-gray-500">
+              <div className="flex items-center gap-1.5">
+                {isMicInitializing ? (
+                  <><span className="w-1.5 h-1.5 rounded-full bg-amber-500 animate-pulse" /><span>Preparing mic...</span></>
+                ) : !micAvailable ? (
+                  <><span className="w-1.5 h-1.5 rounded-full bg-rose-500" /><span>Mic unavailable · type below</span></>
+                ) : isMicMuted ? (
+                  <><span className="w-1.5 h-1.5 rounded-full bg-gray-500" /><span>Mic muted · tap to speak</span></>
+                ) : isStudentSpeaking ? (
+                  <><span className="w-1.5 h-1.5 rounded-full bg-rose-500 animate-ping" /><span className="text-emerald-300">Speak now...</span></>
+                ) : (
+                  <><span className="w-1.5 h-1.5 rounded-full bg-emerald-500" /><span>Mic on · speak anytime or type</span></>
+                )}
+              </div>
+              <span>{isMicMuted ? '' : 'Voice + Text'}</span>
             </div>
           </div>
         </div>

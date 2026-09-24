@@ -90,7 +90,9 @@ export class RAGPipeline {
 
       // Check persistent manifest.json in server/storage/documents
       try {
-        const manifestPath = path.join(process.cwd(), 'server', 'storage', 'documents', 'manifest.json');
+        const manifestPath = process.env.VERCEL
+          ? path.join('/tmp', 'learnsphere-storage', 'documents', 'manifest.json')
+          : path.join(process.cwd(), 'server', 'storage', 'documents', 'manifest.json');
         if (fs.existsSync(manifestPath)) {
           const raw = fs.readFileSync(manifestPath, 'utf-8');
           const manifestDocs = JSON.parse(raw);
@@ -114,7 +116,9 @@ export class RAGPipeline {
 
   private saveManifest(): void {
     try {
-      const manifestPath = path.join(process.cwd(), 'server', 'storage', 'documents', 'manifest.json');
+      const manifestPath = process.env.VERCEL
+        ? path.join('/tmp', 'learnsphere-storage', 'documents', 'manifest.json')
+        : path.join(process.cwd(), 'server', 'storage', 'documents', 'manifest.json');
       const docs = Array.from(this.documentsMap.values());
       fs.writeFileSync(manifestPath, JSON.stringify(docs, null, 2), 'utf-8');
     } catch (e) {

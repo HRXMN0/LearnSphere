@@ -1,0 +1,3477 @@
+{
+  "documentId": "doc_1790239146441_sc7456",
+  "documentName": "Ethernet (1).pdf",
+  "courseTitle": "The Language of Networks: An Introduction to IEEE 802.3 and 802.11 Standards",
+  "totalUnits": 5,
+  "totalSections": 13,
+  "totalConcepts": 29,
+  "nodes": [
+    {
+      "id": "con_doc_1790239146441_sc7456_1",
+      "title": "IEEE 802.3 and IEEE 802.11 Standards",
+      "description": "Introduces the IEEE standards associated with wired Ethernet and wireless local area networking.",
+      "parentId": "sec_doc_1790239146441_sc7456_1_1",
+      "level": "concept",
+      "documentId": "doc_1790239146441_sc7456",
+      "documentName": "Ethernet (1).pdf",
+      "pageStart": 1,
+      "pageEnd": 1,
+      "chunkIds": [
+        "doc_1790239146441_sc7456_1"
+      ],
+      "keywords": [
+        "ieee 802.3",
+        "ieee 802.11",
+        "network standards"
+      ],
+      "order": 3
+    },
+    {
+      "id": "con_doc_1790239146441_sc7456_2",
+      "title": "Ethernet as a LAN Technology",
+      "description": "Defines Ethernet as a widely used local area network technology for communication among connected devices.",
+      "parentId": "sec_doc_1790239146441_sc7456_1_1",
+      "level": "concept",
+      "documentId": "doc_1790239146441_sc7456",
+      "documentName": "Ethernet (1).pdf",
+      "pageStart": 2,
+      "pageEnd": 2,
+      "chunkIds": [
+        "doc_1790239146441_sc7456_2"
+      ],
+      "keywords": [
+        "ethernet",
+        "lan",
+        "local area network"
+      ],
+      "order": 4
+    },
+    {
+      "id": "con_doc_1790239146441_sc7456_3",
+      "title": "Wired Ethernet",
+      "description": "Explains wired Ethernet as a network in which devices are physically connected through networking media and interface hardware.",
+      "parentId": "sec_doc_1790239146441_sc7456_1_1",
+      "level": "concept",
+      "documentId": "doc_1790239146441_sc7456",
+      "documentName": "Ethernet (1).pdf",
+      "pageStart": 3,
+      "pageEnd": 3,
+      "chunkIds": [
+        "doc_1790239146441_sc7456_3"
+      ],
+      "keywords": [
+        "wired ethernet",
+        "physical connection",
+        "network devices"
+      ],
+      "order": 5
+    },
+    {
+      "id": "sec_doc_1790239146441_sc7456_1_1",
+      "title": "Introduction to Ethernet",
+      "description": "Establishes the scope of IEEE 802.3 and IEEE 802.11 and introduces Ethernet networking.",
+      "parentId": "unit_doc_1790239146441_sc7456_1",
+      "level": "section",
+      "documentId": "doc_1790239146441_sc7456",
+      "documentName": "Ethernet (1).pdf",
+      "chunkIds": [
+        "doc_1790239146441_sc7456_1",
+        "doc_1790239146441_sc7456_2",
+        "doc_1790239146441_sc7456_3"
+      ],
+      "keywords": [],
+      "order": 2,
+      "children": [
+        {
+          "id": "con_doc_1790239146441_sc7456_1",
+          "title": "IEEE 802.3 and IEEE 802.11 Standards",
+          "description": "Introduces the IEEE standards associated with wired Ethernet and wireless local area networking.",
+          "parentId": "sec_doc_1790239146441_sc7456_1_1",
+          "level": "concept",
+          "documentId": "doc_1790239146441_sc7456",
+          "documentName": "Ethernet (1).pdf",
+          "pageStart": 1,
+          "pageEnd": 1,
+          "chunkIds": [
+            "doc_1790239146441_sc7456_1"
+          ],
+          "keywords": [
+            "ieee 802.3",
+            "ieee 802.11",
+            "network standards"
+          ],
+          "order": 3
+        },
+        {
+          "id": "con_doc_1790239146441_sc7456_2",
+          "title": "Ethernet as a LAN Technology",
+          "description": "Defines Ethernet as a widely used local area network technology for communication among connected devices.",
+          "parentId": "sec_doc_1790239146441_sc7456_1_1",
+          "level": "concept",
+          "documentId": "doc_1790239146441_sc7456",
+          "documentName": "Ethernet (1).pdf",
+          "pageStart": 2,
+          "pageEnd": 2,
+          "chunkIds": [
+            "doc_1790239146441_sc7456_2"
+          ],
+          "keywords": [
+            "ethernet",
+            "lan",
+            "local area network"
+          ],
+          "order": 4
+        },
+        {
+          "id": "con_doc_1790239146441_sc7456_3",
+          "title": "Wired Ethernet",
+          "description": "Explains wired Ethernet as a network in which devices are physically connected through networking media and interface hardware.",
+          "parentId": "sec_doc_1790239146441_sc7456_1_1",
+          "level": "concept",
+          "documentId": "doc_1790239146441_sc7456",
+          "documentName": "Ethernet (1).pdf",
+          "pageStart": 3,
+          "pageEnd": 3,
+          "chunkIds": [
+            "doc_1790239146441_sc7456_3"
+          ],
+          "keywords": [
+            "wired ethernet",
+            "physical connection",
+            "network devices"
+          ],
+          "order": 5
+        }
+      ],
+      "pageStart": 1,
+      "pageEnd": 3
+    },
+    {
+      "id": "con_doc_1790239146441_sc7456_4",
+      "title": "Wired Network Interface Card",
+      "description": "Presents the wired Network Interface Card as the device interface that enables a computer to connect to an Ethernet network.",
+      "parentId": "sec_doc_1790239146441_sc7456_1_2",
+      "level": "concept",
+      "documentId": "doc_1790239146441_sc7456",
+      "documentName": "Ethernet (1).pdf",
+      "pageStart": 4,
+      "pageEnd": 4,
+      "chunkIds": [
+        "doc_1790239146441_sc7456_4"
+      ],
+      "keywords": [
+        "network interface card",
+        "nic",
+        "wired network"
+      ],
+      "order": 7
+    },
+    {
+      "id": "con_doc_1790239146441_sc7456_5",
+      "title": "Wireless Network Interface Card",
+      "description": "Presents the wireless Network Interface Card as the interface that enables a device to communicate over a wireless network.",
+      "parentId": "sec_doc_1790239146441_sc7456_1_2",
+      "level": "concept",
+      "documentId": "doc_1790239146441_sc7456",
+      "documentName": "Ethernet (1).pdf",
+      "pageStart": 5,
+      "pageEnd": 5,
+      "chunkIds": [
+        "doc_1790239146441_sc7456_5"
+      ],
+      "keywords": [
+        "wireless nic",
+        "network interface card",
+        "wireless network"
+      ],
+      "order": 8
+    },
+    {
+      "id": "sec_doc_1790239146441_sc7456_1_2",
+      "title": "Network Interface Hardware",
+      "description": "Identifies the interface cards used to connect devices to wired and wireless networks.",
+      "parentId": "unit_doc_1790239146441_sc7456_1",
+      "level": "section",
+      "documentId": "doc_1790239146441_sc7456",
+      "documentName": "Ethernet (1).pdf",
+      "chunkIds": [
+        "doc_1790239146441_sc7456_4",
+        "doc_1790239146441_sc7456_5"
+      ],
+      "keywords": [],
+      "order": 6,
+      "children": [
+        {
+          "id": "con_doc_1790239146441_sc7456_4",
+          "title": "Wired Network Interface Card",
+          "description": "Presents the wired Network Interface Card as the device interface that enables a computer to connect to an Ethernet network.",
+          "parentId": "sec_doc_1790239146441_sc7456_1_2",
+          "level": "concept",
+          "documentId": "doc_1790239146441_sc7456",
+          "documentName": "Ethernet (1).pdf",
+          "pageStart": 4,
+          "pageEnd": 4,
+          "chunkIds": [
+            "doc_1790239146441_sc7456_4"
+          ],
+          "keywords": [
+            "network interface card",
+            "nic",
+            "wired network"
+          ],
+          "order": 7
+        },
+        {
+          "id": "con_doc_1790239146441_sc7456_5",
+          "title": "Wireless Network Interface Card",
+          "description": "Presents the wireless Network Interface Card as the interface that enables a device to communicate over a wireless network.",
+          "parentId": "sec_doc_1790239146441_sc7456_1_2",
+          "level": "concept",
+          "documentId": "doc_1790239146441_sc7456",
+          "documentName": "Ethernet (1).pdf",
+          "pageStart": 5,
+          "pageEnd": 5,
+          "chunkIds": [
+            "doc_1790239146441_sc7456_5"
+          ],
+          "keywords": [
+            "wireless nic",
+            "network interface card",
+            "wireless network"
+          ],
+          "order": 8
+        }
+      ],
+      "pageStart": 4,
+      "pageEnd": 5
+    },
+    {
+      "id": "con_doc_1790239146441_sc7456_6",
+      "title": "IEEE 802 Communication Rules",
+      "description": "Describes standardization as the establishment of common rules that allow heterogeneous devices to communicate with one another.",
+      "parentId": "sec_doc_1790239146441_sc7456_1_3",
+      "level": "concept",
+      "documentId": "doc_1790239146441_sc7456",
+      "documentName": "Ethernet (1).pdf",
+      "pageStart": 6,
+      "pageEnd": 6,
+      "chunkIds": [
+        "doc_1790239146441_sc7456_6"
+      ],
+      "keywords": [
+        "ieee",
+        "standardization",
+        "802",
+        "communication rules"
+      ],
+      "order": 10
+    },
+    {
+      "id": "sec_doc_1790239146441_sc7456_1_3",
+      "title": "IEEE Standardization",
+      "description": "Explains how standardized rules enable communication between different network devices.",
+      "parentId": "unit_doc_1790239146441_sc7456_1",
+      "level": "section",
+      "documentId": "doc_1790239146441_sc7456",
+      "documentName": "Ethernet (1).pdf",
+      "chunkIds": [
+        "doc_1790239146441_sc7456_6"
+      ],
+      "keywords": [],
+      "order": 9,
+      "children": [
+        {
+          "id": "con_doc_1790239146441_sc7456_6",
+          "title": "IEEE 802 Communication Rules",
+          "description": "Describes standardization as the establishment of common rules that allow heterogeneous devices to communicate with one another.",
+          "parentId": "sec_doc_1790239146441_sc7456_1_3",
+          "level": "concept",
+          "documentId": "doc_1790239146441_sc7456",
+          "documentName": "Ethernet (1).pdf",
+          "pageStart": 6,
+          "pageEnd": 6,
+          "chunkIds": [
+            "doc_1790239146441_sc7456_6"
+          ],
+          "keywords": [
+            "ieee",
+            "standardization",
+            "802",
+            "communication rules"
+          ],
+          "order": 10
+        }
+      ],
+      "pageStart": 6,
+      "pageEnd": 6
+    },
+    {
+      "id": "unit_doc_1790239146441_sc7456_1",
+      "title": "Network and Ethernet Fundamentals",
+      "description": "Introduces Ethernet as a LAN technology, distinguishes wired and wireless connectivity, and explains the role of network interface hardware and IEEE standardization.",
+      "level": "unit",
+      "documentId": "doc_1790239146441_sc7456",
+      "documentName": "Ethernet (1).pdf",
+      "chunkIds": [
+        "doc_1790239146441_sc7456_1",
+        "doc_1790239146441_sc7456_2",
+        "doc_1790239146441_sc7456_3",
+        "doc_1790239146441_sc7456_4",
+        "doc_1790239146441_sc7456_5",
+        "doc_1790239146441_sc7456_6"
+      ],
+      "keywords": [],
+      "order": 1,
+      "children": [
+        {
+          "id": "sec_doc_1790239146441_sc7456_1_1",
+          "title": "Introduction to Ethernet",
+          "description": "Establishes the scope of IEEE 802.3 and IEEE 802.11 and introduces Ethernet networking.",
+          "parentId": "unit_doc_1790239146441_sc7456_1",
+          "level": "section",
+          "documentId": "doc_1790239146441_sc7456",
+          "documentName": "Ethernet (1).pdf",
+          "chunkIds": [
+            "doc_1790239146441_sc7456_1",
+            "doc_1790239146441_sc7456_2",
+            "doc_1790239146441_sc7456_3"
+          ],
+          "keywords": [],
+          "order": 2,
+          "children": [
+            {
+              "id": "con_doc_1790239146441_sc7456_1",
+              "title": "IEEE 802.3 and IEEE 802.11 Standards",
+              "description": "Introduces the IEEE standards associated with wired Ethernet and wireless local area networking.",
+              "parentId": "sec_doc_1790239146441_sc7456_1_1",
+              "level": "concept",
+              "documentId": "doc_1790239146441_sc7456",
+              "documentName": "Ethernet (1).pdf",
+              "pageStart": 1,
+              "pageEnd": 1,
+              "chunkIds": [
+                "doc_1790239146441_sc7456_1"
+              ],
+              "keywords": [
+                "ieee 802.3",
+                "ieee 802.11",
+                "network standards"
+              ],
+              "order": 3
+            },
+            {
+              "id": "con_doc_1790239146441_sc7456_2",
+              "title": "Ethernet as a LAN Technology",
+              "description": "Defines Ethernet as a widely used local area network technology for communication among connected devices.",
+              "parentId": "sec_doc_1790239146441_sc7456_1_1",
+              "level": "concept",
+              "documentId": "doc_1790239146441_sc7456",
+              "documentName": "Ethernet (1).pdf",
+              "pageStart": 2,
+              "pageEnd": 2,
+              "chunkIds": [
+                "doc_1790239146441_sc7456_2"
+              ],
+              "keywords": [
+                "ethernet",
+                "lan",
+                "local area network"
+              ],
+              "order": 4
+            },
+            {
+              "id": "con_doc_1790239146441_sc7456_3",
+              "title": "Wired Ethernet",
+              "description": "Explains wired Ethernet as a network in which devices are physically connected through networking media and interface hardware.",
+              "parentId": "sec_doc_1790239146441_sc7456_1_1",
+              "level": "concept",
+              "documentId": "doc_1790239146441_sc7456",
+              "documentName": "Ethernet (1).pdf",
+              "pageStart": 3,
+              "pageEnd": 3,
+              "chunkIds": [
+                "doc_1790239146441_sc7456_3"
+              ],
+              "keywords": [
+                "wired ethernet",
+                "physical connection",
+                "network devices"
+              ],
+              "order": 5
+            }
+          ],
+          "pageStart": 1,
+          "pageEnd": 3
+        },
+        {
+          "id": "sec_doc_1790239146441_sc7456_1_2",
+          "title": "Network Interface Hardware",
+          "description": "Identifies the interface cards used to connect devices to wired and wireless networks.",
+          "parentId": "unit_doc_1790239146441_sc7456_1",
+          "level": "section",
+          "documentId": "doc_1790239146441_sc7456",
+          "documentName": "Ethernet (1).pdf",
+          "chunkIds": [
+            "doc_1790239146441_sc7456_4",
+            "doc_1790239146441_sc7456_5"
+          ],
+          "keywords": [],
+          "order": 6,
+          "children": [
+            {
+              "id": "con_doc_1790239146441_sc7456_4",
+              "title": "Wired Network Interface Card",
+              "description": "Presents the wired Network Interface Card as the device interface that enables a computer to connect to an Ethernet network.",
+              "parentId": "sec_doc_1790239146441_sc7456_1_2",
+              "level": "concept",
+              "documentId": "doc_1790239146441_sc7456",
+              "documentName": "Ethernet (1).pdf",
+              "pageStart": 4,
+              "pageEnd": 4,
+              "chunkIds": [
+                "doc_1790239146441_sc7456_4"
+              ],
+              "keywords": [
+                "network interface card",
+                "nic",
+                "wired network"
+              ],
+              "order": 7
+            },
+            {
+              "id": "con_doc_1790239146441_sc7456_5",
+              "title": "Wireless Network Interface Card",
+              "description": "Presents the wireless Network Interface Card as the interface that enables a device to communicate over a wireless network.",
+              "parentId": "sec_doc_1790239146441_sc7456_1_2",
+              "level": "concept",
+              "documentId": "doc_1790239146441_sc7456",
+              "documentName": "Ethernet (1).pdf",
+              "pageStart": 5,
+              "pageEnd": 5,
+              "chunkIds": [
+                "doc_1790239146441_sc7456_5"
+              ],
+              "keywords": [
+                "wireless nic",
+                "network interface card",
+                "wireless network"
+              ],
+              "order": 8
+            }
+          ],
+          "pageStart": 4,
+          "pageEnd": 5
+        },
+        {
+          "id": "sec_doc_1790239146441_sc7456_1_3",
+          "title": "IEEE Standardization",
+          "description": "Explains how standardized rules enable communication between different network devices.",
+          "parentId": "unit_doc_1790239146441_sc7456_1",
+          "level": "section",
+          "documentId": "doc_1790239146441_sc7456",
+          "documentName": "Ethernet (1).pdf",
+          "chunkIds": [
+            "doc_1790239146441_sc7456_6"
+          ],
+          "keywords": [],
+          "order": 9,
+          "children": [
+            {
+              "id": "con_doc_1790239146441_sc7456_6",
+              "title": "IEEE 802 Communication Rules",
+              "description": "Describes standardization as the establishment of common rules that allow heterogeneous devices to communicate with one another.",
+              "parentId": "sec_doc_1790239146441_sc7456_1_3",
+              "level": "concept",
+              "documentId": "doc_1790239146441_sc7456",
+              "documentName": "Ethernet (1).pdf",
+              "pageStart": 6,
+              "pageEnd": 6,
+              "chunkIds": [
+                "doc_1790239146441_sc7456_6"
+              ],
+              "keywords": [
+                "ieee",
+                "standardization",
+                "802",
+                "communication rules"
+              ],
+              "order": 10
+            }
+          ],
+          "pageStart": 6,
+          "pageEnd": 6
+        }
+      ],
+      "pageStart": 1,
+      "pageEnd": 6
+    },
+    {
+      "id": "con_doc_1790239146441_sc7456_7",
+      "title": "Ethernet (802.3) Wired LAN",
+      "description": "Presents IEEE 802.3 as the standard underlying wired local area networks and their physical network communication.",
+      "parentId": "sec_doc_1790239146441_sc7456_2_4",
+      "level": "concept",
+      "documentId": "doc_1790239146441_sc7456",
+      "documentName": "Ethernet (1).pdf",
+      "pageStart": 7,
+      "pageEnd": 7,
+      "chunkIds": [
+        "doc_1790239146441_sc7456_7"
+      ],
+      "keywords": [
+        "ethernet",
+        "802.3",
+        "wired lan",
+        "physical network"
+      ],
+      "order": 13
+    },
+    {
+      "id": "con_doc_1790239146441_sc7456_8",
+      "title": "Ethernet Receiver Synchronization and Destination Identification",
+      "description": "Explains how Ethernet communication supports receiver synchronization and uses a destination MAC address to identify the intended receiver.",
+      "parentId": "sec_doc_1790239146441_sc7456_2_4",
+      "level": "concept",
+      "documentId": "doc_1790239146441_sc7456",
+      "documentName": "Ethernet (1).pdf",
+      "pageStart": 8,
+      "pageEnd": 8,
+      "chunkIds": [
+        "doc_1790239146441_sc7456_8"
+      ],
+      "keywords": [
+        "synchronization",
+        "destination mac",
+        "receiver",
+        "ethernet"
+      ],
+      "order": 14
+    },
+    {
+      "id": "con_doc_1790239146441_sc7456_9",
+      "title": "CSMA/CD",
+      "description": "Describes Carrier Sense Multiple Access with Collision Detection as the method used to coordinate transmissions and manage traffic on shared wired Ethernet.",
+      "parentId": "sec_doc_1790239146441_sc7456_2_4",
+      "level": "concept",
+      "documentId": "doc_1790239146441_sc7456",
+      "documentName": "Ethernet (1).pdf",
+      "pageStart": 9,
+      "pageEnd": 9,
+      "chunkIds": [
+        "doc_1790239146441_sc7456_9"
+      ],
+      "keywords": [
+        "csma/cd",
+        "carrier sense",
+        "multiple access",
+        "collision detection"
+      ],
+      "order": 15
+    },
+    {
+      "id": "sec_doc_1790239146441_sc7456_2_4",
+      "title": "Ethernet Communication and Medium Access",
+      "description": "Explains the functions of IEEE 802.3 Ethernet communication and the CSMA/CD access method.",
+      "parentId": "unit_doc_1790239146441_sc7456_2",
+      "level": "section",
+      "documentId": "doc_1790239146441_sc7456",
+      "documentName": "Ethernet (1).pdf",
+      "chunkIds": [
+        "doc_1790239146441_sc7456_7",
+        "doc_1790239146441_sc7456_8",
+        "doc_1790239146441_sc7456_9"
+      ],
+      "keywords": [],
+      "order": 12,
+      "children": [
+        {
+          "id": "con_doc_1790239146441_sc7456_7",
+          "title": "Ethernet (802.3) Wired LAN",
+          "description": "Presents IEEE 802.3 as the standard underlying wired local area networks and their physical network communication.",
+          "parentId": "sec_doc_1790239146441_sc7456_2_4",
+          "level": "concept",
+          "documentId": "doc_1790239146441_sc7456",
+          "documentName": "Ethernet (1).pdf",
+          "pageStart": 7,
+          "pageEnd": 7,
+          "chunkIds": [
+            "doc_1790239146441_sc7456_7"
+          ],
+          "keywords": [
+            "ethernet",
+            "802.3",
+            "wired lan",
+            "physical network"
+          ],
+          "order": 13
+        },
+        {
+          "id": "con_doc_1790239146441_sc7456_8",
+          "title": "Ethernet Receiver Synchronization and Destination Identification",
+          "description": "Explains how Ethernet communication supports receiver synchronization and uses a destination MAC address to identify the intended receiver.",
+          "parentId": "sec_doc_1790239146441_sc7456_2_4",
+          "level": "concept",
+          "documentId": "doc_1790239146441_sc7456",
+          "documentName": "Ethernet (1).pdf",
+          "pageStart": 8,
+          "pageEnd": 8,
+          "chunkIds": [
+            "doc_1790239146441_sc7456_8"
+          ],
+          "keywords": [
+            "synchronization",
+            "destination mac",
+            "receiver",
+            "ethernet"
+          ],
+          "order": 14
+        },
+        {
+          "id": "con_doc_1790239146441_sc7456_9",
+          "title": "CSMA/CD",
+          "description": "Describes Carrier Sense Multiple Access with Collision Detection as the method used to coordinate transmissions and manage traffic on shared wired Ethernet.",
+          "parentId": "sec_doc_1790239146441_sc7456_2_4",
+          "level": "concept",
+          "documentId": "doc_1790239146441_sc7456",
+          "documentName": "Ethernet (1).pdf",
+          "pageStart": 9,
+          "pageEnd": 9,
+          "chunkIds": [
+            "doc_1790239146441_sc7456_9"
+          ],
+          "keywords": [
+            "csma/cd",
+            "carrier sense",
+            "multiple access",
+            "collision detection"
+          ],
+          "order": 15
+        }
+      ],
+      "pageStart": 7,
+      "pageEnd": 9
+    },
+    {
+      "id": "con_doc_1790239146441_sc7456_10",
+      "title": "Evolution of Ethernet",
+      "description": "Traces the progression from Standard Ethernet in the 1980s to Fast Ethernet, Gigabit Ethernet, and systems operating at 10 Gbps and beyond.",
+      "parentId": "sec_doc_1790239146441_sc7456_2_5",
+      "level": "concept",
+      "documentId": "doc_1790239146441_sc7456",
+      "documentName": "Ethernet (1).pdf",
+      "pageStart": 10,
+      "pageEnd": 10,
+      "chunkIds": [
+        "doc_1790239146441_sc7456_10"
+      ],
+      "keywords": [
+        "standard ethernet",
+        "fast ethernet",
+        "gigabit ethernet",
+        "10 gbps"
+      ],
+      "order": 17
+    },
+    {
+      "id": "con_doc_1790239146441_sc7456_11",
+      "title": "Classification of Ethernet Networks",
+      "description": "Classifies Ethernet networks into four types according to their generation and supported data-transfer rate.",
+      "parentId": "sec_doc_1790239146441_sc7456_2_5",
+      "level": "concept",
+      "documentId": "doc_1790239146441_sc7456",
+      "documentName": "Ethernet (1).pdf",
+      "pageStart": 11,
+      "pageEnd": 12,
+      "chunkIds": [
+        "doc_1790239146441_sc7456_11",
+        "doc_1790239146441_sc7456_12"
+      ],
+      "keywords": [
+        "ethernet types",
+        "standard ethernet",
+        "fast ethernet",
+        "gigabit ethernet"
+      ],
+      "order": 18
+    },
+    {
+      "id": "con_doc_1790239146441_sc7456_12",
+      "title": "Fast Ethernet (802.3u)",
+      "description": "Defines Fast Ethernet as the IEEE 802.3u generation that raised Ethernet performance to 100 Mbps, ten times the original Ethernet rate.",
+      "parentId": "sec_doc_1790239146441_sc7456_2_5",
+      "level": "concept",
+      "documentId": "doc_1790239146441_sc7456",
+      "documentName": "Ethernet (1).pdf",
+      "pageStart": 13,
+      "pageEnd": 13,
+      "chunkIds": [
+        "doc_1790239146441_sc7456_13"
+      ],
+      "keywords": [
+        "fast ethernet",
+        "802.3u",
+        "100 mbps"
+      ],
+      "order": 19
+    },
+    {
+      "id": "con_doc_1790239146441_sc7456_13",
+      "title": "Auto-negotiation",
+      "description": "Explains auto-negotiation as a Fast Ethernet and newer Ethernet feature through which connected interfaces determine mutually supported communication settings.",
+      "parentId": "sec_doc_1790239146441_sc7456_2_5",
+      "level": "concept",
+      "documentId": "doc_1790239146441_sc7456",
+      "documentName": "Ethernet (1).pdf",
+      "pageStart": 14,
+      "pageEnd": 14,
+      "chunkIds": [
+        "doc_1790239146441_sc7456_14"
+      ],
+      "keywords": [
+        "auto-negotiation",
+        "fast ethernet",
+        "speed",
+        "duplex"
+      ],
+      "order": 20
+    },
+    {
+      "id": "con_doc_1790239146441_sc7456_14",
+      "title": "Gigabit Ethernet (802.3ab)",
+      "description": "Introduces Gigabit Ethernet as a 1000 Mbps standard used to support modern high-speed local area networks.",
+      "parentId": "sec_doc_1790239146441_sc7456_2_5",
+      "level": "concept",
+      "documentId": "doc_1790239146441_sc7456",
+      "documentName": "Ethernet (1).pdf",
+      "pageStart": 15,
+      "pageEnd": 15,
+      "chunkIds": [
+        "doc_1790239146441_sc7456_15"
+      ],
+      "keywords": [
+        "gigabit ethernet",
+        "802.3ab",
+        "1000 mbps",
+        "high-speed lan"
+      ],
+      "order": 21
+    },
+    {
+      "id": "sec_doc_1790239146441_sc7456_2_5",
+      "title": "Ethernet Generations and Speeds",
+      "description": "Traces Ethernet development from Standard Ethernet through faster generations and examines their principal characteristics.",
+      "parentId": "unit_doc_1790239146441_sc7456_2",
+      "level": "section",
+      "documentId": "doc_1790239146441_sc7456",
+      "documentName": "Ethernet (1).pdf",
+      "chunkIds": [
+        "doc_1790239146441_sc7456_10",
+        "doc_1790239146441_sc7456_11",
+        "doc_1790239146441_sc7456_12",
+        "doc_1790239146441_sc7456_13",
+        "doc_1790239146441_sc7456_14",
+        "doc_1790239146441_sc7456_15"
+      ],
+      "keywords": [],
+      "order": 16,
+      "children": [
+        {
+          "id": "con_doc_1790239146441_sc7456_10",
+          "title": "Evolution of Ethernet",
+          "description": "Traces the progression from Standard Ethernet in the 1980s to Fast Ethernet, Gigabit Ethernet, and systems operating at 10 Gbps and beyond.",
+          "parentId": "sec_doc_1790239146441_sc7456_2_5",
+          "level": "concept",
+          "documentId": "doc_1790239146441_sc7456",
+          "documentName": "Ethernet (1).pdf",
+          "pageStart": 10,
+          "pageEnd": 10,
+          "chunkIds": [
+            "doc_1790239146441_sc7456_10"
+          ],
+          "keywords": [
+            "standard ethernet",
+            "fast ethernet",
+            "gigabit ethernet",
+            "10 gbps"
+          ],
+          "order": 17
+        },
+        {
+          "id": "con_doc_1790239146441_sc7456_11",
+          "title": "Classification of Ethernet Networks",
+          "description": "Classifies Ethernet networks into four types according to their generation and supported data-transfer rate.",
+          "parentId": "sec_doc_1790239146441_sc7456_2_5",
+          "level": "concept",
+          "documentId": "doc_1790239146441_sc7456",
+          "documentName": "Ethernet (1).pdf",
+          "pageStart": 11,
+          "pageEnd": 12,
+          "chunkIds": [
+            "doc_1790239146441_sc7456_11",
+            "doc_1790239146441_sc7456_12"
+          ],
+          "keywords": [
+            "ethernet types",
+            "standard ethernet",
+            "fast ethernet",
+            "gigabit ethernet"
+          ],
+          "order": 18
+        },
+        {
+          "id": "con_doc_1790239146441_sc7456_12",
+          "title": "Fast Ethernet (802.3u)",
+          "description": "Defines Fast Ethernet as the IEEE 802.3u generation that raised Ethernet performance to 100 Mbps, ten times the original Ethernet rate.",
+          "parentId": "sec_doc_1790239146441_sc7456_2_5",
+          "level": "concept",
+          "documentId": "doc_1790239146441_sc7456",
+          "documentName": "Ethernet (1).pdf",
+          "pageStart": 13,
+          "pageEnd": 13,
+          "chunkIds": [
+            "doc_1790239146441_sc7456_13"
+          ],
+          "keywords": [
+            "fast ethernet",
+            "802.3u",
+            "100 mbps"
+          ],
+          "order": 19
+        },
+        {
+          "id": "con_doc_1790239146441_sc7456_13",
+          "title": "Auto-negotiation",
+          "description": "Explains auto-negotiation as a Fast Ethernet and newer Ethernet feature through which connected interfaces determine mutually supported communication settings.",
+          "parentId": "sec_doc_1790239146441_sc7456_2_5",
+          "level": "concept",
+          "documentId": "doc_1790239146441_sc7456",
+          "documentName": "Ethernet (1).pdf",
+          "pageStart": 14,
+          "pageEnd": 14,
+          "chunkIds": [
+            "doc_1790239146441_sc7456_14"
+          ],
+          "keywords": [
+            "auto-negotiation",
+            "fast ethernet",
+            "speed",
+            "duplex"
+          ],
+          "order": 20
+        },
+        {
+          "id": "con_doc_1790239146441_sc7456_14",
+          "title": "Gigabit Ethernet (802.3ab)",
+          "description": "Introduces Gigabit Ethernet as a 1000 Mbps standard used to support modern high-speed local area networks.",
+          "parentId": "sec_doc_1790239146441_sc7456_2_5",
+          "level": "concept",
+          "documentId": "doc_1790239146441_sc7456",
+          "documentName": "Ethernet (1).pdf",
+          "pageStart": 15,
+          "pageEnd": 15,
+          "chunkIds": [
+            "doc_1790239146441_sc7456_15"
+          ],
+          "keywords": [
+            "gigabit ethernet",
+            "802.3ab",
+            "1000 mbps",
+            "high-speed lan"
+          ],
+          "order": 21
+        }
+      ],
+      "pageStart": 10,
+      "pageEnd": 15
+    },
+    {
+      "id": "con_doc_1790239146441_sc7456_15",
+      "title": "Fiber-Optic and Copper UTP Media",
+      "description": "Compares fiber-optic and copper UTP as Ethernet media, including infrastructure cost and deployment considerations.",
+      "parentId": "sec_doc_1790239146441_sc7456_2_6",
+      "level": "concept",
+      "documentId": "doc_1790239146441_sc7456",
+      "documentName": "Ethernet (1).pdf",
+      "pageStart": 16,
+      "pageEnd": 16,
+      "chunkIds": [
+        "doc_1790239146441_sc7456_16"
+      ],
+      "keywords": [
+        "fiber optic",
+        "copper",
+        "utp",
+        "infrastructure"
+      ],
+      "order": 23
+    },
+    {
+      "id": "con_doc_1790239146441_sc7456_16",
+      "title": "Ethernet Cable Types",
+      "description": "Surveys the various cable designations used for Ethernet implementations, including 10Base2 and other media-specific Ethernet cable types.",
+      "parentId": "sec_doc_1790239146441_sc7456_2_6",
+      "level": "concept",
+      "documentId": "doc_1790239146441_sc7456",
+      "documentName": "Ethernet (1).pdf",
+      "pageStart": 17,
+      "pageEnd": 17,
+      "chunkIds": [
+        "doc_1790239146441_sc7456_17"
+      ],
+      "keywords": [
+        "ethernet cables",
+        "10base2",
+        "cabling",
+        "transmission media"
+      ],
+      "order": 24
+    },
+    {
+      "id": "sec_doc_1790239146441_sc7456_2_6",
+      "title": "Ethernet Transmission Media",
+      "description": "Compares Ethernet media and surveys cable types used by different Ethernet implementations.",
+      "parentId": "unit_doc_1790239146441_sc7456_2",
+      "level": "section",
+      "documentId": "doc_1790239146441_sc7456",
+      "documentName": "Ethernet (1).pdf",
+      "chunkIds": [
+        "doc_1790239146441_sc7456_16",
+        "doc_1790239146441_sc7456_17"
+      ],
+      "keywords": [],
+      "order": 22,
+      "children": [
+        {
+          "id": "con_doc_1790239146441_sc7456_15",
+          "title": "Fiber-Optic and Copper UTP Media",
+          "description": "Compares fiber-optic and copper UTP as Ethernet media, including infrastructure cost and deployment considerations.",
+          "parentId": "sec_doc_1790239146441_sc7456_2_6",
+          "level": "concept",
+          "documentId": "doc_1790239146441_sc7456",
+          "documentName": "Ethernet (1).pdf",
+          "pageStart": 16,
+          "pageEnd": 16,
+          "chunkIds": [
+            "doc_1790239146441_sc7456_16"
+          ],
+          "keywords": [
+            "fiber optic",
+            "copper",
+            "utp",
+            "infrastructure"
+          ],
+          "order": 23
+        },
+        {
+          "id": "con_doc_1790239146441_sc7456_16",
+          "title": "Ethernet Cable Types",
+          "description": "Surveys the various cable designations used for Ethernet implementations, including 10Base2 and other media-specific Ethernet cable types.",
+          "parentId": "sec_doc_1790239146441_sc7456_2_6",
+          "level": "concept",
+          "documentId": "doc_1790239146441_sc7456",
+          "documentName": "Ethernet (1).pdf",
+          "pageStart": 17,
+          "pageEnd": 17,
+          "chunkIds": [
+            "doc_1790239146441_sc7456_17"
+          ],
+          "keywords": [
+            "ethernet cables",
+            "10base2",
+            "cabling",
+            "transmission media"
+          ],
+          "order": 24
+        }
+      ],
+      "pageStart": 16,
+      "pageEnd": 17
+    },
+    {
+      "id": "unit_doc_1790239146441_sc7456_2",
+      "title": "IEEE 802.3 Wired Ethernet",
+      "description": "Examines wired Ethernet operation, medium access, Ethernet generations, transmission speeds, media choices, and cable types.",
+      "level": "unit",
+      "documentId": "doc_1790239146441_sc7456",
+      "documentName": "Ethernet (1).pdf",
+      "chunkIds": [
+        "doc_1790239146441_sc7456_7",
+        "doc_1790239146441_sc7456_8",
+        "doc_1790239146441_sc7456_9",
+        "doc_1790239146441_sc7456_10",
+        "doc_1790239146441_sc7456_11",
+        "doc_1790239146441_sc7456_12",
+        "doc_1790239146441_sc7456_13",
+        "doc_1790239146441_sc7456_14",
+        "doc_1790239146441_sc7456_15",
+        "doc_1790239146441_sc7456_16",
+        "doc_1790239146441_sc7456_17"
+      ],
+      "keywords": [],
+      "order": 11,
+      "children": [
+        {
+          "id": "sec_doc_1790239146441_sc7456_2_4",
+          "title": "Ethernet Communication and Medium Access",
+          "description": "Explains the functions of IEEE 802.3 Ethernet communication and the CSMA/CD access method.",
+          "parentId": "unit_doc_1790239146441_sc7456_2",
+          "level": "section",
+          "documentId": "doc_1790239146441_sc7456",
+          "documentName": "Ethernet (1).pdf",
+          "chunkIds": [
+            "doc_1790239146441_sc7456_7",
+            "doc_1790239146441_sc7456_8",
+            "doc_1790239146441_sc7456_9"
+          ],
+          "keywords": [],
+          "order": 12,
+          "children": [
+            {
+              "id": "con_doc_1790239146441_sc7456_7",
+              "title": "Ethernet (802.3) Wired LAN",
+              "description": "Presents IEEE 802.3 as the standard underlying wired local area networks and their physical network communication.",
+              "parentId": "sec_doc_1790239146441_sc7456_2_4",
+              "level": "concept",
+              "documentId": "doc_1790239146441_sc7456",
+              "documentName": "Ethernet (1).pdf",
+              "pageStart": 7,
+              "pageEnd": 7,
+              "chunkIds": [
+                "doc_1790239146441_sc7456_7"
+              ],
+              "keywords": [
+                "ethernet",
+                "802.3",
+                "wired lan",
+                "physical network"
+              ],
+              "order": 13
+            },
+            {
+              "id": "con_doc_1790239146441_sc7456_8",
+              "title": "Ethernet Receiver Synchronization and Destination Identification",
+              "description": "Explains how Ethernet communication supports receiver synchronization and uses a destination MAC address to identify the intended receiver.",
+              "parentId": "sec_doc_1790239146441_sc7456_2_4",
+              "level": "concept",
+              "documentId": "doc_1790239146441_sc7456",
+              "documentName": "Ethernet (1).pdf",
+              "pageStart": 8,
+              "pageEnd": 8,
+              "chunkIds": [
+                "doc_1790239146441_sc7456_8"
+              ],
+              "keywords": [
+                "synchronization",
+                "destination mac",
+                "receiver",
+                "ethernet"
+              ],
+              "order": 14
+            },
+            {
+              "id": "con_doc_1790239146441_sc7456_9",
+              "title": "CSMA/CD",
+              "description": "Describes Carrier Sense Multiple Access with Collision Detection as the method used to coordinate transmissions and manage traffic on shared wired Ethernet.",
+              "parentId": "sec_doc_1790239146441_sc7456_2_4",
+              "level": "concept",
+              "documentId": "doc_1790239146441_sc7456",
+              "documentName": "Ethernet (1).pdf",
+              "pageStart": 9,
+              "pageEnd": 9,
+              "chunkIds": [
+                "doc_1790239146441_sc7456_9"
+              ],
+              "keywords": [
+                "csma/cd",
+                "carrier sense",
+                "multiple access",
+                "collision detection"
+              ],
+              "order": 15
+            }
+          ],
+          "pageStart": 7,
+          "pageEnd": 9
+        },
+        {
+          "id": "sec_doc_1790239146441_sc7456_2_5",
+          "title": "Ethernet Generations and Speeds",
+          "description": "Traces Ethernet development from Standard Ethernet through faster generations and examines their principal characteristics.",
+          "parentId": "unit_doc_1790239146441_sc7456_2",
+          "level": "section",
+          "documentId": "doc_1790239146441_sc7456",
+          "documentName": "Ethernet (1).pdf",
+          "chunkIds": [
+            "doc_1790239146441_sc7456_10",
+            "doc_1790239146441_sc7456_11",
+            "doc_1790239146441_sc7456_12",
+            "doc_1790239146441_sc7456_13",
+            "doc_1790239146441_sc7456_14",
+            "doc_1790239146441_sc7456_15"
+          ],
+          "keywords": [],
+          "order": 16,
+          "children": [
+            {
+              "id": "con_doc_1790239146441_sc7456_10",
+              "title": "Evolution of Ethernet",
+              "description": "Traces the progression from Standard Ethernet in the 1980s to Fast Ethernet, Gigabit Ethernet, and systems operating at 10 Gbps and beyond.",
+              "parentId": "sec_doc_1790239146441_sc7456_2_5",
+              "level": "concept",
+              "documentId": "doc_1790239146441_sc7456",
+              "documentName": "Ethernet (1).pdf",
+              "pageStart": 10,
+              "pageEnd": 10,
+              "chunkIds": [
+                "doc_1790239146441_sc7456_10"
+              ],
+              "keywords": [
+                "standard ethernet",
+                "fast ethernet",
+                "gigabit ethernet",
+                "10 gbps"
+              ],
+              "order": 17
+            },
+            {
+              "id": "con_doc_1790239146441_sc7456_11",
+              "title": "Classification of Ethernet Networks",
+              "description": "Classifies Ethernet networks into four types according to their generation and supported data-transfer rate.",
+              "parentId": "sec_doc_1790239146441_sc7456_2_5",
+              "level": "concept",
+              "documentId": "doc_1790239146441_sc7456",
+              "documentName": "Ethernet (1).pdf",
+              "pageStart": 11,
+              "pageEnd": 12,
+              "chunkIds": [
+                "doc_1790239146441_sc7456_11",
+                "doc_1790239146441_sc7456_12"
+              ],
+              "keywords": [
+                "ethernet types",
+                "standard ethernet",
+                "fast ethernet",
+                "gigabit ethernet"
+              ],
+              "order": 18
+            },
+            {
+              "id": "con_doc_1790239146441_sc7456_12",
+              "title": "Fast Ethernet (802.3u)",
+              "description": "Defines Fast Ethernet as the IEEE 802.3u generation that raised Ethernet performance to 100 Mbps, ten times the original Ethernet rate.",
+              "parentId": "sec_doc_1790239146441_sc7456_2_5",
+              "level": "concept",
+              "documentId": "doc_1790239146441_sc7456",
+              "documentName": "Ethernet (1).pdf",
+              "pageStart": 13,
+              "pageEnd": 13,
+              "chunkIds": [
+                "doc_1790239146441_sc7456_13"
+              ],
+              "keywords": [
+                "fast ethernet",
+                "802.3u",
+                "100 mbps"
+              ],
+              "order": 19
+            },
+            {
+              "id": "con_doc_1790239146441_sc7456_13",
+              "title": "Auto-negotiation",
+              "description": "Explains auto-negotiation as a Fast Ethernet and newer Ethernet feature through which connected interfaces determine mutually supported communication settings.",
+              "parentId": "sec_doc_1790239146441_sc7456_2_5",
+              "level": "concept",
+              "documentId": "doc_1790239146441_sc7456",
+              "documentName": "Ethernet (1).pdf",
+              "pageStart": 14,
+              "pageEnd": 14,
+              "chunkIds": [
+                "doc_1790239146441_sc7456_14"
+              ],
+              "keywords": [
+                "auto-negotiation",
+                "fast ethernet",
+                "speed",
+                "duplex"
+              ],
+              "order": 20
+            },
+            {
+              "id": "con_doc_1790239146441_sc7456_14",
+              "title": "Gigabit Ethernet (802.3ab)",
+              "description": "Introduces Gigabit Ethernet as a 1000 Mbps standard used to support modern high-speed local area networks.",
+              "parentId": "sec_doc_1790239146441_sc7456_2_5",
+              "level": "concept",
+              "documentId": "doc_1790239146441_sc7456",
+              "documentName": "Ethernet (1).pdf",
+              "pageStart": 15,
+              "pageEnd": 15,
+              "chunkIds": [
+                "doc_1790239146441_sc7456_15"
+              ],
+              "keywords": [
+                "gigabit ethernet",
+                "802.3ab",
+                "1000 mbps",
+                "high-speed lan"
+              ],
+              "order": 21
+            }
+          ],
+          "pageStart": 10,
+          "pageEnd": 15
+        },
+        {
+          "id": "sec_doc_1790239146441_sc7456_2_6",
+          "title": "Ethernet Transmission Media",
+          "description": "Compares Ethernet media and surveys cable types used by different Ethernet implementations.",
+          "parentId": "unit_doc_1790239146441_sc7456_2",
+          "level": "section",
+          "documentId": "doc_1790239146441_sc7456",
+          "documentName": "Ethernet (1).pdf",
+          "chunkIds": [
+            "doc_1790239146441_sc7456_16",
+            "doc_1790239146441_sc7456_17"
+          ],
+          "keywords": [],
+          "order": 22,
+          "children": [
+            {
+              "id": "con_doc_1790239146441_sc7456_15",
+              "title": "Fiber-Optic and Copper UTP Media",
+              "description": "Compares fiber-optic and copper UTP as Ethernet media, including infrastructure cost and deployment considerations.",
+              "parentId": "sec_doc_1790239146441_sc7456_2_6",
+              "level": "concept",
+              "documentId": "doc_1790239146441_sc7456",
+              "documentName": "Ethernet (1).pdf",
+              "pageStart": 16,
+              "pageEnd": 16,
+              "chunkIds": [
+                "doc_1790239146441_sc7456_16"
+              ],
+              "keywords": [
+                "fiber optic",
+                "copper",
+                "utp",
+                "infrastructure"
+              ],
+              "order": 23
+            },
+            {
+              "id": "con_doc_1790239146441_sc7456_16",
+              "title": "Ethernet Cable Types",
+              "description": "Surveys the various cable designations used for Ethernet implementations, including 10Base2 and other media-specific Ethernet cable types.",
+              "parentId": "sec_doc_1790239146441_sc7456_2_6",
+              "level": "concept",
+              "documentId": "doc_1790239146441_sc7456",
+              "documentName": "Ethernet (1).pdf",
+              "pageStart": 17,
+              "pageEnd": 17,
+              "chunkIds": [
+                "doc_1790239146441_sc7456_17"
+              ],
+              "keywords": [
+                "ethernet cables",
+                "10base2",
+                "cabling",
+                "transmission media"
+              ],
+              "order": 24
+            }
+          ],
+          "pageStart": 16,
+          "pageEnd": 17
+        }
+      ],
+      "pageStart": 7,
+      "pageEnd": 17
+    },
+    {
+      "id": "con_doc_1790239146441_sc7456_17",
+      "title": "IEEE 802.11 Wireless LAN Standard",
+      "description": "Introduces IEEE 802.11 as the standard for wireless LAN communication and relates it to wireless networking methods, media, and user benefits.",
+      "parentId": "sec_doc_1790239146441_sc7456_3_7",
+      "level": "concept",
+      "documentId": "doc_1790239146441_sc7456",
+      "documentName": "Ethernet (1).pdf",
+      "pageStart": 18,
+      "pageEnd": 18,
+      "chunkIds": [
+        "doc_1790239146441_sc7456_18"
+      ],
+      "keywords": [
+        "ieee 802.11",
+        "wireless lan",
+        "wi-fi",
+        "wireless communication"
+      ],
+      "order": 27
+    },
+    {
+      "id": "con_doc_1790239146441_sc7456_18",
+      "title": "2.4 GHz and 5 GHz Wireless Bands",
+      "description": "Compares the 2.4 GHz and 5 GHz bands in terms of range, speed, crowding, and susceptibility to interference.",
+      "parentId": "sec_doc_1790239146441_sc7456_3_7",
+      "level": "concept",
+      "documentId": "doc_1790239146441_sc7456",
+      "documentName": "Ethernet (1).pdf",
+      "pageStart": 19,
+      "pageEnd": 19,
+      "chunkIds": [
+        "doc_1790239146441_sc7456_19"
+      ],
+      "keywords": [
+        "2.4 ghz",
+        "5 ghz",
+        "range",
+        "interference",
+        "speed"
+      ],
+      "order": 28
+    },
+    {
+      "id": "sec_doc_1790239146441_sc7456_3_7",
+      "title": "Wireless LAN Standards and Radio Bands",
+      "description": "Presents IEEE 802.11 wireless networking and compares the operating characteristics of common frequency bands.",
+      "parentId": "unit_doc_1790239146441_sc7456_3",
+      "level": "section",
+      "documentId": "doc_1790239146441_sc7456",
+      "documentName": "Ethernet (1).pdf",
+      "chunkIds": [
+        "doc_1790239146441_sc7456_18",
+        "doc_1790239146441_sc7456_19"
+      ],
+      "keywords": [],
+      "order": 26,
+      "children": [
+        {
+          "id": "con_doc_1790239146441_sc7456_17",
+          "title": "IEEE 802.11 Wireless LAN Standard",
+          "description": "Introduces IEEE 802.11 as the standard for wireless LAN communication and relates it to wireless networking methods, media, and user benefits.",
+          "parentId": "sec_doc_1790239146441_sc7456_3_7",
+          "level": "concept",
+          "documentId": "doc_1790239146441_sc7456",
+          "documentName": "Ethernet (1).pdf",
+          "pageStart": 18,
+          "pageEnd": 18,
+          "chunkIds": [
+            "doc_1790239146441_sc7456_18"
+          ],
+          "keywords": [
+            "ieee 802.11",
+            "wireless lan",
+            "wi-fi",
+            "wireless communication"
+          ],
+          "order": 27
+        },
+        {
+          "id": "con_doc_1790239146441_sc7456_18",
+          "title": "2.4 GHz and 5 GHz Wireless Bands",
+          "description": "Compares the 2.4 GHz and 5 GHz bands in terms of range, speed, crowding, and susceptibility to interference.",
+          "parentId": "sec_doc_1790239146441_sc7456_3_7",
+          "level": "concept",
+          "documentId": "doc_1790239146441_sc7456",
+          "documentName": "Ethernet (1).pdf",
+          "pageStart": 19,
+          "pageEnd": 19,
+          "chunkIds": [
+            "doc_1790239146441_sc7456_19"
+          ],
+          "keywords": [
+            "2.4 ghz",
+            "5 ghz",
+            "range",
+            "interference",
+            "speed"
+          ],
+          "order": 28
+        }
+      ],
+      "pageStart": 18,
+      "pageEnd": 19
+    },
+    {
+      "id": "con_doc_1790239146441_sc7456_19",
+      "title": "CSMA/CA Wireless Medium Access",
+      "description": "Explains how a wireless device listens to the medium before transmitting and uses collision avoidance to reduce competing transmissions.",
+      "parentId": "sec_doc_1790239146441_sc7456_3_8",
+      "level": "concept",
+      "documentId": "doc_1790239146441_sc7456",
+      "documentName": "Ethernet (1).pdf",
+      "pageStart": 20,
+      "pageEnd": 20,
+      "chunkIds": [
+        "doc_1790239146441_sc7456_20"
+      ],
+      "keywords": [
+        "csma/ca",
+        "collision avoidance",
+        "wireless medium",
+        "transmission"
+      ],
+      "order": 30
+    },
+    {
+      "id": "con_doc_1790239146441_sc7456_20",
+      "title": "Wireless Network Components",
+      "description": "Identifies the access point, station, and SSID, including the access point's role as a bridge between wired and wireless networking.",
+      "parentId": "sec_doc_1790239146441_sc7456_3_8",
+      "level": "concept",
+      "documentId": "doc_1790239146441_sc7456",
+      "documentName": "Ethernet (1).pdf",
+      "pageStart": 21,
+      "pageEnd": 21,
+      "chunkIds": [
+        "doc_1790239146441_sc7456_21"
+      ],
+      "keywords": [
+        "access point",
+        "station",
+        "ssid",
+        "wireless network"
+      ],
+      "order": 31
+    },
+    {
+      "id": "sec_doc_1790239146441_sc7456_3_8",
+      "title": "Wireless Access and Components",
+      "description": "Explains how wireless devices access the shared medium and identifies the central elements of a wireless network.",
+      "parentId": "unit_doc_1790239146441_sc7456_3",
+      "level": "section",
+      "documentId": "doc_1790239146441_sc7456",
+      "documentName": "Ethernet (1).pdf",
+      "chunkIds": [
+        "doc_1790239146441_sc7456_20",
+        "doc_1790239146441_sc7456_21"
+      ],
+      "keywords": [],
+      "order": 29,
+      "children": [
+        {
+          "id": "con_doc_1790239146441_sc7456_19",
+          "title": "CSMA/CA Wireless Medium Access",
+          "description": "Explains how a wireless device listens to the medium before transmitting and uses collision avoidance to reduce competing transmissions.",
+          "parentId": "sec_doc_1790239146441_sc7456_3_8",
+          "level": "concept",
+          "documentId": "doc_1790239146441_sc7456",
+          "documentName": "Ethernet (1).pdf",
+          "pageStart": 20,
+          "pageEnd": 20,
+          "chunkIds": [
+            "doc_1790239146441_sc7456_20"
+          ],
+          "keywords": [
+            "csma/ca",
+            "collision avoidance",
+            "wireless medium",
+            "transmission"
+          ],
+          "order": 30
+        },
+        {
+          "id": "con_doc_1790239146441_sc7456_20",
+          "title": "Wireless Network Components",
+          "description": "Identifies the access point, station, and SSID, including the access point's role as a bridge between wired and wireless networking.",
+          "parentId": "sec_doc_1790239146441_sc7456_3_8",
+          "level": "concept",
+          "documentId": "doc_1790239146441_sc7456",
+          "documentName": "Ethernet (1).pdf",
+          "pageStart": 21,
+          "pageEnd": 21,
+          "chunkIds": [
+            "doc_1790239146441_sc7456_21"
+          ],
+          "keywords": [
+            "access point",
+            "station",
+            "ssid",
+            "wireless network"
+          ],
+          "order": 31
+        }
+      ],
+      "pageStart": 20,
+      "pageEnd": 21
+    },
+    {
+      "id": "unit_doc_1790239146441_sc7456_3",
+      "title": "IEEE 802.11 Wireless LAN",
+      "description": "Introduces wireless LAN standards, radio-frequency bands, wireless medium access, and the main components of a wireless network.",
+      "level": "unit",
+      "documentId": "doc_1790239146441_sc7456",
+      "documentName": "Ethernet (1).pdf",
+      "chunkIds": [
+        "doc_1790239146441_sc7456_18",
+        "doc_1790239146441_sc7456_19",
+        "doc_1790239146441_sc7456_20",
+        "doc_1790239146441_sc7456_21"
+      ],
+      "keywords": [],
+      "order": 25,
+      "children": [
+        {
+          "id": "sec_doc_1790239146441_sc7456_3_7",
+          "title": "Wireless LAN Standards and Radio Bands",
+          "description": "Presents IEEE 802.11 wireless networking and compares the operating characteristics of common frequency bands.",
+          "parentId": "unit_doc_1790239146441_sc7456_3",
+          "level": "section",
+          "documentId": "doc_1790239146441_sc7456",
+          "documentName": "Ethernet (1).pdf",
+          "chunkIds": [
+            "doc_1790239146441_sc7456_18",
+            "doc_1790239146441_sc7456_19"
+          ],
+          "keywords": [],
+          "order": 26,
+          "children": [
+            {
+              "id": "con_doc_1790239146441_sc7456_17",
+              "title": "IEEE 802.11 Wireless LAN Standard",
+              "description": "Introduces IEEE 802.11 as the standard for wireless LAN communication and relates it to wireless networking methods, media, and user benefits.",
+              "parentId": "sec_doc_1790239146441_sc7456_3_7",
+              "level": "concept",
+              "documentId": "doc_1790239146441_sc7456",
+              "documentName": "Ethernet (1).pdf",
+              "pageStart": 18,
+              "pageEnd": 18,
+              "chunkIds": [
+                "doc_1790239146441_sc7456_18"
+              ],
+              "keywords": [
+                "ieee 802.11",
+                "wireless lan",
+                "wi-fi",
+                "wireless communication"
+              ],
+              "order": 27
+            },
+            {
+              "id": "con_doc_1790239146441_sc7456_18",
+              "title": "2.4 GHz and 5 GHz Wireless Bands",
+              "description": "Compares the 2.4 GHz and 5 GHz bands in terms of range, speed, crowding, and susceptibility to interference.",
+              "parentId": "sec_doc_1790239146441_sc7456_3_7",
+              "level": "concept",
+              "documentId": "doc_1790239146441_sc7456",
+              "documentName": "Ethernet (1).pdf",
+              "pageStart": 19,
+              "pageEnd": 19,
+              "chunkIds": [
+                "doc_1790239146441_sc7456_19"
+              ],
+              "keywords": [
+                "2.4 ghz",
+                "5 ghz",
+                "range",
+                "interference",
+                "speed"
+              ],
+              "order": 28
+            }
+          ],
+          "pageStart": 18,
+          "pageEnd": 19
+        },
+        {
+          "id": "sec_doc_1790239146441_sc7456_3_8",
+          "title": "Wireless Access and Components",
+          "description": "Explains how wireless devices access the shared medium and identifies the central elements of a wireless network.",
+          "parentId": "unit_doc_1790239146441_sc7456_3",
+          "level": "section",
+          "documentId": "doc_1790239146441_sc7456",
+          "documentName": "Ethernet (1).pdf",
+          "chunkIds": [
+            "doc_1790239146441_sc7456_20",
+            "doc_1790239146441_sc7456_21"
+          ],
+          "keywords": [],
+          "order": 29,
+          "children": [
+            {
+              "id": "con_doc_1790239146441_sc7456_19",
+              "title": "CSMA/CA Wireless Medium Access",
+              "description": "Explains how a wireless device listens to the medium before transmitting and uses collision avoidance to reduce competing transmissions.",
+              "parentId": "sec_doc_1790239146441_sc7456_3_8",
+              "level": "concept",
+              "documentId": "doc_1790239146441_sc7456",
+              "documentName": "Ethernet (1).pdf",
+              "pageStart": 20,
+              "pageEnd": 20,
+              "chunkIds": [
+                "doc_1790239146441_sc7456_20"
+              ],
+              "keywords": [
+                "csma/ca",
+                "collision avoidance",
+                "wireless medium",
+                "transmission"
+              ],
+              "order": 30
+            },
+            {
+              "id": "con_doc_1790239146441_sc7456_20",
+              "title": "Wireless Network Components",
+              "description": "Identifies the access point, station, and SSID, including the access point's role as a bridge between wired and wireless networking.",
+              "parentId": "sec_doc_1790239146441_sc7456_3_8",
+              "level": "concept",
+              "documentId": "doc_1790239146441_sc7456",
+              "documentName": "Ethernet (1).pdf",
+              "pageStart": 21,
+              "pageEnd": 21,
+              "chunkIds": [
+                "doc_1790239146441_sc7456_21"
+              ],
+              "keywords": [
+                "access point",
+                "station",
+                "ssid",
+                "wireless network"
+              ],
+              "order": 31
+            }
+          ],
+          "pageStart": 20,
+          "pageEnd": 21
+        }
+      ],
+      "pageStart": 18,
+      "pageEnd": 21
+    },
+    {
+      "id": "con_doc_1790239146441_sc7456_21",
+      "title": "Wired (802.3) versus Wireless (802.11) Connectivity",
+      "description": "Compares wired Ethernet and wireless LAN connectivity to determine which standard best fits particular infrastructure needs.",
+      "parentId": "sec_doc_1790239146441_sc7456_4_9",
+      "level": "concept",
+      "documentId": "doc_1790239146441_sc7456",
+      "documentName": "Ethernet (1).pdf",
+      "pageStart": 22,
+      "pageEnd": 22,
+      "chunkIds": [
+        "doc_1790239146441_sc7456_22"
+      ],
+      "keywords": [
+        "wired",
+        "wireless",
+        "802.3",
+        "802.11",
+        "infrastructure"
+      ],
+      "order": 34
+    },
+    {
+      "id": "sec_doc_1790239146441_sc7456_4_9",
+      "title": "Wired and Wireless Infrastructure",
+      "description": "Evaluates the selection of IEEE 802.3 or IEEE 802.11 according to infrastructure requirements.",
+      "parentId": "unit_doc_1790239146441_sc7456_4",
+      "level": "section",
+      "documentId": "doc_1790239146441_sc7456",
+      "documentName": "Ethernet (1).pdf",
+      "chunkIds": [
+        "doc_1790239146441_sc7456_22"
+      ],
+      "keywords": [],
+      "order": 33,
+      "children": [
+        {
+          "id": "con_doc_1790239146441_sc7456_21",
+          "title": "Wired (802.3) versus Wireless (802.11) Connectivity",
+          "description": "Compares wired Ethernet and wireless LAN connectivity to determine which standard best fits particular infrastructure needs.",
+          "parentId": "sec_doc_1790239146441_sc7456_4_9",
+          "level": "concept",
+          "documentId": "doc_1790239146441_sc7456",
+          "documentName": "Ethernet (1).pdf",
+          "pageStart": 22,
+          "pageEnd": 22,
+          "chunkIds": [
+            "doc_1790239146441_sc7456_22"
+          ],
+          "keywords": [
+            "wired",
+            "wireless",
+            "802.3",
+            "802.11",
+            "infrastructure"
+          ],
+          "order": 34
+        }
+      ],
+      "pageStart": 22,
+      "pageEnd": 22
+    },
+    {
+      "id": "con_doc_1790239146441_sc7456_22",
+      "title": "Wi-Fi 7, Terabit Ethernet, and IoT Integration",
+      "description": "Highlights Wi-Fi 7, Terabit Ethernet, and Internet of Things integration as developments aimed at higher throughput and broader connectivity.",
+      "parentId": "sec_doc_1790239146441_sc7456_4_10",
+      "level": "concept",
+      "documentId": "doc_1790239146441_sc7456",
+      "documentName": "Ethernet (1).pdf",
+      "pageStart": 23,
+      "pageEnd": 23,
+      "chunkIds": [
+        "doc_1790239146441_sc7456_23"
+      ],
+      "keywords": [
+        "wi-fi 7",
+        "terabit ethernet",
+        "iot integration",
+        "high throughput"
+      ],
+      "order": 36
+    },
+    {
+      "id": "sec_doc_1790239146441_sc7456_4_10",
+      "title": "Future of Network Connectivity",
+      "description": "Introduces technologies expected to advance network capacity and integration.",
+      "parentId": "unit_doc_1790239146441_sc7456_4",
+      "level": "section",
+      "documentId": "doc_1790239146441_sc7456",
+      "documentName": "Ethernet (1).pdf",
+      "chunkIds": [
+        "doc_1790239146441_sc7456_23"
+      ],
+      "keywords": [],
+      "order": 35,
+      "children": [
+        {
+          "id": "con_doc_1790239146441_sc7456_22",
+          "title": "Wi-Fi 7, Terabit Ethernet, and IoT Integration",
+          "description": "Highlights Wi-Fi 7, Terabit Ethernet, and Internet of Things integration as developments aimed at higher throughput and broader connectivity.",
+          "parentId": "sec_doc_1790239146441_sc7456_4_10",
+          "level": "concept",
+          "documentId": "doc_1790239146441_sc7456",
+          "documentName": "Ethernet (1).pdf",
+          "pageStart": 23,
+          "pageEnd": 23,
+          "chunkIds": [
+            "doc_1790239146441_sc7456_23"
+          ],
+          "keywords": [
+            "wi-fi 7",
+            "terabit ethernet",
+            "iot integration",
+            "high throughput"
+          ],
+          "order": 36
+        }
+      ],
+      "pageStart": 23,
+      "pageEnd": 23
+    },
+    {
+      "id": "unit_doc_1790239146441_sc7456_4",
+      "title": "Connectivity Selection and Emerging Developments",
+      "description": "Compares wired and wireless network standards for infrastructure decisions and highlights future connectivity technologies.",
+      "level": "unit",
+      "documentId": "doc_1790239146441_sc7456",
+      "documentName": "Ethernet (1).pdf",
+      "chunkIds": [
+        "doc_1790239146441_sc7456_22",
+        "doc_1790239146441_sc7456_23"
+      ],
+      "keywords": [],
+      "order": 32,
+      "children": [
+        {
+          "id": "sec_doc_1790239146441_sc7456_4_9",
+          "title": "Wired and Wireless Infrastructure",
+          "description": "Evaluates the selection of IEEE 802.3 or IEEE 802.11 according to infrastructure requirements.",
+          "parentId": "unit_doc_1790239146441_sc7456_4",
+          "level": "section",
+          "documentId": "doc_1790239146441_sc7456",
+          "documentName": "Ethernet (1).pdf",
+          "chunkIds": [
+            "doc_1790239146441_sc7456_22"
+          ],
+          "keywords": [],
+          "order": 33,
+          "children": [
+            {
+              "id": "con_doc_1790239146441_sc7456_21",
+              "title": "Wired (802.3) versus Wireless (802.11) Connectivity",
+              "description": "Compares wired Ethernet and wireless LAN connectivity to determine which standard best fits particular infrastructure needs.",
+              "parentId": "sec_doc_1790239146441_sc7456_4_9",
+              "level": "concept",
+              "documentId": "doc_1790239146441_sc7456",
+              "documentName": "Ethernet (1).pdf",
+              "pageStart": 22,
+              "pageEnd": 22,
+              "chunkIds": [
+                "doc_1790239146441_sc7456_22"
+              ],
+              "keywords": [
+                "wired",
+                "wireless",
+                "802.3",
+                "802.11",
+                "infrastructure"
+              ],
+              "order": 34
+            }
+          ],
+          "pageStart": 22,
+          "pageEnd": 22
+        },
+        {
+          "id": "sec_doc_1790239146441_sc7456_4_10",
+          "title": "Future of Network Connectivity",
+          "description": "Introduces technologies expected to advance network capacity and integration.",
+          "parentId": "unit_doc_1790239146441_sc7456_4",
+          "level": "section",
+          "documentId": "doc_1790239146441_sc7456",
+          "documentName": "Ethernet (1).pdf",
+          "chunkIds": [
+            "doc_1790239146441_sc7456_23"
+          ],
+          "keywords": [],
+          "order": 35,
+          "children": [
+            {
+              "id": "con_doc_1790239146441_sc7456_22",
+              "title": "Wi-Fi 7, Terabit Ethernet, and IoT Integration",
+              "description": "Highlights Wi-Fi 7, Terabit Ethernet, and Internet of Things integration as developments aimed at higher throughput and broader connectivity.",
+              "parentId": "sec_doc_1790239146441_sc7456_4_10",
+              "level": "concept",
+              "documentId": "doc_1790239146441_sc7456",
+              "documentName": "Ethernet (1).pdf",
+              "pageStart": 23,
+              "pageEnd": 23,
+              "chunkIds": [
+                "doc_1790239146441_sc7456_23"
+              ],
+              "keywords": [
+                "wi-fi 7",
+                "terabit ethernet",
+                "iot integration",
+                "high throughput"
+              ],
+              "order": 36
+            }
+          ],
+          "pageStart": 23,
+          "pageEnd": 23
+        }
+      ],
+      "pageStart": 22,
+      "pageEnd": 23
+    },
+    {
+      "id": "con_doc_1790239146441_sc7456_23",
+      "title": "Shared Ethernet Transmission",
+      "description": "Examines a shared Ethernet cable scenario in which only one computer can transmit at a time, reinforcing shared-medium access behavior.",
+      "parentId": "sec_doc_1790239146441_sc7456_5_11",
+      "level": "concept",
+      "documentId": "doc_1790239146441_sc7456",
+      "documentName": "Ethernet (1).pdf",
+      "pageStart": 25,
+      "pageEnd": 26,
+      "chunkIds": [
+        "doc_1790239146441_sc7456_24",
+        "doc_1790239146441_sc7456_25"
+      ],
+      "keywords": [
+        "shared ethernet",
+        "transmission",
+        "shared medium",
+        "csma/cd"
+      ],
+      "order": 39
+    },
+    {
+      "id": "con_doc_1790239146441_sc7456_24",
+      "title": "Upgrade from Standard Ethernet to Fast Ethernet",
+      "description": "Assesses an upgrade from 10 Mbps Ethernet to 100 Mbps Fast Ethernet while retaining existing network cabling.",
+      "parentId": "sec_doc_1790239146441_sc7456_5_11",
+      "level": "concept",
+      "documentId": "doc_1790239146441_sc7456",
+      "documentName": "Ethernet (1).pdf",
+      "pageStart": 27,
+      "pageEnd": 28,
+      "chunkIds": [
+        "doc_1790239146441_sc7456_26",
+        "doc_1790239146441_sc7456_27"
+      ],
+      "keywords": [
+        "10 mbps",
+        "100 mbps",
+        "fast ethernet",
+        "upgrade",
+        "cabling"
+      ],
+      "order": 40
+    },
+    {
+      "id": "sec_doc_1790239146441_sc7456_5_11",
+      "title": "Ethernet Access and Upgrade Scenarios",
+      "description": "Applies Ethernet principles to shared-medium communication and network upgrades.",
+      "parentId": "unit_doc_1790239146441_sc7456_5",
+      "level": "section",
+      "documentId": "doc_1790239146441_sc7456",
+      "documentName": "Ethernet (1).pdf",
+      "chunkIds": [
+        "doc_1790239146441_sc7456_24",
+        "doc_1790239146441_sc7456_25",
+        "doc_1790239146441_sc7456_26",
+        "doc_1790239146441_sc7456_27"
+      ],
+      "keywords": [],
+      "order": 38,
+      "children": [
+        {
+          "id": "con_doc_1790239146441_sc7456_23",
+          "title": "Shared Ethernet Transmission",
+          "description": "Examines a shared Ethernet cable scenario in which only one computer can transmit at a time, reinforcing shared-medium access behavior.",
+          "parentId": "sec_doc_1790239146441_sc7456_5_11",
+          "level": "concept",
+          "documentId": "doc_1790239146441_sc7456",
+          "documentName": "Ethernet (1).pdf",
+          "pageStart": 25,
+          "pageEnd": 26,
+          "chunkIds": [
+            "doc_1790239146441_sc7456_24",
+            "doc_1790239146441_sc7456_25"
+          ],
+          "keywords": [
+            "shared ethernet",
+            "transmission",
+            "shared medium",
+            "csma/cd"
+          ],
+          "order": 39
+        },
+        {
+          "id": "con_doc_1790239146441_sc7456_24",
+          "title": "Upgrade from Standard Ethernet to Fast Ethernet",
+          "description": "Assesses an upgrade from 10 Mbps Ethernet to 100 Mbps Fast Ethernet while retaining existing network cabling.",
+          "parentId": "sec_doc_1790239146441_sc7456_5_11",
+          "level": "concept",
+          "documentId": "doc_1790239146441_sc7456",
+          "documentName": "Ethernet (1).pdf",
+          "pageStart": 27,
+          "pageEnd": 28,
+          "chunkIds": [
+            "doc_1790239146441_sc7456_26",
+            "doc_1790239146441_sc7456_27"
+          ],
+          "keywords": [
+            "10 mbps",
+            "100 mbps",
+            "fast ethernet",
+            "upgrade",
+            "cabling"
+          ],
+          "order": 40
+        }
+      ],
+      "pageStart": 25,
+      "pageEnd": 28
+    },
+    {
+      "id": "con_doc_1790239146441_sc7456_25",
+      "title": "Settings Negotiated by Ethernet Interfaces",
+      "description": "Reviews the communication parameters selected by a Fast Ethernet Network Interface Card through auto-negotiation.",
+      "parentId": "sec_doc_1790239146441_sc7456_5_12",
+      "level": "concept",
+      "documentId": "doc_1790239146441_sc7456",
+      "documentName": "Ethernet (1).pdf",
+      "pageStart": 29,
+      "pageEnd": 30,
+      "chunkIds": [
+        "doc_1790239146441_sc7456_28",
+        "doc_1790239146441_sc7456_29"
+      ],
+      "keywords": [
+        "auto-negotiation",
+        "nic",
+        "speed",
+        "duplex"
+      ],
+      "order": 42
+    },
+    {
+      "id": "con_doc_1790239146441_sc7456_26",
+      "title": "Mutually Supported Ethernet Speed",
+      "description": "Applies auto-negotiation to a 1 Gbps laptop connected to a switch that supports only 100 Mbps.",
+      "parentId": "sec_doc_1790239146441_sc7456_5_12",
+      "level": "concept",
+      "documentId": "doc_1790239146441_sc7456",
+      "documentName": "Ethernet (1).pdf",
+      "pageStart": 31,
+      "pageEnd": 32,
+      "chunkIds": [
+        "doc_1790239146441_sc7456_30",
+        "doc_1790239146441_sc7456_31"
+      ],
+      "keywords": [
+        "1 gbps",
+        "100 mbps",
+        "switch",
+        "auto-negotiation"
+      ],
+      "order": 43
+    },
+    {
+      "id": "con_doc_1790239146441_sc7456_27",
+      "title": "Gigabit Ethernet Media Support",
+      "description": "Reviews the capability of Gigabit Ethernet to operate over supported copper or fiber media rather than requiring only one medium.",
+      "parentId": "sec_doc_1790239146441_sc7456_5_12",
+      "level": "concept",
+      "documentId": "doc_1790239146441_sc7456",
+      "documentName": "Ethernet (1).pdf",
+      "pageStart": 33,
+      "pageEnd": 34,
+      "chunkIds": [
+        "doc_1790239146441_sc7456_32",
+        "doc_1790239146441_sc7456_33"
+      ],
+      "keywords": [
+        "gigabit ethernet",
+        "copper",
+        "fiber",
+        "transmission media"
+      ],
+      "order": 44
+    },
+    {
+      "id": "sec_doc_1790239146441_sc7456_5_12",
+      "title": "Auto-negotiation and Gigabit Ethernet Review",
+      "description": "Assesses negotiated Ethernet settings, compatibility between different link speeds, and Gigabit Ethernet media support.",
+      "parentId": "unit_doc_1790239146441_sc7456_5",
+      "level": "section",
+      "documentId": "doc_1790239146441_sc7456",
+      "documentName": "Ethernet (1).pdf",
+      "chunkIds": [
+        "doc_1790239146441_sc7456_28",
+        "doc_1790239146441_sc7456_29",
+        "doc_1790239146441_sc7456_30",
+        "doc_1790239146441_sc7456_31",
+        "doc_1790239146441_sc7456_32",
+        "doc_1790239146441_sc7456_33"
+      ],
+      "keywords": [],
+      "order": 41,
+      "children": [
+        {
+          "id": "con_doc_1790239146441_sc7456_25",
+          "title": "Settings Negotiated by Ethernet Interfaces",
+          "description": "Reviews the communication parameters selected by a Fast Ethernet Network Interface Card through auto-negotiation.",
+          "parentId": "sec_doc_1790239146441_sc7456_5_12",
+          "level": "concept",
+          "documentId": "doc_1790239146441_sc7456",
+          "documentName": "Ethernet (1).pdf",
+          "pageStart": 29,
+          "pageEnd": 30,
+          "chunkIds": [
+            "doc_1790239146441_sc7456_28",
+            "doc_1790239146441_sc7456_29"
+          ],
+          "keywords": [
+            "auto-negotiation",
+            "nic",
+            "speed",
+            "duplex"
+          ],
+          "order": 42
+        },
+        {
+          "id": "con_doc_1790239146441_sc7456_26",
+          "title": "Mutually Supported Ethernet Speed",
+          "description": "Applies auto-negotiation to a 1 Gbps laptop connected to a switch that supports only 100 Mbps.",
+          "parentId": "sec_doc_1790239146441_sc7456_5_12",
+          "level": "concept",
+          "documentId": "doc_1790239146441_sc7456",
+          "documentName": "Ethernet (1).pdf",
+          "pageStart": 31,
+          "pageEnd": 32,
+          "chunkIds": [
+            "doc_1790239146441_sc7456_30",
+            "doc_1790239146441_sc7456_31"
+          ],
+          "keywords": [
+            "1 gbps",
+            "100 mbps",
+            "switch",
+            "auto-negotiation"
+          ],
+          "order": 43
+        },
+        {
+          "id": "con_doc_1790239146441_sc7456_27",
+          "title": "Gigabit Ethernet Media Support",
+          "description": "Reviews the capability of Gigabit Ethernet to operate over supported copper or fiber media rather than requiring only one medium.",
+          "parentId": "sec_doc_1790239146441_sc7456_5_12",
+          "level": "concept",
+          "documentId": "doc_1790239146441_sc7456",
+          "documentName": "Ethernet (1).pdf",
+          "pageStart": 33,
+          "pageEnd": 34,
+          "chunkIds": [
+            "doc_1790239146441_sc7456_32",
+            "doc_1790239146441_sc7456_33"
+          ],
+          "keywords": [
+            "gigabit ethernet",
+            "copper",
+            "fiber",
+            "transmission media"
+          ],
+          "order": 44
+        }
+      ],
+      "pageStart": 29,
+      "pageEnd": 34
+    },
+    {
+      "id": "con_doc_1790239146441_sc7456_28",
+      "title": "Why Wi-Fi Uses CSMA/CA",
+      "description": "Reviews the use of CSMA/CA in Wi-Fi because wireless devices cannot reliably detect collisions while transmitting.",
+      "parentId": "sec_doc_1790239146441_sc7456_5_13",
+      "level": "concept",
+      "documentId": "doc_1790239146441_sc7456",
+      "documentName": "Ethernet (1).pdf",
+      "pageStart": 35,
+      "pageEnd": 36,
+      "chunkIds": [
+        "doc_1790239146441_sc7456_34",
+        "doc_1790239146441_sc7456_35"
+      ],
+      "keywords": [
+        "wi-fi",
+        "csma/ca",
+        "collision detection",
+        "wireless devices"
+      ],
+      "order": 46
+    },
+    {
+      "id": "con_doc_1790239146441_sc7456_29",
+      "title": "Ethernet and Wireless LAN Comparison",
+      "description": "Assesses the distinction between Ethernet and wireless LAN operation, particularly their different medium-access methods.",
+      "parentId": "sec_doc_1790239146441_sc7456_5_13",
+      "level": "concept",
+      "documentId": "doc_1790239146441_sc7456",
+      "documentName": "Ethernet (1).pdf",
+      "pageStart": 37,
+      "pageEnd": 38,
+      "chunkIds": [
+        "doc_1790239146441_sc7456_36",
+        "doc_1790239146441_sc7456_37"
+      ],
+      "keywords": [
+        "ethernet",
+        "wireless lan",
+        "csma/cd",
+        "csma/ca"
+      ],
+      "order": 47
+    },
+    {
+      "id": "sec_doc_1790239146441_sc7456_5_13",
+      "title": "Wireless Access and Standards Comparison Review",
+      "description": "Assesses why wireless LANs use collision avoidance and how their operation differs from wired Ethernet.",
+      "parentId": "unit_doc_1790239146441_sc7456_5",
+      "level": "section",
+      "documentId": "doc_1790239146441_sc7456",
+      "documentName": "Ethernet (1).pdf",
+      "chunkIds": [
+        "doc_1790239146441_sc7456_34",
+        "doc_1790239146441_sc7456_35",
+        "doc_1790239146441_sc7456_36",
+        "doc_1790239146441_sc7456_37"
+      ],
+      "keywords": [],
+      "order": 45,
+      "children": [
+        {
+          "id": "con_doc_1790239146441_sc7456_28",
+          "title": "Why Wi-Fi Uses CSMA/CA",
+          "description": "Reviews the use of CSMA/CA in Wi-Fi because wireless devices cannot reliably detect collisions while transmitting.",
+          "parentId": "sec_doc_1790239146441_sc7456_5_13",
+          "level": "concept",
+          "documentId": "doc_1790239146441_sc7456",
+          "documentName": "Ethernet (1).pdf",
+          "pageStart": 35,
+          "pageEnd": 36,
+          "chunkIds": [
+            "doc_1790239146441_sc7456_34",
+            "doc_1790239146441_sc7456_35"
+          ],
+          "keywords": [
+            "wi-fi",
+            "csma/ca",
+            "collision detection",
+            "wireless devices"
+          ],
+          "order": 46
+        },
+        {
+          "id": "con_doc_1790239146441_sc7456_29",
+          "title": "Ethernet and Wireless LAN Comparison",
+          "description": "Assesses the distinction between Ethernet and wireless LAN operation, particularly their different medium-access methods.",
+          "parentId": "sec_doc_1790239146441_sc7456_5_13",
+          "level": "concept",
+          "documentId": "doc_1790239146441_sc7456",
+          "documentName": "Ethernet (1).pdf",
+          "pageStart": 37,
+          "pageEnd": 38,
+          "chunkIds": [
+            "doc_1790239146441_sc7456_36",
+            "doc_1790239146441_sc7456_37"
+          ],
+          "keywords": [
+            "ethernet",
+            "wireless lan",
+            "csma/cd",
+            "csma/ca"
+          ],
+          "order": 47
+        }
+      ],
+      "pageStart": 35,
+      "pageEnd": 38
+    },
+    {
+      "id": "unit_doc_1790239146441_sc7456_5",
+      "title": "Applied Review of Ethernet and Wireless LAN",
+      "description": "Uses scenario-based and multiple-choice questions to assess Ethernet access methods, speed compatibility, auto-negotiation, media support, and wired-wireless distinctions.",
+      "level": "unit",
+      "documentId": "doc_1790239146441_sc7456",
+      "documentName": "Ethernet (1).pdf",
+      "chunkIds": [
+        "doc_1790239146441_sc7456_24",
+        "doc_1790239146441_sc7456_25",
+        "doc_1790239146441_sc7456_26",
+        "doc_1790239146441_sc7456_27",
+        "doc_1790239146441_sc7456_28",
+        "doc_1790239146441_sc7456_29",
+        "doc_1790239146441_sc7456_30",
+        "doc_1790239146441_sc7456_31",
+        "doc_1790239146441_sc7456_32",
+        "doc_1790239146441_sc7456_33",
+        "doc_1790239146441_sc7456_34",
+        "doc_1790239146441_sc7456_35",
+        "doc_1790239146441_sc7456_36",
+        "doc_1790239146441_sc7456_37"
+      ],
+      "keywords": [],
+      "order": 37,
+      "children": [
+        {
+          "id": "sec_doc_1790239146441_sc7456_5_11",
+          "title": "Ethernet Access and Upgrade Scenarios",
+          "description": "Applies Ethernet principles to shared-medium communication and network upgrades.",
+          "parentId": "unit_doc_1790239146441_sc7456_5",
+          "level": "section",
+          "documentId": "doc_1790239146441_sc7456",
+          "documentName": "Ethernet (1).pdf",
+          "chunkIds": [
+            "doc_1790239146441_sc7456_24",
+            "doc_1790239146441_sc7456_25",
+            "doc_1790239146441_sc7456_26",
+            "doc_1790239146441_sc7456_27"
+          ],
+          "keywords": [],
+          "order": 38,
+          "children": [
+            {
+              "id": "con_doc_1790239146441_sc7456_23",
+              "title": "Shared Ethernet Transmission",
+              "description": "Examines a shared Ethernet cable scenario in which only one computer can transmit at a time, reinforcing shared-medium access behavior.",
+              "parentId": "sec_doc_1790239146441_sc7456_5_11",
+              "level": "concept",
+              "documentId": "doc_1790239146441_sc7456",
+              "documentName": "Ethernet (1).pdf",
+              "pageStart": 25,
+              "pageEnd": 26,
+              "chunkIds": [
+                "doc_1790239146441_sc7456_24",
+                "doc_1790239146441_sc7456_25"
+              ],
+              "keywords": [
+                "shared ethernet",
+                "transmission",
+                "shared medium",
+                "csma/cd"
+              ],
+              "order": 39
+            },
+            {
+              "id": "con_doc_1790239146441_sc7456_24",
+              "title": "Upgrade from Standard Ethernet to Fast Ethernet",
+              "description": "Assesses an upgrade from 10 Mbps Ethernet to 100 Mbps Fast Ethernet while retaining existing network cabling.",
+              "parentId": "sec_doc_1790239146441_sc7456_5_11",
+              "level": "concept",
+              "documentId": "doc_1790239146441_sc7456",
+              "documentName": "Ethernet (1).pdf",
+              "pageStart": 27,
+              "pageEnd": 28,
+              "chunkIds": [
+                "doc_1790239146441_sc7456_26",
+                "doc_1790239146441_sc7456_27"
+              ],
+              "keywords": [
+                "10 mbps",
+                "100 mbps",
+                "fast ethernet",
+                "upgrade",
+                "cabling"
+              ],
+              "order": 40
+            }
+          ],
+          "pageStart": 25,
+          "pageEnd": 28
+        },
+        {
+          "id": "sec_doc_1790239146441_sc7456_5_12",
+          "title": "Auto-negotiation and Gigabit Ethernet Review",
+          "description": "Assesses negotiated Ethernet settings, compatibility between different link speeds, and Gigabit Ethernet media support.",
+          "parentId": "unit_doc_1790239146441_sc7456_5",
+          "level": "section",
+          "documentId": "doc_1790239146441_sc7456",
+          "documentName": "Ethernet (1).pdf",
+          "chunkIds": [
+            "doc_1790239146441_sc7456_28",
+            "doc_1790239146441_sc7456_29",
+            "doc_1790239146441_sc7456_30",
+            "doc_1790239146441_sc7456_31",
+            "doc_1790239146441_sc7456_32",
+            "doc_1790239146441_sc7456_33"
+          ],
+          "keywords": [],
+          "order": 41,
+          "children": [
+            {
+              "id": "con_doc_1790239146441_sc7456_25",
+              "title": "Settings Negotiated by Ethernet Interfaces",
+              "description": "Reviews the communication parameters selected by a Fast Ethernet Network Interface Card through auto-negotiation.",
+              "parentId": "sec_doc_1790239146441_sc7456_5_12",
+              "level": "concept",
+              "documentId": "doc_1790239146441_sc7456",
+              "documentName": "Ethernet (1).pdf",
+              "pageStart": 29,
+              "pageEnd": 30,
+              "chunkIds": [
+                "doc_1790239146441_sc7456_28",
+                "doc_1790239146441_sc7456_29"
+              ],
+              "keywords": [
+                "auto-negotiation",
+                "nic",
+                "speed",
+                "duplex"
+              ],
+              "order": 42
+            },
+            {
+              "id": "con_doc_1790239146441_sc7456_26",
+              "title": "Mutually Supported Ethernet Speed",
+              "description": "Applies auto-negotiation to a 1 Gbps laptop connected to a switch that supports only 100 Mbps.",
+              "parentId": "sec_doc_1790239146441_sc7456_5_12",
+              "level": "concept",
+              "documentId": "doc_1790239146441_sc7456",
+              "documentName": "Ethernet (1).pdf",
+              "pageStart": 31,
+              "pageEnd": 32,
+              "chunkIds": [
+                "doc_1790239146441_sc7456_30",
+                "doc_1790239146441_sc7456_31"
+              ],
+              "keywords": [
+                "1 gbps",
+                "100 mbps",
+                "switch",
+                "auto-negotiation"
+              ],
+              "order": 43
+            },
+            {
+              "id": "con_doc_1790239146441_sc7456_27",
+              "title": "Gigabit Ethernet Media Support",
+              "description": "Reviews the capability of Gigabit Ethernet to operate over supported copper or fiber media rather than requiring only one medium.",
+              "parentId": "sec_doc_1790239146441_sc7456_5_12",
+              "level": "concept",
+              "documentId": "doc_1790239146441_sc7456",
+              "documentName": "Ethernet (1).pdf",
+              "pageStart": 33,
+              "pageEnd": 34,
+              "chunkIds": [
+                "doc_1790239146441_sc7456_32",
+                "doc_1790239146441_sc7456_33"
+              ],
+              "keywords": [
+                "gigabit ethernet",
+                "copper",
+                "fiber",
+                "transmission media"
+              ],
+              "order": 44
+            }
+          ],
+          "pageStart": 29,
+          "pageEnd": 34
+        },
+        {
+          "id": "sec_doc_1790239146441_sc7456_5_13",
+          "title": "Wireless Access and Standards Comparison Review",
+          "description": "Assesses why wireless LANs use collision avoidance and how their operation differs from wired Ethernet.",
+          "parentId": "unit_doc_1790239146441_sc7456_5",
+          "level": "section",
+          "documentId": "doc_1790239146441_sc7456",
+          "documentName": "Ethernet (1).pdf",
+          "chunkIds": [
+            "doc_1790239146441_sc7456_34",
+            "doc_1790239146441_sc7456_35",
+            "doc_1790239146441_sc7456_36",
+            "doc_1790239146441_sc7456_37"
+          ],
+          "keywords": [],
+          "order": 45,
+          "children": [
+            {
+              "id": "con_doc_1790239146441_sc7456_28",
+              "title": "Why Wi-Fi Uses CSMA/CA",
+              "description": "Reviews the use of CSMA/CA in Wi-Fi because wireless devices cannot reliably detect collisions while transmitting.",
+              "parentId": "sec_doc_1790239146441_sc7456_5_13",
+              "level": "concept",
+              "documentId": "doc_1790239146441_sc7456",
+              "documentName": "Ethernet (1).pdf",
+              "pageStart": 35,
+              "pageEnd": 36,
+              "chunkIds": [
+                "doc_1790239146441_sc7456_34",
+                "doc_1790239146441_sc7456_35"
+              ],
+              "keywords": [
+                "wi-fi",
+                "csma/ca",
+                "collision detection",
+                "wireless devices"
+              ],
+              "order": 46
+            },
+            {
+              "id": "con_doc_1790239146441_sc7456_29",
+              "title": "Ethernet and Wireless LAN Comparison",
+              "description": "Assesses the distinction between Ethernet and wireless LAN operation, particularly their different medium-access methods.",
+              "parentId": "sec_doc_1790239146441_sc7456_5_13",
+              "level": "concept",
+              "documentId": "doc_1790239146441_sc7456",
+              "documentName": "Ethernet (1).pdf",
+              "pageStart": 37,
+              "pageEnd": 38,
+              "chunkIds": [
+                "doc_1790239146441_sc7456_36",
+                "doc_1790239146441_sc7456_37"
+              ],
+              "keywords": [
+                "ethernet",
+                "wireless lan",
+                "csma/cd",
+                "csma/ca"
+              ],
+              "order": 47
+            }
+          ],
+          "pageStart": 35,
+          "pageEnd": 38
+        }
+      ],
+      "pageStart": 25,
+      "pageEnd": 38
+    }
+  ],
+  "tree": [
+    {
+      "id": "unit_doc_1790239146441_sc7456_1",
+      "title": "Network and Ethernet Fundamentals",
+      "description": "Introduces Ethernet as a LAN technology, distinguishes wired and wireless connectivity, and explains the role of network interface hardware and IEEE standardization.",
+      "level": "unit",
+      "documentId": "doc_1790239146441_sc7456",
+      "documentName": "Ethernet (1).pdf",
+      "chunkIds": [
+        "doc_1790239146441_sc7456_1",
+        "doc_1790239146441_sc7456_2",
+        "doc_1790239146441_sc7456_3",
+        "doc_1790239146441_sc7456_4",
+        "doc_1790239146441_sc7456_5",
+        "doc_1790239146441_sc7456_6"
+      ],
+      "keywords": [],
+      "order": 1,
+      "children": [
+        {
+          "id": "sec_doc_1790239146441_sc7456_1_1",
+          "title": "Introduction to Ethernet",
+          "description": "Establishes the scope of IEEE 802.3 and IEEE 802.11 and introduces Ethernet networking.",
+          "parentId": "unit_doc_1790239146441_sc7456_1",
+          "level": "section",
+          "documentId": "doc_1790239146441_sc7456",
+          "documentName": "Ethernet (1).pdf",
+          "chunkIds": [
+            "doc_1790239146441_sc7456_1",
+            "doc_1790239146441_sc7456_2",
+            "doc_1790239146441_sc7456_3"
+          ],
+          "keywords": [],
+          "order": 2,
+          "children": [
+            {
+              "id": "con_doc_1790239146441_sc7456_1",
+              "title": "IEEE 802.3 and IEEE 802.11 Standards",
+              "description": "Introduces the IEEE standards associated with wired Ethernet and wireless local area networking.",
+              "parentId": "sec_doc_1790239146441_sc7456_1_1",
+              "level": "concept",
+              "documentId": "doc_1790239146441_sc7456",
+              "documentName": "Ethernet (1).pdf",
+              "pageStart": 1,
+              "pageEnd": 1,
+              "chunkIds": [
+                "doc_1790239146441_sc7456_1"
+              ],
+              "keywords": [
+                "ieee 802.3",
+                "ieee 802.11",
+                "network standards"
+              ],
+              "order": 3
+            },
+            {
+              "id": "con_doc_1790239146441_sc7456_2",
+              "title": "Ethernet as a LAN Technology",
+              "description": "Defines Ethernet as a widely used local area network technology for communication among connected devices.",
+              "parentId": "sec_doc_1790239146441_sc7456_1_1",
+              "level": "concept",
+              "documentId": "doc_1790239146441_sc7456",
+              "documentName": "Ethernet (1).pdf",
+              "pageStart": 2,
+              "pageEnd": 2,
+              "chunkIds": [
+                "doc_1790239146441_sc7456_2"
+              ],
+              "keywords": [
+                "ethernet",
+                "lan",
+                "local area network"
+              ],
+              "order": 4
+            },
+            {
+              "id": "con_doc_1790239146441_sc7456_3",
+              "title": "Wired Ethernet",
+              "description": "Explains wired Ethernet as a network in which devices are physically connected through networking media and interface hardware.",
+              "parentId": "sec_doc_1790239146441_sc7456_1_1",
+              "level": "concept",
+              "documentId": "doc_1790239146441_sc7456",
+              "documentName": "Ethernet (1).pdf",
+              "pageStart": 3,
+              "pageEnd": 3,
+              "chunkIds": [
+                "doc_1790239146441_sc7456_3"
+              ],
+              "keywords": [
+                "wired ethernet",
+                "physical connection",
+                "network devices"
+              ],
+              "order": 5
+            }
+          ],
+          "pageStart": 1,
+          "pageEnd": 3
+        },
+        {
+          "id": "sec_doc_1790239146441_sc7456_1_2",
+          "title": "Network Interface Hardware",
+          "description": "Identifies the interface cards used to connect devices to wired and wireless networks.",
+          "parentId": "unit_doc_1790239146441_sc7456_1",
+          "level": "section",
+          "documentId": "doc_1790239146441_sc7456",
+          "documentName": "Ethernet (1).pdf",
+          "chunkIds": [
+            "doc_1790239146441_sc7456_4",
+            "doc_1790239146441_sc7456_5"
+          ],
+          "keywords": [],
+          "order": 6,
+          "children": [
+            {
+              "id": "con_doc_1790239146441_sc7456_4",
+              "title": "Wired Network Interface Card",
+              "description": "Presents the wired Network Interface Card as the device interface that enables a computer to connect to an Ethernet network.",
+              "parentId": "sec_doc_1790239146441_sc7456_1_2",
+              "level": "concept",
+              "documentId": "doc_1790239146441_sc7456",
+              "documentName": "Ethernet (1).pdf",
+              "pageStart": 4,
+              "pageEnd": 4,
+              "chunkIds": [
+                "doc_1790239146441_sc7456_4"
+              ],
+              "keywords": [
+                "network interface card",
+                "nic",
+                "wired network"
+              ],
+              "order": 7
+            },
+            {
+              "id": "con_doc_1790239146441_sc7456_5",
+              "title": "Wireless Network Interface Card",
+              "description": "Presents the wireless Network Interface Card as the interface that enables a device to communicate over a wireless network.",
+              "parentId": "sec_doc_1790239146441_sc7456_1_2",
+              "level": "concept",
+              "documentId": "doc_1790239146441_sc7456",
+              "documentName": "Ethernet (1).pdf",
+              "pageStart": 5,
+              "pageEnd": 5,
+              "chunkIds": [
+                "doc_1790239146441_sc7456_5"
+              ],
+              "keywords": [
+                "wireless nic",
+                "network interface card",
+                "wireless network"
+              ],
+              "order": 8
+            }
+          ],
+          "pageStart": 4,
+          "pageEnd": 5
+        },
+        {
+          "id": "sec_doc_1790239146441_sc7456_1_3",
+          "title": "IEEE Standardization",
+          "description": "Explains how standardized rules enable communication between different network devices.",
+          "parentId": "unit_doc_1790239146441_sc7456_1",
+          "level": "section",
+          "documentId": "doc_1790239146441_sc7456",
+          "documentName": "Ethernet (1).pdf",
+          "chunkIds": [
+            "doc_1790239146441_sc7456_6"
+          ],
+          "keywords": [],
+          "order": 9,
+          "children": [
+            {
+              "id": "con_doc_1790239146441_sc7456_6",
+              "title": "IEEE 802 Communication Rules",
+              "description": "Describes standardization as the establishment of common rules that allow heterogeneous devices to communicate with one another.",
+              "parentId": "sec_doc_1790239146441_sc7456_1_3",
+              "level": "concept",
+              "documentId": "doc_1790239146441_sc7456",
+              "documentName": "Ethernet (1).pdf",
+              "pageStart": 6,
+              "pageEnd": 6,
+              "chunkIds": [
+                "doc_1790239146441_sc7456_6"
+              ],
+              "keywords": [
+                "ieee",
+                "standardization",
+                "802",
+                "communication rules"
+              ],
+              "order": 10
+            }
+          ],
+          "pageStart": 6,
+          "pageEnd": 6
+        }
+      ],
+      "pageStart": 1,
+      "pageEnd": 6
+    },
+    {
+      "id": "unit_doc_1790239146441_sc7456_2",
+      "title": "IEEE 802.3 Wired Ethernet",
+      "description": "Examines wired Ethernet operation, medium access, Ethernet generations, transmission speeds, media choices, and cable types.",
+      "level": "unit",
+      "documentId": "doc_1790239146441_sc7456",
+      "documentName": "Ethernet (1).pdf",
+      "chunkIds": [
+        "doc_1790239146441_sc7456_7",
+        "doc_1790239146441_sc7456_8",
+        "doc_1790239146441_sc7456_9",
+        "doc_1790239146441_sc7456_10",
+        "doc_1790239146441_sc7456_11",
+        "doc_1790239146441_sc7456_12",
+        "doc_1790239146441_sc7456_13",
+        "doc_1790239146441_sc7456_14",
+        "doc_1790239146441_sc7456_15",
+        "doc_1790239146441_sc7456_16",
+        "doc_1790239146441_sc7456_17"
+      ],
+      "keywords": [],
+      "order": 11,
+      "children": [
+        {
+          "id": "sec_doc_1790239146441_sc7456_2_4",
+          "title": "Ethernet Communication and Medium Access",
+          "description": "Explains the functions of IEEE 802.3 Ethernet communication and the CSMA/CD access method.",
+          "parentId": "unit_doc_1790239146441_sc7456_2",
+          "level": "section",
+          "documentId": "doc_1790239146441_sc7456",
+          "documentName": "Ethernet (1).pdf",
+          "chunkIds": [
+            "doc_1790239146441_sc7456_7",
+            "doc_1790239146441_sc7456_8",
+            "doc_1790239146441_sc7456_9"
+          ],
+          "keywords": [],
+          "order": 12,
+          "children": [
+            {
+              "id": "con_doc_1790239146441_sc7456_7",
+              "title": "Ethernet (802.3) Wired LAN",
+              "description": "Presents IEEE 802.3 as the standard underlying wired local area networks and their physical network communication.",
+              "parentId": "sec_doc_1790239146441_sc7456_2_4",
+              "level": "concept",
+              "documentId": "doc_1790239146441_sc7456",
+              "documentName": "Ethernet (1).pdf",
+              "pageStart": 7,
+              "pageEnd": 7,
+              "chunkIds": [
+                "doc_1790239146441_sc7456_7"
+              ],
+              "keywords": [
+                "ethernet",
+                "802.3",
+                "wired lan",
+                "physical network"
+              ],
+              "order": 13
+            },
+            {
+              "id": "con_doc_1790239146441_sc7456_8",
+              "title": "Ethernet Receiver Synchronization and Destination Identification",
+              "description": "Explains how Ethernet communication supports receiver synchronization and uses a destination MAC address to identify the intended receiver.",
+              "parentId": "sec_doc_1790239146441_sc7456_2_4",
+              "level": "concept",
+              "documentId": "doc_1790239146441_sc7456",
+              "documentName": "Ethernet (1).pdf",
+              "pageStart": 8,
+              "pageEnd": 8,
+              "chunkIds": [
+                "doc_1790239146441_sc7456_8"
+              ],
+              "keywords": [
+                "synchronization",
+                "destination mac",
+                "receiver",
+                "ethernet"
+              ],
+              "order": 14
+            },
+            {
+              "id": "con_doc_1790239146441_sc7456_9",
+              "title": "CSMA/CD",
+              "description": "Describes Carrier Sense Multiple Access with Collision Detection as the method used to coordinate transmissions and manage traffic on shared wired Ethernet.",
+              "parentId": "sec_doc_1790239146441_sc7456_2_4",
+              "level": "concept",
+              "documentId": "doc_1790239146441_sc7456",
+              "documentName": "Ethernet (1).pdf",
+              "pageStart": 9,
+              "pageEnd": 9,
+              "chunkIds": [
+                "doc_1790239146441_sc7456_9"
+              ],
+              "keywords": [
+                "csma/cd",
+                "carrier sense",
+                "multiple access",
+                "collision detection"
+              ],
+              "order": 15
+            }
+          ],
+          "pageStart": 7,
+          "pageEnd": 9
+        },
+        {
+          "id": "sec_doc_1790239146441_sc7456_2_5",
+          "title": "Ethernet Generations and Speeds",
+          "description": "Traces Ethernet development from Standard Ethernet through faster generations and examines their principal characteristics.",
+          "parentId": "unit_doc_1790239146441_sc7456_2",
+          "level": "section",
+          "documentId": "doc_1790239146441_sc7456",
+          "documentName": "Ethernet (1).pdf",
+          "chunkIds": [
+            "doc_1790239146441_sc7456_10",
+            "doc_1790239146441_sc7456_11",
+            "doc_1790239146441_sc7456_12",
+            "doc_1790239146441_sc7456_13",
+            "doc_1790239146441_sc7456_14",
+            "doc_1790239146441_sc7456_15"
+          ],
+          "keywords": [],
+          "order": 16,
+          "children": [
+            {
+              "id": "con_doc_1790239146441_sc7456_10",
+              "title": "Evolution of Ethernet",
+              "description": "Traces the progression from Standard Ethernet in the 1980s to Fast Ethernet, Gigabit Ethernet, and systems operating at 10 Gbps and beyond.",
+              "parentId": "sec_doc_1790239146441_sc7456_2_5",
+              "level": "concept",
+              "documentId": "doc_1790239146441_sc7456",
+              "documentName": "Ethernet (1).pdf",
+              "pageStart": 10,
+              "pageEnd": 10,
+              "chunkIds": [
+                "doc_1790239146441_sc7456_10"
+              ],
+              "keywords": [
+                "standard ethernet",
+                "fast ethernet",
+                "gigabit ethernet",
+                "10 gbps"
+              ],
+              "order": 17
+            },
+            {
+              "id": "con_doc_1790239146441_sc7456_11",
+              "title": "Classification of Ethernet Networks",
+              "description": "Classifies Ethernet networks into four types according to their generation and supported data-transfer rate.",
+              "parentId": "sec_doc_1790239146441_sc7456_2_5",
+              "level": "concept",
+              "documentId": "doc_1790239146441_sc7456",
+              "documentName": "Ethernet (1).pdf",
+              "pageStart": 11,
+              "pageEnd": 12,
+              "chunkIds": [
+                "doc_1790239146441_sc7456_11",
+                "doc_1790239146441_sc7456_12"
+              ],
+              "keywords": [
+                "ethernet types",
+                "standard ethernet",
+                "fast ethernet",
+                "gigabit ethernet"
+              ],
+              "order": 18
+            },
+            {
+              "id": "con_doc_1790239146441_sc7456_12",
+              "title": "Fast Ethernet (802.3u)",
+              "description": "Defines Fast Ethernet as the IEEE 802.3u generation that raised Ethernet performance to 100 Mbps, ten times the original Ethernet rate.",
+              "parentId": "sec_doc_1790239146441_sc7456_2_5",
+              "level": "concept",
+              "documentId": "doc_1790239146441_sc7456",
+              "documentName": "Ethernet (1).pdf",
+              "pageStart": 13,
+              "pageEnd": 13,
+              "chunkIds": [
+                "doc_1790239146441_sc7456_13"
+              ],
+              "keywords": [
+                "fast ethernet",
+                "802.3u",
+                "100 mbps"
+              ],
+              "order": 19
+            },
+            {
+              "id": "con_doc_1790239146441_sc7456_13",
+              "title": "Auto-negotiation",
+              "description": "Explains auto-negotiation as a Fast Ethernet and newer Ethernet feature through which connected interfaces determine mutually supported communication settings.",
+              "parentId": "sec_doc_1790239146441_sc7456_2_5",
+              "level": "concept",
+              "documentId": "doc_1790239146441_sc7456",
+              "documentName": "Ethernet (1).pdf",
+              "pageStart": 14,
+              "pageEnd": 14,
+              "chunkIds": [
+                "doc_1790239146441_sc7456_14"
+              ],
+              "keywords": [
+                "auto-negotiation",
+                "fast ethernet",
+                "speed",
+                "duplex"
+              ],
+              "order": 20
+            },
+            {
+              "id": "con_doc_1790239146441_sc7456_14",
+              "title": "Gigabit Ethernet (802.3ab)",
+              "description": "Introduces Gigabit Ethernet as a 1000 Mbps standard used to support modern high-speed local area networks.",
+              "parentId": "sec_doc_1790239146441_sc7456_2_5",
+              "level": "concept",
+              "documentId": "doc_1790239146441_sc7456",
+              "documentName": "Ethernet (1).pdf",
+              "pageStart": 15,
+              "pageEnd": 15,
+              "chunkIds": [
+                "doc_1790239146441_sc7456_15"
+              ],
+              "keywords": [
+                "gigabit ethernet",
+                "802.3ab",
+                "1000 mbps",
+                "high-speed lan"
+              ],
+              "order": 21
+            }
+          ],
+          "pageStart": 10,
+          "pageEnd": 15
+        },
+        {
+          "id": "sec_doc_1790239146441_sc7456_2_6",
+          "title": "Ethernet Transmission Media",
+          "description": "Compares Ethernet media and surveys cable types used by different Ethernet implementations.",
+          "parentId": "unit_doc_1790239146441_sc7456_2",
+          "level": "section",
+          "documentId": "doc_1790239146441_sc7456",
+          "documentName": "Ethernet (1).pdf",
+          "chunkIds": [
+            "doc_1790239146441_sc7456_16",
+            "doc_1790239146441_sc7456_17"
+          ],
+          "keywords": [],
+          "order": 22,
+          "children": [
+            {
+              "id": "con_doc_1790239146441_sc7456_15",
+              "title": "Fiber-Optic and Copper UTP Media",
+              "description": "Compares fiber-optic and copper UTP as Ethernet media, including infrastructure cost and deployment considerations.",
+              "parentId": "sec_doc_1790239146441_sc7456_2_6",
+              "level": "concept",
+              "documentId": "doc_1790239146441_sc7456",
+              "documentName": "Ethernet (1).pdf",
+              "pageStart": 16,
+              "pageEnd": 16,
+              "chunkIds": [
+                "doc_1790239146441_sc7456_16"
+              ],
+              "keywords": [
+                "fiber optic",
+                "copper",
+                "utp",
+                "infrastructure"
+              ],
+              "order": 23
+            },
+            {
+              "id": "con_doc_1790239146441_sc7456_16",
+              "title": "Ethernet Cable Types",
+              "description": "Surveys the various cable designations used for Ethernet implementations, including 10Base2 and other media-specific Ethernet cable types.",
+              "parentId": "sec_doc_1790239146441_sc7456_2_6",
+              "level": "concept",
+              "documentId": "doc_1790239146441_sc7456",
+              "documentName": "Ethernet (1).pdf",
+              "pageStart": 17,
+              "pageEnd": 17,
+              "chunkIds": [
+                "doc_1790239146441_sc7456_17"
+              ],
+              "keywords": [
+                "ethernet cables",
+                "10base2",
+                "cabling",
+                "transmission media"
+              ],
+              "order": 24
+            }
+          ],
+          "pageStart": 16,
+          "pageEnd": 17
+        }
+      ],
+      "pageStart": 7,
+      "pageEnd": 17
+    },
+    {
+      "id": "unit_doc_1790239146441_sc7456_3",
+      "title": "IEEE 802.11 Wireless LAN",
+      "description": "Introduces wireless LAN standards, radio-frequency bands, wireless medium access, and the main components of a wireless network.",
+      "level": "unit",
+      "documentId": "doc_1790239146441_sc7456",
+      "documentName": "Ethernet (1).pdf",
+      "chunkIds": [
+        "doc_1790239146441_sc7456_18",
+        "doc_1790239146441_sc7456_19",
+        "doc_1790239146441_sc7456_20",
+        "doc_1790239146441_sc7456_21"
+      ],
+      "keywords": [],
+      "order": 25,
+      "children": [
+        {
+          "id": "sec_doc_1790239146441_sc7456_3_7",
+          "title": "Wireless LAN Standards and Radio Bands",
+          "description": "Presents IEEE 802.11 wireless networking and compares the operating characteristics of common frequency bands.",
+          "parentId": "unit_doc_1790239146441_sc7456_3",
+          "level": "section",
+          "documentId": "doc_1790239146441_sc7456",
+          "documentName": "Ethernet (1).pdf",
+          "chunkIds": [
+            "doc_1790239146441_sc7456_18",
+            "doc_1790239146441_sc7456_19"
+          ],
+          "keywords": [],
+          "order": 26,
+          "children": [
+            {
+              "id": "con_doc_1790239146441_sc7456_17",
+              "title": "IEEE 802.11 Wireless LAN Standard",
+              "description": "Introduces IEEE 802.11 as the standard for wireless LAN communication and relates it to wireless networking methods, media, and user benefits.",
+              "parentId": "sec_doc_1790239146441_sc7456_3_7",
+              "level": "concept",
+              "documentId": "doc_1790239146441_sc7456",
+              "documentName": "Ethernet (1).pdf",
+              "pageStart": 18,
+              "pageEnd": 18,
+              "chunkIds": [
+                "doc_1790239146441_sc7456_18"
+              ],
+              "keywords": [
+                "ieee 802.11",
+                "wireless lan",
+                "wi-fi",
+                "wireless communication"
+              ],
+              "order": 27
+            },
+            {
+              "id": "con_doc_1790239146441_sc7456_18",
+              "title": "2.4 GHz and 5 GHz Wireless Bands",
+              "description": "Compares the 2.4 GHz and 5 GHz bands in terms of range, speed, crowding, and susceptibility to interference.",
+              "parentId": "sec_doc_1790239146441_sc7456_3_7",
+              "level": "concept",
+              "documentId": "doc_1790239146441_sc7456",
+              "documentName": "Ethernet (1).pdf",
+              "pageStart": 19,
+              "pageEnd": 19,
+              "chunkIds": [
+                "doc_1790239146441_sc7456_19"
+              ],
+              "keywords": [
+                "2.4 ghz",
+                "5 ghz",
+                "range",
+                "interference",
+                "speed"
+              ],
+              "order": 28
+            }
+          ],
+          "pageStart": 18,
+          "pageEnd": 19
+        },
+        {
+          "id": "sec_doc_1790239146441_sc7456_3_8",
+          "title": "Wireless Access and Components",
+          "description": "Explains how wireless devices access the shared medium and identifies the central elements of a wireless network.",
+          "parentId": "unit_doc_1790239146441_sc7456_3",
+          "level": "section",
+          "documentId": "doc_1790239146441_sc7456",
+          "documentName": "Ethernet (1).pdf",
+          "chunkIds": [
+            "doc_1790239146441_sc7456_20",
+            "doc_1790239146441_sc7456_21"
+          ],
+          "keywords": [],
+          "order": 29,
+          "children": [
+            {
+              "id": "con_doc_1790239146441_sc7456_19",
+              "title": "CSMA/CA Wireless Medium Access",
+              "description": "Explains how a wireless device listens to the medium before transmitting and uses collision avoidance to reduce competing transmissions.",
+              "parentId": "sec_doc_1790239146441_sc7456_3_8",
+              "level": "concept",
+              "documentId": "doc_1790239146441_sc7456",
+              "documentName": "Ethernet (1).pdf",
+              "pageStart": 20,
+              "pageEnd": 20,
+              "chunkIds": [
+                "doc_1790239146441_sc7456_20"
+              ],
+              "keywords": [
+                "csma/ca",
+                "collision avoidance",
+                "wireless medium",
+                "transmission"
+              ],
+              "order": 30
+            },
+            {
+              "id": "con_doc_1790239146441_sc7456_20",
+              "title": "Wireless Network Components",
+              "description": "Identifies the access point, station, and SSID, including the access point's role as a bridge between wired and wireless networking.",
+              "parentId": "sec_doc_1790239146441_sc7456_3_8",
+              "level": "concept",
+              "documentId": "doc_1790239146441_sc7456",
+              "documentName": "Ethernet (1).pdf",
+              "pageStart": 21,
+              "pageEnd": 21,
+              "chunkIds": [
+                "doc_1790239146441_sc7456_21"
+              ],
+              "keywords": [
+                "access point",
+                "station",
+                "ssid",
+                "wireless network"
+              ],
+              "order": 31
+            }
+          ],
+          "pageStart": 20,
+          "pageEnd": 21
+        }
+      ],
+      "pageStart": 18,
+      "pageEnd": 21
+    },
+    {
+      "id": "unit_doc_1790239146441_sc7456_4",
+      "title": "Connectivity Selection and Emerging Developments",
+      "description": "Compares wired and wireless network standards for infrastructure decisions and highlights future connectivity technologies.",
+      "level": "unit",
+      "documentId": "doc_1790239146441_sc7456",
+      "documentName": "Ethernet (1).pdf",
+      "chunkIds": [
+        "doc_1790239146441_sc7456_22",
+        "doc_1790239146441_sc7456_23"
+      ],
+      "keywords": [],
+      "order": 32,
+      "children": [
+        {
+          "id": "sec_doc_1790239146441_sc7456_4_9",
+          "title": "Wired and Wireless Infrastructure",
+          "description": "Evaluates the selection of IEEE 802.3 or IEEE 802.11 according to infrastructure requirements.",
+          "parentId": "unit_doc_1790239146441_sc7456_4",
+          "level": "section",
+          "documentId": "doc_1790239146441_sc7456",
+          "documentName": "Ethernet (1).pdf",
+          "chunkIds": [
+            "doc_1790239146441_sc7456_22"
+          ],
+          "keywords": [],
+          "order": 33,
+          "children": [
+            {
+              "id": "con_doc_1790239146441_sc7456_21",
+              "title": "Wired (802.3) versus Wireless (802.11) Connectivity",
+              "description": "Compares wired Ethernet and wireless LAN connectivity to determine which standard best fits particular infrastructure needs.",
+              "parentId": "sec_doc_1790239146441_sc7456_4_9",
+              "level": "concept",
+              "documentId": "doc_1790239146441_sc7456",
+              "documentName": "Ethernet (1).pdf",
+              "pageStart": 22,
+              "pageEnd": 22,
+              "chunkIds": [
+                "doc_1790239146441_sc7456_22"
+              ],
+              "keywords": [
+                "wired",
+                "wireless",
+                "802.3",
+                "802.11",
+                "infrastructure"
+              ],
+              "order": 34
+            }
+          ],
+          "pageStart": 22,
+          "pageEnd": 22
+        },
+        {
+          "id": "sec_doc_1790239146441_sc7456_4_10",
+          "title": "Future of Network Connectivity",
+          "description": "Introduces technologies expected to advance network capacity and integration.",
+          "parentId": "unit_doc_1790239146441_sc7456_4",
+          "level": "section",
+          "documentId": "doc_1790239146441_sc7456",
+          "documentName": "Ethernet (1).pdf",
+          "chunkIds": [
+            "doc_1790239146441_sc7456_23"
+          ],
+          "keywords": [],
+          "order": 35,
+          "children": [
+            {
+              "id": "con_doc_1790239146441_sc7456_22",
+              "title": "Wi-Fi 7, Terabit Ethernet, and IoT Integration",
+              "description": "Highlights Wi-Fi 7, Terabit Ethernet, and Internet of Things integration as developments aimed at higher throughput and broader connectivity.",
+              "parentId": "sec_doc_1790239146441_sc7456_4_10",
+              "level": "concept",
+              "documentId": "doc_1790239146441_sc7456",
+              "documentName": "Ethernet (1).pdf",
+              "pageStart": 23,
+              "pageEnd": 23,
+              "chunkIds": [
+                "doc_1790239146441_sc7456_23"
+              ],
+              "keywords": [
+                "wi-fi 7",
+                "terabit ethernet",
+                "iot integration",
+                "high throughput"
+              ],
+              "order": 36
+            }
+          ],
+          "pageStart": 23,
+          "pageEnd": 23
+        }
+      ],
+      "pageStart": 22,
+      "pageEnd": 23
+    },
+    {
+      "id": "unit_doc_1790239146441_sc7456_5",
+      "title": "Applied Review of Ethernet and Wireless LAN",
+      "description": "Uses scenario-based and multiple-choice questions to assess Ethernet access methods, speed compatibility, auto-negotiation, media support, and wired-wireless distinctions.",
+      "level": "unit",
+      "documentId": "doc_1790239146441_sc7456",
+      "documentName": "Ethernet (1).pdf",
+      "chunkIds": [
+        "doc_1790239146441_sc7456_24",
+        "doc_1790239146441_sc7456_25",
+        "doc_1790239146441_sc7456_26",
+        "doc_1790239146441_sc7456_27",
+        "doc_1790239146441_sc7456_28",
+        "doc_1790239146441_sc7456_29",
+        "doc_1790239146441_sc7456_30",
+        "doc_1790239146441_sc7456_31",
+        "doc_1790239146441_sc7456_32",
+        "doc_1790239146441_sc7456_33",
+        "doc_1790239146441_sc7456_34",
+        "doc_1790239146441_sc7456_35",
+        "doc_1790239146441_sc7456_36",
+        "doc_1790239146441_sc7456_37"
+      ],
+      "keywords": [],
+      "order": 37,
+      "children": [
+        {
+          "id": "sec_doc_1790239146441_sc7456_5_11",
+          "title": "Ethernet Access and Upgrade Scenarios",
+          "description": "Applies Ethernet principles to shared-medium communication and network upgrades.",
+          "parentId": "unit_doc_1790239146441_sc7456_5",
+          "level": "section",
+          "documentId": "doc_1790239146441_sc7456",
+          "documentName": "Ethernet (1).pdf",
+          "chunkIds": [
+            "doc_1790239146441_sc7456_24",
+            "doc_1790239146441_sc7456_25",
+            "doc_1790239146441_sc7456_26",
+            "doc_1790239146441_sc7456_27"
+          ],
+          "keywords": [],
+          "order": 38,
+          "children": [
+            {
+              "id": "con_doc_1790239146441_sc7456_23",
+              "title": "Shared Ethernet Transmission",
+              "description": "Examines a shared Ethernet cable scenario in which only one computer can transmit at a time, reinforcing shared-medium access behavior.",
+              "parentId": "sec_doc_1790239146441_sc7456_5_11",
+              "level": "concept",
+              "documentId": "doc_1790239146441_sc7456",
+              "documentName": "Ethernet (1).pdf",
+              "pageStart": 25,
+              "pageEnd": 26,
+              "chunkIds": [
+                "doc_1790239146441_sc7456_24",
+                "doc_1790239146441_sc7456_25"
+              ],
+              "keywords": [
+                "shared ethernet",
+                "transmission",
+                "shared medium",
+                "csma/cd"
+              ],
+              "order": 39
+            },
+            {
+              "id": "con_doc_1790239146441_sc7456_24",
+              "title": "Upgrade from Standard Ethernet to Fast Ethernet",
+              "description": "Assesses an upgrade from 10 Mbps Ethernet to 100 Mbps Fast Ethernet while retaining existing network cabling.",
+              "parentId": "sec_doc_1790239146441_sc7456_5_11",
+              "level": "concept",
+              "documentId": "doc_1790239146441_sc7456",
+              "documentName": "Ethernet (1).pdf",
+              "pageStart": 27,
+              "pageEnd": 28,
+              "chunkIds": [
+                "doc_1790239146441_sc7456_26",
+                "doc_1790239146441_sc7456_27"
+              ],
+              "keywords": [
+                "10 mbps",
+                "100 mbps",
+                "fast ethernet",
+                "upgrade",
+                "cabling"
+              ],
+              "order": 40
+            }
+          ],
+          "pageStart": 25,
+          "pageEnd": 28
+        },
+        {
+          "id": "sec_doc_1790239146441_sc7456_5_12",
+          "title": "Auto-negotiation and Gigabit Ethernet Review",
+          "description": "Assesses negotiated Ethernet settings, compatibility between different link speeds, and Gigabit Ethernet media support.",
+          "parentId": "unit_doc_1790239146441_sc7456_5",
+          "level": "section",
+          "documentId": "doc_1790239146441_sc7456",
+          "documentName": "Ethernet (1).pdf",
+          "chunkIds": [
+            "doc_1790239146441_sc7456_28",
+            "doc_1790239146441_sc7456_29",
+            "doc_1790239146441_sc7456_30",
+            "doc_1790239146441_sc7456_31",
+            "doc_1790239146441_sc7456_32",
+            "doc_1790239146441_sc7456_33"
+          ],
+          "keywords": [],
+          "order": 41,
+          "children": [
+            {
+              "id": "con_doc_1790239146441_sc7456_25",
+              "title": "Settings Negotiated by Ethernet Interfaces",
+              "description": "Reviews the communication parameters selected by a Fast Ethernet Network Interface Card through auto-negotiation.",
+              "parentId": "sec_doc_1790239146441_sc7456_5_12",
+              "level": "concept",
+              "documentId": "doc_1790239146441_sc7456",
+              "documentName": "Ethernet (1).pdf",
+              "pageStart": 29,
+              "pageEnd": 30,
+              "chunkIds": [
+                "doc_1790239146441_sc7456_28",
+                "doc_1790239146441_sc7456_29"
+              ],
+              "keywords": [
+                "auto-negotiation",
+                "nic",
+                "speed",
+                "duplex"
+              ],
+              "order": 42
+            },
+            {
+              "id": "con_doc_1790239146441_sc7456_26",
+              "title": "Mutually Supported Ethernet Speed",
+              "description": "Applies auto-negotiation to a 1 Gbps laptop connected to a switch that supports only 100 Mbps.",
+              "parentId": "sec_doc_1790239146441_sc7456_5_12",
+              "level": "concept",
+              "documentId": "doc_1790239146441_sc7456",
+              "documentName": "Ethernet (1).pdf",
+              "pageStart": 31,
+              "pageEnd": 32,
+              "chunkIds": [
+                "doc_1790239146441_sc7456_30",
+                "doc_1790239146441_sc7456_31"
+              ],
+              "keywords": [
+                "1 gbps",
+                "100 mbps",
+                "switch",
+                "auto-negotiation"
+              ],
+              "order": 43
+            },
+            {
+              "id": "con_doc_1790239146441_sc7456_27",
+              "title": "Gigabit Ethernet Media Support",
+              "description": "Reviews the capability of Gigabit Ethernet to operate over supported copper or fiber media rather than requiring only one medium.",
+              "parentId": "sec_doc_1790239146441_sc7456_5_12",
+              "level": "concept",
+              "documentId": "doc_1790239146441_sc7456",
+              "documentName": "Ethernet (1).pdf",
+              "pageStart": 33,
+              "pageEnd": 34,
+              "chunkIds": [
+                "doc_1790239146441_sc7456_32",
+                "doc_1790239146441_sc7456_33"
+              ],
+              "keywords": [
+                "gigabit ethernet",
+                "copper",
+                "fiber",
+                "transmission media"
+              ],
+              "order": 44
+            }
+          ],
+          "pageStart": 29,
+          "pageEnd": 34
+        },
+        {
+          "id": "sec_doc_1790239146441_sc7456_5_13",
+          "title": "Wireless Access and Standards Comparison Review",
+          "description": "Assesses why wireless LANs use collision avoidance and how their operation differs from wired Ethernet.",
+          "parentId": "unit_doc_1790239146441_sc7456_5",
+          "level": "section",
+          "documentId": "doc_1790239146441_sc7456",
+          "documentName": "Ethernet (1).pdf",
+          "chunkIds": [
+            "doc_1790239146441_sc7456_34",
+            "doc_1790239146441_sc7456_35",
+            "doc_1790239146441_sc7456_36",
+            "doc_1790239146441_sc7456_37"
+          ],
+          "keywords": [],
+          "order": 45,
+          "children": [
+            {
+              "id": "con_doc_1790239146441_sc7456_28",
+              "title": "Why Wi-Fi Uses CSMA/CA",
+              "description": "Reviews the use of CSMA/CA in Wi-Fi because wireless devices cannot reliably detect collisions while transmitting.",
+              "parentId": "sec_doc_1790239146441_sc7456_5_13",
+              "level": "concept",
+              "documentId": "doc_1790239146441_sc7456",
+              "documentName": "Ethernet (1).pdf",
+              "pageStart": 35,
+              "pageEnd": 36,
+              "chunkIds": [
+                "doc_1790239146441_sc7456_34",
+                "doc_1790239146441_sc7456_35"
+              ],
+              "keywords": [
+                "wi-fi",
+                "csma/ca",
+                "collision detection",
+                "wireless devices"
+              ],
+              "order": 46
+            },
+            {
+              "id": "con_doc_1790239146441_sc7456_29",
+              "title": "Ethernet and Wireless LAN Comparison",
+              "description": "Assesses the distinction between Ethernet and wireless LAN operation, particularly their different medium-access methods.",
+              "parentId": "sec_doc_1790239146441_sc7456_5_13",
+              "level": "concept",
+              "documentId": "doc_1790239146441_sc7456",
+              "documentName": "Ethernet (1).pdf",
+              "pageStart": 37,
+              "pageEnd": 38,
+              "chunkIds": [
+                "doc_1790239146441_sc7456_36",
+                "doc_1790239146441_sc7456_37"
+              ],
+              "keywords": [
+                "ethernet",
+                "wireless lan",
+                "csma/cd",
+                "csma/ca"
+              ],
+              "order": 47
+            }
+          ],
+          "pageStart": 35,
+          "pageEnd": 38
+        }
+      ],
+      "pageStart": 25,
+      "pageEnd": 38
+    }
+  ],
+  "generatedAt": "2026-09-24T08:39:49.817Z"
+}

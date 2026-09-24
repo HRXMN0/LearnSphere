@@ -20,7 +20,9 @@ export class CourseTopicMapService {
   private inMemoryCache: Map<string, CourseTopicMap> = new Map();
 
   constructor() {
-    this.cacheDir = path.join(process.cwd(), 'server', 'data', 'topic-maps');
+    this.cacheDir = process.env.VERCEL
+      ? path.join('/tmp', 'learnsphere-storage', 'topic-maps')
+      : path.join(process.cwd(), 'server', 'data', 'topic-maps');
     try {
       if (!fs.existsSync(this.cacheDir)) {
         fs.mkdirSync(this.cacheDir, { recursive: true });
@@ -169,7 +171,9 @@ export class CourseTopicMapService {
 
     // 2. Fallback to local stored document file in server/storage/documents
     try {
-      const storageDir = path.join(process.cwd(), 'server', 'storage', 'documents');
+      const storageDir = process.env.VERCEL
+        ? path.join('/tmp', 'learnsphere-storage', 'documents')
+        : path.join(process.cwd(), 'server', 'storage', 'documents');
       if (fs.existsSync(storageDir)) {
         const files = fs.readdirSync(storageDir);
         const matchFile = files.find(f => f.startsWith(documentId) || (documentName && f.includes(documentName)));

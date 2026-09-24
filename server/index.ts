@@ -14,9 +14,16 @@ import { aiClassService } from './services/aiClassService';
 import { pdfExportService } from './services/pdfExportService';
 import { analyticsService } from './services/analyticsService';
 
-const storageDir = path.join(process.cwd(), 'server', 'storage', 'documents');
-if (!fs.existsSync(storageDir)) {
-  fs.mkdirSync(storageDir, { recursive: true });
+const isVercel = !!process.env.VERCEL;
+const storageDir = isVercel
+  ? path.join('/tmp', 'learnsphere-storage', 'documents')
+  : path.join(process.cwd(), 'server', 'storage', 'documents');
+try {
+  if (!fs.existsSync(storageDir)) {
+    fs.mkdirSync(storageDir, { recursive: true });
+  }
+} catch (err) {
+  console.warn('[Storage] Could not create document storage directory:', err);
 }
 
 const app = express();
@@ -945,29 +952,42 @@ app.get('/api/analytics/events', (req, res) => {
   res.json({ events: analyticsService.getEvents(), count: analyticsService.getEvents().length });
 });
 
-// Start server
-const PORT = config.port;
-const server = app.listen(PORT, '0.0.0.0', () => {
-  console.log(`========================================================`);
-  console.log(`[Server] Multimodal Learning Assistant API running on port ${PORT}`);
-  console.log(`[Server] Azure OpenAI Chat Deployment: ${config.openAI.chatDeployment}`);
-  console.log(`[Server] Azure OpenAI Embedding Deployment: ${config.openAI.embeddingDeployment}`);
-  console.log(`[Server] Azure AI Search Index: ${config.search.indexName}`);
-  console.log(`[Server] Azure Configured: ${config.openAI.isConfigured && config.search.isConfigured}`);
-  console.log(`========================================================`);
-});
+// Export the Express app for Vercel serverless adapter (and for testing).
+// When imported by api/index.ts, this module must NOT start a listener.
+export { app };
+export default app;
 
-server.on('error', (err) => {
-  console.error('[Server Error]', err);
-});
+// Start server ONLY when running locally via `tsx server/index.ts` (npm run server).
+// In Vercel serverless, this file is imported (not executed directly), so the guard prevents
+// app.listen() from firing.
+const isDirectExecution =
+  process.argv[1]?.replace(/\\/g, '/').includes('server/index') ||
+  process.argv[1]?.replace(/\\/g, '/').includes('server\\index');
 
-process.on('uncaughtException', (err) => {
-  console.error('[Uncaught Exception]', err);
-});
+if (isDirectExecution) {
+  const PORT = config.port;
+  const server = app.listen(PORT, '0.0.0.0', () => {
+    console.log(`========================================================`);
+    console.log(`[Server] Multimodal Learning Assistant API running on port ${PORT}`);
+    console.log(`[Server] Azure OpenAI Chat Deployment: ${config.openAI.chatDeployment}`);
+    console.log(`[Server] Azure OpenAI Embedding Deployment: ${config.openAI.embeddingDeployment}`);
+    console.log(`[Server] Azure AI Search Index: ${config.search.indexName}`);
+    console.log(`[Server] Azure Configured: ${config.openAI.isConfigured && config.search.isConfigured}`);
+    console.log(`========================================================`);
+  });
 
-process.on('unhandledRejection', (reason) => {
-  console.error('[Unhandled Rejection]', reason);
-});
+  server.on('error', (err) => {
+    console.error('[Server Error]', err);
+  });
 
-// Explicit event-loop keepalive
-setInterval(() => {}, 1000 * 60 * 60);
+  process.on('uncaughtException', (err) => {
+    console.error('[Uncaught Exception]', err);
+  });
+
+  process.on('unhandledRejection', (reason) => {
+    console.error('[Unhandled Rejection]', reason);
+  });
+
+  // Explicit event-loop keepalive (local dev only)
+  setInterval(() => {}, 1000 * 60 * 60);
+}

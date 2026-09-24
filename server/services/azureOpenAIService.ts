@@ -165,6 +165,10 @@ export class AzureOpenAIService {
         delete v1Payload.temperature;
         shouldRetry = true;
       }
+      if (errText.includes('reasoning_effort') && v1Payload.reasoning_effort !== undefined) {
+        delete v1Payload.reasoning_effort;
+        shouldRetry = true;
+      }
       if (shouldRetry) {
         response = await fetch(v1Url, {
           method: 'POST',
@@ -481,8 +485,54 @@ Synthesize a structured pedagogical answer strictly from the context above:`;
     }
   }
 
+
   /**
-   * Real Multimodal Vision Analysis: sends user-provided image to gpt-4.1-mini or vision deployment.
+   * Robust JSON extractor and parser that handles:
+   * 1. Direct valid JSON strings
+   * 2. Markdown fenced code blocks (```json ... ``` or ``` ... ```)
+   * 3. Extra surrounding commentary / text around the JSON object
+   */
+  private parseVisionJsonResponse(content: string | null | undefined): any {
+    if (!content || typeof content !== 'string' || !content.trim()) {
+      throw new Error('Azure OpenAI returned an empty response for the visual analysis.');
+    }
+
+    const trimmed = content.trim();
+
+    // 1. Direct JSON parse
+    try {
+      return JSON.parse(trimmed);
+    } catch {
+      // Continue to code fence extraction
+    }
+
+    // 2. Extract from markdown code fences: ```json ... ``` or ``` ... ```
+    const fenceMatch = trimmed.match(/```(?:json)?\s*([\s\S]*?)\s*```/i);
+    if (fenceMatch && fenceMatch[1]) {
+      try {
+        return JSON.parse(fenceMatch[1].trim());
+      } catch {
+        // Continue to outermost bracket extraction
+      }
+    }
+
+    // 3. Extract outermost JSON object { ... }
+    const firstBrace = trimmed.indexOf('{');
+    const lastBrace = trimmed.lastIndexOf('}');
+    if (firstBrace !== -1 && lastBrace > firstBrace) {
+      const candidate = trimmed.substring(firstBrace, lastBrace + 1);
+      try {
+        return JSON.parse(candidate);
+      } catch {
+        // Fall through
+      }
+    }
+
+    throw new Error('Azure OpenAI returned malformed JSON for the visual analysis.');
+  }
+
+  /**
+   * Real Multimodal Vision Analysis: sends user-provided image to Azure OpenAI vision deployment.
    */
   async analyzeVisionImage(
     imageBase64: string,
@@ -527,7 +577,8 @@ Return a structured JSON object strictly matching this schema:
 Output strictly valid JSON.`;
 
     const imageUrl = `data:${mimeType};base64,${imageBase64}`;
-    const data = await this.postRequest(config.openAI.visionDeployment, 'chat/completions', {
+    const isReasoning = /gpt-5|sol|o1|o3/i.test(config.openAI.visionDeployment);
+    const payload: any = {
       messages: [
         { role: 'system', content: systemPrompt },
         {
@@ -538,25 +589,38 @@ Output strictly valid JSON.`;
           ],
         },
       ],
-      temperature: 0.2,
-      max_tokens: 1500,
+      max_tokens: 4096,
       response_format: { type: 'json_object' },
-    });
+    };
 
-    const rawJson = data.choices[0].message.content;
-    try {
-      const parsed = JSON.parse(rawJson);
-      return {
-        title: parsed.title || 'Analyzed Image',
-        whatISee: parsed.whatISee || 'Visual analysis complete.',
-        keyConcepts: Array.isArray(parsed.keyConcepts) ? parsed.keyConcepts : [],
-        stepByStep: Array.isArray(parsed.stepByStep) ? parsed.stepByStep : [],
-        importantLabels: Array.isArray(parsed.importantLabels) ? parsed.importantLabels : [],
-        detailedExplanation: parsed.detailedExplanation || parsed.whatISee || '',
-      };
-    } catch {
-      throw new Error('Azure OpenAI returned malformed JSON for the visual analysis.');
+    if (isReasoning) {
+      payload.reasoning_effort = 'low';
+    } else {
+      payload.temperature = 0.2;
     }
+
+    const data = await this.postRequest(config.openAI.visionDeployment, 'chat/completions', payload);
+
+    const firstChoice = data.choices && data.choices[0];
+    if (!firstChoice) {
+      throw new Error('Azure OpenAI returned no completion choices for the visual analysis.');
+    }
+
+    if (firstChoice.finish_reason === 'length' && (!firstChoice.message?.content || !firstChoice.message.content.trim())) {
+      throw new Error('Azure OpenAI token limit reached before visual analysis completed.');
+    }
+
+    const rawJson = firstChoice.message?.content;
+    const parsed = this.parseVisionJsonResponse(rawJson);
+
+    return {
+      title: parsed.title || 'Analyzed Image',
+      whatISee: parsed.whatISee || 'Visual analysis complete.',
+      keyConcepts: Array.isArray(parsed.keyConcepts) ? parsed.keyConcepts : [],
+      stepByStep: Array.isArray(parsed.stepByStep) ? parsed.stepByStep : [],
+      importantLabels: Array.isArray(parsed.importantLabels) ? parsed.importantLabels : [],
+      detailedExplanation: parsed.detailedExplanation || parsed.whatISee || '',
+    };
   }
 
   /**
@@ -582,7 +646,8 @@ Ground your answer explicitly in the visual evidence (e.g. labels, connections, 
 If a detail cannot be determined from the image, state that candidly.`;
 
     const imageUrl = `data:${mimeType};base64,${imageBase64}`;
-    const data = await this.postRequest(config.openAI.visionDeployment, 'chat/completions', {
+    const isReasoning = /gpt-5|sol|o1|o3/i.test(config.openAI.visionDeployment);
+    const payload: any = {
       messages: [
         { role: 'system', content: systemPrompt },
         {
@@ -593,9 +658,16 @@ If a detail cannot be determined from the image, state that candidly.`;
           ],
         },
       ],
-      temperature: 0.3,
-      max_tokens: 1200,
-    });
+      max_tokens: 2500,
+    };
+
+    if (isReasoning) {
+      payload.reasoning_effort = 'low';
+    } else {
+      payload.temperature = 0.3;
+    }
+
+    const data = await this.postRequest(config.openAI.visionDeployment, 'chat/completions', payload);
 
     const answer = data.choices[0]?.message?.content || 'No response generated.';
     return { answer };
